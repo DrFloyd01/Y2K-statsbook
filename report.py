@@ -1,21 +1,17 @@
 import json
 import logging
-import os
 from yfpy.query import YahooFantasySportsQuery
 
 # Set up logging for debugging
 logging.basicConfig(level=logging.INFO)
 
-# User-specific configuration (using environment variables)
-# Make sure your .env file is loaded and contains these variables.
-# For example:
-# YAHOO_CONSUMER_KEY="<YOUR_CONSUMER_KEY>"
-# YAHOO_CONSUMER_SECRET="<YOUR_CONSUMER_SECRET>"
-YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
-YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
-LEAGUE_ID = "1286518"  # Your league ID for the 2018 season
-GAME_ID = 380  # The game ID for the 2018 NFL season
+
+# User-specific configuration (replace with your actual values)
+LEAGUE_ID = "1286518"  # Your league ID
+GAME_ID = 449  # The game ID for the 2018 NFL season
+YAHOO_CONSUMER_KEY = "<YOUR_CONSUMER_KEY>"
+YAHOO_CONSUMER_SECRET = "<YOUR_CONSUMER_SECRET>"
 WEEK = 1  # The week you want to analyze
 
 def generate_weekly_report(league_id, game_id, week, consumer_key, consumer_secret):
