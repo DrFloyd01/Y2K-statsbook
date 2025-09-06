@@ -1,0 +1,1042 @@
+[
+    {
+        "week": 1,
+        "alternative_universe_winners": [
+            "Trace's Team",
+            "The Mongol Horde",
+            "The Waterboys"
+        ],
+        "top_points": {
+            "name": "Trace's Team",
+            "score": 172.33,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Mongol Horde"
+        },
+        "highest_scoring_loss": {
+            "name": "The Mongol Horde",
+            "score": 167.17,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "The Mongol Horde",
+            "score": 167.17,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "lowest_scoring_win": {
+            "name": "Good football team!!",
+            "score": 157.83,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "Trace's Team",
+                "score": 172.33,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 167.17,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 164.43,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 157.83,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 131.93,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 115.27,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            }
+        ]
+    },
+    {
+        "week": 2,
+        "alternative_universe_winners": [
+            "The Waterboys",
+            "Good football team!!",
+            "Show Me Dem TDS"
+        ],
+        "top_points": {
+            "name": "The Waterboys",
+            "score": 162.97,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Good football team!!"
+        },
+        "highest_scoring_loss": {
+            "name": "Good football team!!",
+            "score": 154.63,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Waterboys"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Good football team!!",
+            "score": 154.63,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Waterboys"
+        },
+        "lowest_scoring_win": {
+            "name": "Trace's Team",
+            "score": 126.47,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "The Waterboys",
+                "score": 162.97,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 154.63,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 137.9,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 129.53,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 126.47,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 84.05,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            }
+        ]
+    },
+    {
+        "week": 3,
+        "alternative_universe_winners": [
+            "Show Me Dem TDS",
+            "Trace's Team",
+            "The Mongol Horde"
+        ],
+        "top_points": {
+            "name": "Show Me Dem TDS",
+            "score": 151.97,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Good football team!!"
+        },
+        "highest_scoring_loss": {
+            "name": "Good football team!!",
+            "score": 128.37,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Good football team!!",
+            "score": 128.37,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "lowest_scoring_win": {
+            "name": "The Mongol Horde",
+            "score": 131.22,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "Show Me Dem TDS",
+                "score": 151.97,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 150.47,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 131.22,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 128.37,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 117.77,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 82.41,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Mongol Horde"
+            }
+        ]
+    },
+    {
+        "week": 4,
+        "alternative_universe_winners": [
+            "The Waterboys",
+            "Trace's Team",
+            "Show Me Dem TDS"
+        ],
+        "top_points": {
+            "name": "The Waterboys",
+            "score": 228.42,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "highest_scoring_loss": {
+            "name": "Show Me Dem TDS",
+            "score": 157.36,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "The Mongol Horde",
+            "score": 132.13,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Good football team!!"
+        },
+        "lowest_scoring_win": {
+            "name": "Good football team!!",
+            "score": 133.23,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Mongol Horde"
+        },
+        "all_scores": [
+            {
+                "name": "The Waterboys",
+                "score": 228.42,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 190.48,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 157.36,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 134.03,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 133.23,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 132.13,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            }
+        ]
+    },
+    {
+        "week": 5,
+        "alternative_universe_winners": [
+            "Good football team!!",
+            "The Mongol Horde",
+            "The Waterboys"
+        ],
+        "top_points": {
+            "name": "Good football team!!",
+            "score": 186.35,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Trace's Team"
+        },
+        "highest_scoring_loss": {
+            "name": "The Waterboys",
+            "score": 142.93,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Mongol Horde"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "The Waterboys",
+            "score": 142.93,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Mongol Horde"
+        },
+        "lowest_scoring_win": {
+            "name": "Show Me Dem TDS",
+            "score": 138.33,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "Good football team!!",
+                "score": 186.35,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 158.06,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 142.93,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 138.33,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 133.55,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 122.14,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            }
+        ]
+    },
+    {
+        "week": 6,
+        "alternative_universe_winners": [
+            "Trace's Team",
+            "Good football team!!",
+            "Show Me Dem TDS"
+        ],
+        "top_points": {
+            "name": "Trace's Team",
+            "score": 196.02,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Mongol Horde"
+        },
+        "highest_scoring_loss": {
+            "name": "The Waterboys",
+            "score": 150.87,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "The Waterboys",
+            "score": 150.87,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "lowest_scoring_win": {
+            "name": "Show Me Dem TDS",
+            "score": 171.48,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Waterboys"
+        },
+        "all_scores": [
+            {
+                "name": "Trace's Team",
+                "score": 196.02,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 176.43,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 171.48,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 150.87,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 137.38,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 74.6,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            }
+        ]
+    },
+    {
+        "week": 7,
+        "alternative_universe_winners": [
+            "Show Me Dem TDS",
+            "The Waterboys",
+            "Good football team!!"
+        ],
+        "top_points": {
+            "name": "Show Me Dem TDS",
+            "score": 201.27,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Mongol Horde"
+        },
+        "highest_scoring_loss": {
+            "name": "Good football team!!",
+            "score": 139.93,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Waterboys"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Good football team!!",
+            "score": 139.93,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Waterboys"
+        },
+        "lowest_scoring_win": {
+            "name": "Trace's Team",
+            "score": 108.81,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "Show Me Dem TDS",
+                "score": 201.27,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 145.6,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 139.93,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 129.42,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 108.81,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 98.35,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            }
+        ]
+    },
+    {
+        "week": 8,
+        "alternative_universe_winners": [
+            "Trace's Team",
+            "Good football team!!",
+            "The Waterboys"
+        ],
+        "top_points": {
+            "name": "Trace's Team",
+            "score": 184.92,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Waterboys"
+        },
+        "highest_scoring_loss": {
+            "name": "The Waterboys",
+            "score": 174.31,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "The Waterboys",
+            "score": 174.31,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "lowest_scoring_win": {
+            "name": "The Mongol Horde",
+            "score": 113.15,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "Trace's Team",
+                "score": 184.92,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 180.98,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 174.31,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 160.45,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 113.15,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 72.58,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Mongol Horde"
+            }
+        ]
+    },
+    {
+        "week": 9,
+        "alternative_universe_winners": [
+            "Good football team!!",
+            "The Waterboys",
+            "Trace's Team"
+        ],
+        "top_points": {
+            "name": "Good football team!!",
+            "score": 187.33,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Mongol Horde"
+        },
+        "highest_scoring_loss": {
+            "name": "Show Me Dem TDS",
+            "score": 140.55,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Show Me Dem TDS",
+            "score": 140.55,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Trace's Team"
+        },
+        "lowest_scoring_win": {
+            "name": "Trace's Team",
+            "score": 156.53,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "all_scores": [
+            {
+                "name": "Good football team!!",
+                "score": 187.33,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 160.59,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 156.53,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 140.55,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 117.1,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 93.65,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            }
+        ]
+    },
+    {
+        "week": 10,
+        "alternative_universe_winners": [
+            "The Mongol Horde",
+            "The Waterboys",
+            "Good football team!!"
+        ],
+        "top_points": {
+            "name": "The Mongol Horde",
+            "score": 199.63,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Waterboys"
+        },
+        "highest_scoring_loss": {
+            "name": "The Waterboys",
+            "score": 162.76,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Mongol Horde"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Show Me Dem TDS",
+            "score": 111.52,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Ronny Man"
+        },
+        "lowest_scoring_win": {
+            "name": "Ronny Man",
+            "score": 140.68,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "all_scores": [
+            {
+                "name": "The Mongol Horde",
+                "score": 199.63,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 162.76,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 157.5,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 140.68,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 121.41,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 111.52,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Ronny Man"
+            }
+        ]
+    },
+    {
+        "week": 11,
+        "alternative_universe_winners": [
+            "Show Me Dem TDS",
+            "The Waterboys",
+            "Trace's Team"
+        ],
+        "top_points": {
+            "name": "Show Me Dem TDS",
+            "score": 188.68,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "The Waterboys"
+        },
+        "highest_scoring_loss": {
+            "name": "The Waterboys",
+            "score": 182.57,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "The Waterboys",
+            "score": 182.57,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "lowest_scoring_win": {
+            "name": "Ronny Man",
+            "score": 146.57,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Good football team!!"
+        },
+        "all_scores": [
+            {
+                "name": "Show Me Dem TDS",
+                "score": 188.68,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Waterboys"
+            },
+            {
+                "name": "The Waterboys",
+                "score": 182.57,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 147.3,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 146.57,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 137.97,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 127.76,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Trace's Team"
+            }
+        ]
+    },
+    {
+        "week": 12,
+        "alternative_universe_winners": [
+            "The Waterboys",
+            "The Mongol Horde",
+            "Show Me Dem TDS"
+        ],
+        "top_points": {
+            "name": "The Waterboys",
+            "score": 169.82,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Good football team!!"
+        },
+        "highest_scoring_loss": {
+            "name": "Show Me Dem TDS",
+            "score": 144.05,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "The Mongol Horde"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Trace's Team",
+            "score": 135.48,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Ronny Man"
+        },
+        "lowest_scoring_win": {
+            "name": "Ronny Man",
+            "score": 140.57,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Trace's Team"
+        },
+        "all_scores": [
+            {
+                "name": "The Waterboys",
+                "score": 169.82,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 169.17,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 144.05,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 140.57,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 135.48,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 129.22,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            }
+        ]
+    },
+    {
+        "week": 13,
+        "alternative_universe_winners": [
+            "The Waterboys",
+            "Show Me Dem TDS",
+            "Good football team!!"
+        ],
+        "top_points": {
+            "name": "The Waterboys",
+            "score": 200.92,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Trace's Team"
+        },
+        "highest_scoring_loss": {
+            "name": "Good football team!!",
+            "score": 136.95,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "smallest_margin_of_defeat": {
+            "name": "Good football team!!",
+            "score": 136.95,
+            "is_winner": false,
+            "is_loss": true,
+            "opponent_name": "Show Me Dem TDS"
+        },
+        "lowest_scoring_win": {
+            "name": "The Mongol Horde",
+            "score": 134.83,
+            "is_winner": true,
+            "is_loss": false,
+            "opponent_name": "Ronny Man"
+        },
+        "all_scores": [
+            {
+                "name": "The Waterboys",
+                "score": 200.92,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Trace's Team"
+            },
+            {
+                "name": "Show Me Dem TDS",
+                "score": 148.18,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Good football team!!"
+            },
+            {
+                "name": "Good football team!!",
+                "score": 136.95,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "Show Me Dem TDS"
+            },
+            {
+                "name": "The Mongol Horde",
+                "score": 134.83,
+                "is_winner": true,
+                "is_loss": false,
+                "opponent_name": "Ronny Man"
+            },
+            {
+                "name": "Ronny Man",
+                "score": 107.0,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Mongol Horde"
+            },
+            {
+                "name": "Trace's Team",
+                "score": 101.85,
+                "is_winner": false,
+                "is_loss": true,
+                "opponent_name": "The Waterboys"
+            }
+        ]
+    }
+]
