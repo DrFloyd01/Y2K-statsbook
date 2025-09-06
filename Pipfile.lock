@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ca8f0dedfd738447a2ca8192bb39990766c517c336f15626dea2019be5ed8861"
+            "sha256": "4b456c4ad342212619f91e5a79dd6345919dda3b7547942be3c548f87fb228e8"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -195,6 +195,13 @@
             "markers": "python_version >= '3.8'",
             "version": "==7.6.1"
         },
+        "dotenv": {
+            "hashes": [
+                "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9"
+            ],
+            "index": "pypi",
+            "version": "==0.9.9"
+        },
         "flake8": {
             "hashes": [
                 "sha256:049d058491e228e03e67b390f311bbf88fce2dbaa8fa673e7aea87b7198b8d38",
@@ -264,14 +271,6 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==25.0"
-        },
-        "pbr": {
-            "hashes": [
-                "sha256:32df5156fbeccb6f8a858d1ebc4e465dcf47d6cc7a4895d5df9aa951c712fc35",
-                "sha256:3ecbcb11d2b8551588ec816b3756b1eb4394186c3b689b17e04850dfc20f7e57"
-            ],
-            "markers": "python_version >= '2.6'",
-            "version": "==7.0.1"
         },
         "pluggy": {
             "hashes": [
@@ -478,14 +477,6 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==0.2.12"
-        },
-        "setuptools": {
-            "hashes": [
-                "sha256:062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
-                "sha256:f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c"
-            ],
-            "markers": "python_version >= '3.9'",
-            "version": "==80.9.0"
         },
         "six": {
             "hashes": [
