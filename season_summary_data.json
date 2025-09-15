@@ -1,0 +1,160 @@
+{
+    "Alternative Universe Standings": [
+        {
+            "team": "The Waterboys",
+            "wins": 11
+        },
+        {
+            "team": "Show Me Dem TDS",
+            "wins": 9
+        },
+        {
+            "team": "Good football team!!",
+            "wins": 8
+        },
+        {
+            "team": "Trace's Team",
+            "wins": 8
+        },
+        {
+            "team": "The Mongol Horde",
+            "wins": 6
+        },
+        {
+            "team": "Ronny Man",
+            "wins": 0
+        }
+    ],
+    "Accolade Leaderboard": {
+        "The Rollercoaster Award (Most Volatile)": [
+            {
+                "team": "Trace's Team",
+                "stdev": 29.57
+            },
+            {
+                "team": "The Waterboys",
+                "stdev": 27.23
+            },
+            {
+                "team": "Ronny Man",
+                "stdev": 27.15
+            },
+            {
+                "team": "Show Me Dem TDS",
+                "stdev": 25.09
+            },
+            {
+                "team": "The Mongol Horde",
+                "stdev": 23.55
+            },
+            {
+                "team": "Good football team!!",
+                "stdev": 23.43
+            }
+        ],
+        "Most Top Point Weeks": [
+            {
+                "team": "The Waterboys",
+                "count": 4
+            },
+            {
+                "team": "Show Me Dem TDS",
+                "count": 4
+            },
+            {
+                "team": "Trace's Team",
+                "count": 3
+            },
+            {
+                "team": "Good football team!!",
+                "count": 2
+            },
+            {
+                "team": "The Mongol Horde",
+                "count": 1
+            },
+            {
+                "team": "Ronny Man",
+                "count": 0
+            }
+        ],
+        "Most Highest-Scoring Losses (Tough Luck Award)": [
+            {
+                "team": "The Waterboys",
+                "count": 5
+            },
+            {
+                "team": "Good football team!!",
+                "count": 4
+            },
+            {
+                "team": "Show Me Dem TDS",
+                "count": 3
+            },
+            {
+                "team": "Trace's Team",
+                "count": 1
+            },
+            {
+                "team": "The Mongol Horde",
+                "count": 1
+            },
+            {
+                "team": "Ronny Man",
+                "count": 0
+            }
+        ],
+        "Most Smallest-Margin Defeats (Heartbreak Award)": [
+            {
+                "team": "The Waterboys",
+                "count": 4
+            },
+            {
+                "team": "Good football team!!",
+                "count": 4
+            },
+            {
+                "team": "Show Me Dem TDS",
+                "count": 2
+            },
+            {
+                "team": "The Mongol Horde",
+                "count": 2
+            },
+            {
+                "team": "Trace's Team",
+                "count": 1
+            },
+            {
+                "team": "Ronny Man",
+                "count": 1
+            }
+        ],
+        "Most Lowest-Scoring Wins (Win is a Win Award)": [
+            {
+                "team": "Trace's Team",
+                "count": 3
+            },
+            {
+                "team": "Ronny Man",
+                "count": 3
+            },
+            {
+                "team": "The Mongol Horde",
+                "count": 3
+            },
+            {
+                "team": "Show Me Dem TDS",
+                "count": 2
+            },
+            {
+                "team": "Good football team!!",
+                "count": 2
+            },
+            {
+                "team": "The Waterboys",
+                "count": 1
+            }
+        ]
+    }
+}
