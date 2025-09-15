@@ -2012,7 +2012,7 @@
   {
     "season": 2021,
     "week": 16,
-    "game_type": "SF",
+    "game_type": "consolation",
     "team1_manager_name": "Boaz",
     "team2_manager_name": "Dustin",
     "team1_score": 100.08,
@@ -2812,7 +2812,7 @@
   {
     "season": 2022,
     "week": 16,
-    "game_type": "SF",
+    "game_type": "consolation",
     "team1_manager_name": "Boaz",
     "team2_manager_name": "Jasper",
     "team1_score": 157.31,
@@ -3762,7 +3762,7 @@
   {
     "season": 2023,
     "week": 16,
-    "game_type": "SF",
+    "game_type": "consolation",
     "team1_manager_name": "Casey",
     "team2_manager_name": "Boaz",
     "team1_score": 132.1,
@@ -4582,7 +4582,7 @@
   {
     "season": 2024,
     "week": 16,
-    "game_type": "SF",
+    "game_type": "consolation",
     "team1_manager_name": "Casey",
     "team2_manager_name": "Boaz",
     "team1_score": 186.64,
