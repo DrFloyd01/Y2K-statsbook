@@ -46,13 +46,14 @@ def get_season():
     # season = 2015
     # season = 2016
     # season = 2017
-    season = 2018
+    # season = 2018
     # season = 2019
     # season = 2020
     # season = 2021
     # season = 2022
     # season = 2023
     # season = 2024
+    season = 2025
     return season
 
 
@@ -147,13 +148,14 @@ def get_game_key():
     # game_key = "348"  # NFL - 2015 (divisions)
     # game_key = "359"  # NFL - 2016
     # game_key = "371"  # NFL - 2017
-    game_key = "380"  # NFL - 2018
+    # game_key = "380"  # NFL - 2018
     # game_key = "390"  # NFL - 2019
     # game_key = "399"  # NFL - 2020
     # game_key = "406"  # NFL - 2021
     # game_key = "414"  # NFL - 2022 (divisions)
     # game_key = "423"  # NFL - 2023
     # game_key = "449"  # NFL - 2024
+    game_key = "461"  # NFL - 2025
 
     # HOCKEY
     # game_key = "303"  # NHL - 2012
@@ -182,9 +184,11 @@ def get_league_id():
     # league_id = "413954"  # NFL - 2021
     # league_id = "791337"  # NFL - 2022 (divisions)
     # league_id = "321958"  # NFL - 2023
-   # league_id = "365083"  # NFL - 2024
+    league_id = "365083"  # NFL - 2024
 
-    league_id = "1286518"   # Y2K - 2018
+    # league_id = "1286518"   # Y2K - 2018
+
+    # league_id = "97974"     # Y2K - 2025
 
     # HOCKEY
     # league_id = "69624"  # NHL - 2012
@@ -293,8 +297,8 @@ test_player_key = f"{test_game_id}.p.{test_player_id}"
 # RUN QUERIES # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# print(repr(query.get_all_yahoo_fantasy_game_keys()))
-# print(repr(query.get_game_key_by_season(test_season)))
+print(repr(query.get_all_yahoo_fantasy_game_keys()))
+print(repr(query.get_game_key_by_season(test_season)))
 # print(repr(query.get_current_game_info()))
 # print(repr(query.get_current_game_metadata()))
 # print(repr(query.get_game_info_by_game_id(test_game_id)))
@@ -312,7 +316,7 @@ test_player_key = f"{test_game_id}.p.{test_player_id}"
 # print(repr(query.get_league_metadata()))
 # print(repr(query.get_league_settings()))
 # print(repr(query.get_league_standings()))
-print(repr(query.get_league_teams()))
+# print(repr(query.get_league_teams()))
 # print(repr(query.get_league_players(player_count_limit=10, player_count_start=0)))
 # print(repr(query.get_league_draft_results()))
 # print(repr(query.get_league_transactions()))
