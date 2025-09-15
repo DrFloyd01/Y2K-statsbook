@@ -1,0 +1,4702 @@
+[
+  {
+    "season": 2018,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 164.43,
+    "team2_score": 115.27,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 157.83,
+    "team2_score": 131.93,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 172.33,
+    "team2_score": 167.17,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 162.97,
+    "team2_score": 154.63,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 137.9,
+    "team2_score": 129.53,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 126.47,
+    "team2_score": 84.05,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 117.77,
+    "team2_score": 150.47,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 151.97,
+    "team2_score": 128.37,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 82.41,
+    "team2_score": 131.22,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 228.42,
+    "team2_score": 134.03,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 157.36,
+    "team2_score": 190.48,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 133.23,
+    "team2_score": 132.13,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 142.93,
+    "team2_score": 158.06,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 138.33,
+    "team2_score": 122.14,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Trace",
+    "team1_score": 186.35,
+    "team2_score": 133.55,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 150.87,
+    "team2_score": 171.48,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 176.43,
+    "team2_score": 74.6,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 196.02,
+    "team2_score": 137.38,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 145.6,
+    "team2_score": 139.93,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 201.27,
+    "team2_score": 129.42,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 108.81,
+    "team2_score": 98.35,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 174.31,
+    "team2_score": 184.92,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 160.45,
+    "team2_score": 180.98,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 72.58,
+    "team2_score": 113.15,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 160.59,
+    "team2_score": 93.65,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 140.55,
+    "team2_score": 156.53,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 187.33,
+    "team2_score": 117.1,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 162.76,
+    "team2_score": 199.63,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 111.52,
+    "team2_score": 140.68,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2018,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Trace",
+    "team1_score": 157.5,
+    "team2_score": 121.41,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 182.57,
+    "team2_score": 188.68,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 137.97,
+    "team2_score": 146.57,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2018,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 147.3,
+    "team2_score": 127.76,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 169.82,
+    "team2_score": 129.22,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 144.05,
+    "team2_score": 169.17,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 135.48,
+    "team2_score": 140.57,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2018,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 200.92,
+    "team2_score": 101.85,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 148.18,
+    "team2_score": 136.95,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 107.0,
+    "team2_score": 134.83,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 140.71,
+    "team2_score": 136.63,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2018,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 170.9,
+    "team2_score": 143.17,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 117.35,
+    "team2_score": 143.23,
+    "winner_manager_name": "--hidden--"
+  },
+  {
+    "season": 2018,
+    "week": 15,
+    "game_type": "SF",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 134.37,
+    "team2_score": 136.85,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 15,
+    "game_type": "SF",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Trace",
+    "team1_score": 123.8,
+    "team2_score": 143.4,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2018,
+    "week": 16,
+    "game_type": "3rd",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 129.0,
+    "team2_score": 140.02,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2018,
+    "week": 16,
+    "game_type": "1st",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 159.34,
+    "team2_score": 156.14,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2018,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "--hidden--",
+    "team1_score": 158.98,
+    "team2_score": 135.07,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 149.65,
+    "team2_score": 136.95,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 180.78,
+    "team2_score": 133.97,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 156.65,
+    "team2_score": 168.0,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 109.45,
+    "team2_score": 140.27,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2019,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 142.78,
+    "team2_score": 161.77,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 144.65,
+    "team2_score": 138.94,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2019,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 228.5,
+    "team2_score": 159.57,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 89.1,
+    "team2_score": 134.5,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2019,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 147.58,
+    "team2_score": 212.94,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 109.98,
+    "team2_score": 172.32,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 172.23,
+    "team2_score": 110.7,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 140.88,
+    "team2_score": 148.17,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 144.78,
+    "team2_score": 208.0,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 174.93,
+    "team2_score": 154.48,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 179.6,
+    "team2_score": 195.88,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2019,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 144.18,
+    "team2_score": 151.77,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 128.48,
+    "team2_score": 147.72,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 148.65,
+    "team2_score": 172.47,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 161.08,
+    "team2_score": 115.53,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 161.38,
+    "team2_score": 156.03,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 85.43,
+    "team2_score": 163.6,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 180.15,
+    "team2_score": 124.18,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 172.05,
+    "team2_score": 151.33,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 159.27,
+    "team2_score": 186.21,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 111.85,
+    "team2_score": 111.37,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 159.03,
+    "team2_score": 165.12,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2019,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 149.22,
+    "team2_score": 202.1,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 161.85,
+    "team2_score": 134.0,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 152.02,
+    "team2_score": 158.03,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 147.48,
+    "team2_score": 173.07,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2019,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 118.51,
+    "team2_score": 157.7,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 123.2,
+    "team2_score": 123.6,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 122.82,
+    "team2_score": 162.08,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 159.85,
+    "team2_score": 116.16,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2019,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 186.92,
+    "team2_score": 123.82,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 140.38,
+    "team2_score": 182.68,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 140.58,
+    "team2_score": 141.25,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2019,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 119.98,
+    "team2_score": 135.48,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2019,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 127.8,
+    "team2_score": 106.45,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 145.33,
+    "team2_score": 149.78,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 173.33,
+    "team2_score": 149.18,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 157.7,
+    "team2_score": 120.22,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2019,
+    "week": 15,
+    "game_type": "SF",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 151.55,
+    "team2_score": 183.48,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2019,
+    "week": 15,
+    "game_type": "SF",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 152.68,
+    "team2_score": 177.17,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2019,
+    "week": 16,
+    "game_type": "3rd",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 119.18,
+    "team2_score": 126.9,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2019,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 141.87,
+    "team2_score": 173.07,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2019,
+    "week": 16,
+    "game_type": "1st",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 179.93,
+    "team2_score": 124.8,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2020,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 95.43,
+    "team2_score": 129.71,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 153.59,
+    "team2_score": 113.09,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 130.87,
+    "team2_score": 138.54,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 129.28,
+    "team2_score": 116.05,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2020,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 163.82,
+    "team2_score": 107.55,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 124.84,
+    "team2_score": 86.62,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2020,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 114.06,
+    "team2_score": 150.54,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2020,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 144.32,
+    "team2_score": 138.85,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 118.85,
+    "team2_score": 140.21,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 77.37,
+    "team2_score": 173.57,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2020,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 158.27,
+    "team2_score": 97.36,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 87.22,
+    "team2_score": 105.65,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 124.4,
+    "team2_score": 120.73,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2020,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 106.17,
+    "team2_score": 93.75,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 133.5,
+    "team2_score": 130.05,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 123.01,
+    "team2_score": 74.46,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2020,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 122.21,
+    "team2_score": 120.24,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 78.45,
+    "team2_score": 127.24,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 115.77,
+    "team2_score": 142.13,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 110.43,
+    "team2_score": 158.52,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 128.76,
+    "team2_score": 93.08,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2020,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 85.07,
+    "team2_score": 127.74,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2020,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 71.71,
+    "team2_score": 149.26,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 128.31,
+    "team2_score": 123.01,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2020,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 133.78,
+    "team2_score": 152.41,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2020,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 95.22,
+    "team2_score": 93.17,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 122.76,
+    "team2_score": 125.9,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 73.29,
+    "team2_score": 113.17,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 138.41,
+    "team2_score": 96.98,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 85.23,
+    "team2_score": 79.04,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 93.44,
+    "team2_score": 117.84,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 137.3,
+    "team2_score": 110.37,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 73.02,
+    "team2_score": 116.67,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 111.19,
+    "team2_score": 108.25,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2020,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 107.13,
+    "team2_score": 150.65,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 84.66,
+    "team2_score": 159.11,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2020,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 110.49,
+    "team2_score": 114.24,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2020,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 113.21,
+    "team2_score": 113.97,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 99.17,
+    "team2_score": 107.73,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 150.55,
+    "team2_score": 104.38,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2020,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 164.87,
+    "team2_score": 113.3,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 120.04,
+    "team2_score": 144.32,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 15,
+    "game_type": "SF",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 122.08,
+    "team2_score": 148.34,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2020,
+    "week": 15,
+    "game_type": "SF",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 105.04,
+    "team2_score": 93.59,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 16,
+    "game_type": "3rd",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 124.34,
+    "team2_score": 134.58,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2020,
+    "week": 16,
+    "game_type": "1st",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 157.07,
+    "team2_score": 105.19,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2020,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 95.74,
+    "team2_score": 130.54,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 144.2,
+    "team2_score": 140.23,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Boaz",
+    "team1_score": 105.26,
+    "team2_score": 112.28,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 117.72,
+    "team2_score": 125.55,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 132.03,
+    "team2_score": 112.8,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 153.7,
+    "team2_score": 106.11,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Dustin",
+    "team1_score": 104.25,
+    "team2_score": 151.53,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 99.34,
+    "team2_score": 110.86,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 113.32,
+    "team2_score": 164.48,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 127.32,
+    "team2_score": 99.02,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 139.27,
+    "team2_score": 100.67,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 109.5,
+    "team2_score": 110.28,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 105.08,
+    "team2_score": 106.15,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 74.93,
+    "team2_score": 124.46,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 129.29,
+    "team2_score": 138.5,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2021,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 149.21,
+    "team2_score": 120.11,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2021,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 125.01,
+    "team2_score": 110.94,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 125.08,
+    "team2_score": 156.34,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 145.72,
+    "team2_score": 98.92,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 153.8,
+    "team2_score": 140.09,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2021,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 156.24,
+    "team2_score": 191.96,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 149.81,
+    "team2_score": 88.56,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 141.83,
+    "team2_score": 164.59,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 110.79,
+    "team2_score": 127.07,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 93.88,
+    "team2_score": 96.41,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 159.5,
+    "team2_score": 121.62,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Boaz",
+    "team1_score": 130.62,
+    "team2_score": 139.56,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 118.36,
+    "team2_score": 94.07,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2021,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 117.29,
+    "team2_score": 120.18,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 99.08,
+    "team2_score": 121.4,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Boaz",
+    "team1_score": 130.55,
+    "team2_score": 110.64,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2021,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 128.24,
+    "team2_score": 70.7,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2021,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 104.94,
+    "team2_score": 101.97,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 83.37,
+    "team2_score": 97.82,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2021,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Dustin",
+    "team1_score": 167.35,
+    "team2_score": 100.54,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 115.76,
+    "team2_score": 78.58,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2021,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 127.61,
+    "team2_score": 96.15,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 153.18,
+    "team2_score": 112.16,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 115.04,
+    "team2_score": 90.93,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 116.5,
+    "team2_score": 137.05,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 106.96,
+    "team2_score": 103.16,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 127.76,
+    "team2_score": 135.15,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 166.85,
+    "team2_score": 103.89,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 128.79,
+    "team2_score": 129.6,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 111.41,
+    "team2_score": 113.87,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 88.09,
+    "team2_score": 135.76,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 138.74,
+    "team2_score": 119.25,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 78.61,
+    "team2_score": 81.96,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2021,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 92.78,
+    "team2_score": 138.28,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 100.45,
+    "team2_score": 134.0,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 154.71,
+    "team2_score": 149.82,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 113.5,
+    "team2_score": 87.73,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2021,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 142.32,
+    "team2_score": 134.23,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2021,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 115.28,
+    "team2_score": 162.61,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Boaz",
+    "team1_score": 114.41,
+    "team2_score": 124.66,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2021,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 113.27,
+    "team2_score": 117.97,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 152.33,
+    "team2_score": 117.88,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2021,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 122.47,
+    "team2_score": 68.23,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 120.21,
+    "team2_score": 103.94,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2021,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 168.93,
+    "team2_score": 163.99,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2021,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 77.7,
+    "team2_score": 106.14,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 100.08,
+    "team2_score": 115.68,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2021,
+    "week": 17,
+    "game_type": "1st",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 99.99,
+    "team2_score": 119.46,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2021,
+    "week": 17,
+    "game_type": "3rd",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 130.48,
+    "team2_score": 98.99,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2021,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 148.03,
+    "team2_score": 117.15,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 133.32,
+    "team2_score": 133.08,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 201.48,
+    "team2_score": 153.18,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 191.57,
+    "team2_score": 132.32,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 116.82,
+    "team2_score": 120.54,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "Jasper",
+    "team1_score": 106.77,
+    "team2_score": 156.76,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 134.83,
+    "team2_score": 137.51,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Boaz",
+    "team1_score": 99.36,
+    "team2_score": 150.58,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "cooper",
+    "team1_score": 171.17,
+    "team2_score": 209.97,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Jasper",
+    "team1_score": 112.83,
+    "team2_score": 144.05,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 141.95,
+    "team2_score": 121.54,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 138.74,
+    "team2_score": 141.92,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Jasper",
+    "team1_score": 133.64,
+    "team2_score": 89.1,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "cooper",
+    "team1_score": 103.91,
+    "team2_score": 142.12,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 141.86,
+    "team2_score": 114.27,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2022,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 138.51,
+    "team2_score": 140.91,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2022,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 145.54,
+    "team2_score": 147.62,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 183.84,
+    "team2_score": 119.34,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 145.74,
+    "team2_score": 127.4,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 150.32,
+    "team2_score": 149.79,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "cooper",
+    "team1_score": 80.5,
+    "team2_score": 174.2,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 165.63,
+    "team2_score": 118.25,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 126.34,
+    "team2_score": 119.03,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 81.63,
+    "team2_score": 148.42,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2022,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 166.84,
+    "team2_score": 166.51,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "cooper",
+    "team1_score": 147.42,
+    "team2_score": 149.67,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 109.28,
+    "team2_score": 141.09,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Dustin",
+    "team1_score": 165.12,
+    "team2_score": 114.54,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Jasper",
+    "team1_score": 116.6,
+    "team2_score": 129.16,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 117.82,
+    "team2_score": 127.03,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "cooper",
+    "team1_score": 169.63,
+    "team2_score": 102.18,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 124.11,
+    "team2_score": 101.38,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Boaz",
+    "team1_score": 162.03,
+    "team2_score": 121.87,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Jasper",
+    "team1_score": 148.23,
+    "team2_score": 128.45,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 140.89,
+    "team2_score": 148.09,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "cooper",
+    "team1_score": 117.93,
+    "team2_score": 130.99,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 139.0,
+    "team2_score": 169.07,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "cooper",
+    "team1_score": 146.06,
+    "team2_score": 181.06,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 157.01,
+    "team2_score": 161.0,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2022,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 119.48,
+    "team2_score": 132.78,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Jasper",
+    "team1_score": 193.15,
+    "team2_score": 127.97,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2022,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "cooper",
+    "team1_score": 134.36,
+    "team2_score": 119.85,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 182.19,
+    "team2_score": 112.24,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 186.21,
+    "team2_score": 78.66,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 136.22,
+    "team2_score": 152.42,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2022,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Jasper",
+    "team1_score": 122.39,
+    "team2_score": 105.51,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 133.57,
+    "team2_score": 133.93,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2022,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 177.68,
+    "team2_score": 137.33,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 134.4,
+    "team2_score": 102.92,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 157.79,
+    "team2_score": 116.3,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2022,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "Jasper",
+    "team1_score": 117.46,
+    "team2_score": 149.18,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 148.99,
+    "team2_score": 159.02,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Boaz",
+    "team1_score": 97.18,
+    "team2_score": 129.95,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "cooper",
+    "team1_score": 144.81,
+    "team2_score": 128.46,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2022,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Jasper",
+    "team1_score": 91.86,
+    "team2_score": 112.33,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 159.99,
+    "team2_score": 153.92,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 123.83,
+    "team2_score": 179.1,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Jasper",
+    "team1_score": 137.4,
+    "team2_score": 144.54,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "cooper",
+    "team1_score": 162.15,
+    "team2_score": 174.45,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 151.05,
+    "team2_score": 85.16,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2022,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 147.97,
+    "team2_score": 104.02,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 115.06,
+    "team2_score": 135.56,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2022,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 175.81,
+    "team2_score": 155.54,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2022,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 124.85,
+    "team2_score": 105.47,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 133.77,
+    "team2_score": 129.81,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "cooper",
+    "team1_score": 173.14,
+    "team2_score": 182.48,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 137.04,
+    "team2_score": 122.86,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 123.57,
+    "team2_score": 134.7,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 119.84,
+    "team2_score": 126.03,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2022,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 130.76,
+    "team2_score": 94.28,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "cooper",
+    "team1_score": 108.64,
+    "team2_score": 149.72,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Jasper",
+    "team1_score": 146.94,
+    "team2_score": 106.35,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "cooper",
+    "team1_score": 151.34,
+    "team2_score": 169.89,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 128.67,
+    "team2_score": 119.8,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 139.61,
+    "team2_score": 162.2,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 136.92,
+    "team2_score": 179.28,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2022,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "cooper",
+    "team1_score": 113.35,
+    "team2_score": 136.63,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2022,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Jasper",
+    "team1_score": 157.31,
+    "team2_score": 131.71,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2022,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 110.76,
+    "team2_score": 92.47,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2022,
+    "week": 17,
+    "game_type": "3rd",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 150.87,
+    "team2_score": 158.75,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2022,
+    "week": 17,
+    "game_type": "1st",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "cooper",
+    "team1_score": 124.2,
+    "team2_score": 120.46,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2022,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 125.25,
+    "team2_score": 115.88,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 97.94,
+    "team2_score": 116.81,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 158.31,
+    "team2_score": 104.68,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 94.97,
+    "team2_score": 93.38,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2023,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "nick",
+    "team1_score": 149.25,
+    "team2_score": 151.74,
+    "winner_manager_name": "nick"
+  },
+  {
+    "season": 2023,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "cooper",
+    "team1_score": 104.13,
+    "team2_score": 115.14,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2023,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Jasper",
+    "team2_manager_name": "Torin",
+    "team1_score": 126.3,
+    "team2_score": 107.38,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 89.36,
+    "team2_score": 152.69,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 130.15,
+    "team2_score": 129.48,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 137.48,
+    "team2_score": 119.48,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Jasper",
+    "team1_score": 116.12,
+    "team2_score": 159.24,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Torin",
+    "team1_score": 118.87,
+    "team2_score": 121.11,
+    "winner_manager_name": "Torin"
+  },
+  {
+    "season": 2023,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "nick",
+    "team1_score": 143.88,
+    "team2_score": 97.83,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2023,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 158.3,
+    "team2_score": 162.52,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2023,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 136.69,
+    "team2_score": 131.95,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 99.81,
+    "team2_score": 178.43,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "cooper",
+    "team1_score": 160.4,
+    "team2_score": 155.47,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2023,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Jasper",
+    "team1_score": 156.02,
+    "team2_score": 149.34,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Torin",
+    "team2_manager_name": "nick",
+    "team1_score": 119.67,
+    "team2_score": 71.41,
+    "winner_manager_name": "Torin"
+  },
+  {
+    "season": 2023,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 120.03,
+    "team2_score": 143.93,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 122.14,
+    "team2_score": 151.48,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 84.29,
+    "team2_score": 95.5,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 117.15,
+    "team2_score": 170.2,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "Torin",
+    "team1_score": 87.16,
+    "team2_score": 112.34,
+    "winner_manager_name": "Torin"
+  },
+  {
+    "season": 2023,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Jasper",
+    "team2_manager_name": "nick",
+    "team1_score": 151.23,
+    "team2_score": 122.25,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 247.56,
+    "team2_score": 141.1,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 145.57,
+    "team2_score": 154.19,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 99.51,
+    "team2_score": 144.66,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Torin",
+    "team1_score": 117.75,
+    "team2_score": 104.79,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2023,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "nick",
+    "team1_score": 135.07,
+    "team2_score": 81.95,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "Jasper",
+    "team1_score": 105.93,
+    "team2_score": 126.41,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 119.06,
+    "team2_score": 125.23,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Torin",
+    "team1_score": 143.92,
+    "team2_score": 110.78,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "nick",
+    "team1_score": 111.36,
+    "team2_score": 112.94,
+    "winner_manager_name": "nick"
+  },
+  {
+    "season": 2023,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 133.7,
+    "team2_score": 158.72,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2023,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Jasper",
+    "team1_score": 130.69,
+    "team2_score": 123.46,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "cooper",
+    "team1_score": 103.29,
+    "team2_score": 123.83,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2023,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "nick",
+    "team1_score": 164.16,
+    "team2_score": 99.09,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Boaz",
+    "team1_score": 174.9,
+    "team2_score": 101.43,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Jasper",
+    "team1_score": 109.53,
+    "team2_score": 151.84,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "cooper",
+    "team1_score": 138.98,
+    "team2_score": 134.43,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 89.83,
+    "team2_score": 160.01,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Torin",
+    "team1_score": 106.82,
+    "team2_score": 147.87,
+    "winner_manager_name": "Torin"
+  },
+  {
+    "season": 2023,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 162.23,
+    "team2_score": 151.23,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Dustin",
+    "team1_score": 149.45,
+    "team2_score": 178.98,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "cooper",
+    "team1_score": 118.62,
+    "team2_score": 115.87,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2023,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Torin",
+    "team1_score": 148.92,
+    "team2_score": 114.62,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "nick",
+    "team1_score": 152.61,
+    "team2_score": 125.01,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 139.11,
+    "team2_score": 148.13,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Torin",
+    "team1_score": 108.56,
+    "team2_score": 101.18,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "nick",
+    "team1_score": 113.7,
+    "team2_score": 107.02,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 111.9,
+    "team2_score": 116.74,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Jasper",
+    "team1_score": 130.65,
+    "team2_score": 124.96,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "cooper",
+    "team1_score": 127.02,
+    "team2_score": 78.76,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 96.55,
+    "team2_score": 171.26,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2023,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 110.43,
+    "team2_score": 146.95,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "cooper",
+    "team1_score": 116.86,
+    "team2_score": 112.44,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Torin",
+    "team1_score": 144.18,
+    "team2_score": 116.66,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2023,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 116.51,
+    "team2_score": 200.36,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 159.15,
+    "team2_score": 124.62,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "nick",
+    "team1_score": 159.39,
+    "team2_score": 104.46,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "cooper",
+    "team1_score": 123.28,
+    "team2_score": 106.99,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Jasper",
+    "team1_score": 158.72,
+    "team2_score": 111.13,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Boaz",
+    "team1_score": 98.31,
+    "team2_score": 126.13,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2023,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "nick",
+    "team1_score": 114.86,
+    "team2_score": 156.04,
+    "winner_manager_name": "nick"
+  },
+  {
+    "season": 2023,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Torin",
+    "team1_score": 145.79,
+    "team2_score": 113.47,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 161.23,
+    "team2_score": 125.74,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 118.19,
+    "team2_score": 154.18,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 147.83,
+    "team2_score": 117.98,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 102.92,
+    "team2_score": 142.99,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "nick",
+    "team1_score": 131.88,
+    "team2_score": 156.73,
+    "winner_manager_name": "nick"
+  },
+  {
+    "season": 2023,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "cooper",
+    "team1_score": 178.36,
+    "team2_score": 92.33,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Jasper",
+    "team2_manager_name": "Torin",
+    "team1_score": 193.14,
+    "team2_score": 116.01,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 115.07,
+    "team2_score": 124.3,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 142.5,
+    "team2_score": 99.91,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 153.03,
+    "team2_score": 97.73,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Jasper",
+    "team1_score": 163.89,
+    "team2_score": 80.84,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2023,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Torin",
+    "team1_score": 169.93,
+    "team2_score": 124.89,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "nick",
+    "team1_score": 110.51,
+    "team2_score": 142.46,
+    "winner_manager_name": "nick"
+  },
+  {
+    "season": 2023,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 140.56,
+    "team2_score": 96.92,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 130.88,
+    "team2_score": 118.87,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 122.33,
+    "team2_score": 147.32,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "cooper",
+    "team1_score": 129.49,
+    "team2_score": 158.86,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2023,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Jasper",
+    "team1_score": 125.71,
+    "team2_score": 90.06,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Torin",
+    "team2_manager_name": "nick",
+    "team1_score": 117.74,
+    "team2_score": 98.67,
+    "winner_manager_name": "Torin"
+  },
+  {
+    "season": 2023,
+    "week": 15,
+    "game_type": "consolation",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Torin",
+    "team1_score": 78.62,
+    "team2_score": 68.14,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2023,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Jasper",
+    "team1_score": 114.39,
+    "team2_score": 116.6,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2023,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 194.02,
+    "team2_score": 74.43,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2023,
+    "week": 15,
+    "game_type": "consolation",
+    "team1_manager_name": "cooper",
+    "team2_manager_name": "nick",
+    "team1_score": 139.54,
+    "team2_score": 116.38,
+    "winner_manager_name": "cooper"
+  },
+  {
+    "season": 2023,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 123.96,
+    "team2_score": 150.1,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2023,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 111.46,
+    "team2_score": 93.89,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2023,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 132.1,
+    "team2_score": 128.45,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2023,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "cooper",
+    "team1_score": 113.72,
+    "team2_score": 103.32,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Jasper",
+    "team1_score": 152.56,
+    "team2_score": 143.16,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Torin",
+    "team2_manager_name": "nick",
+    "team1_score": 128.36,
+    "team2_score": 106.77,
+    "winner_manager_name": "Torin"
+  },
+  {
+    "season": 2023,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "cooper",
+    "team1_score": 163.06,
+    "team2_score": 106.09,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2023,
+    "week": 17,
+    "game_type": "1st",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Dustin",
+    "team1_score": 124.99,
+    "team2_score": 215.89,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2023,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 106.71,
+    "team2_score": 111.94,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2023,
+    "week": 17,
+    "game_type": "3rd",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Jasper",
+    "team1_score": 138.42,
+    "team2_score": 124.75,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 139.74,
+    "team2_score": 139.92,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 108.52,
+    "team2_score": 131.96,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 138.16,
+    "team2_score": 169.76,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Jasper",
+    "team1_score": 126.96,
+    "team2_score": 136.54,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Tess",
+    "team1_score": 162.83,
+    "team2_score": 134.24,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2024,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Tess",
+    "team1_score": 170.56,
+    "team2_score": 141.72,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 123.88,
+    "team2_score": 110.9,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 107.06,
+    "team2_score": 157.41,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Jasper",
+    "team1_score": 139.0,
+    "team2_score": 108.22,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 2,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 155.68,
+    "team2_score": 181.12,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 130.7,
+    "team2_score": 115.04,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Tess",
+    "team1_score": 126.0,
+    "team2_score": 130.76,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 74.18,
+    "team2_score": 132.28,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 176.98,
+    "team2_score": 149.74,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 3,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 130.8,
+    "team2_score": 160.96,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 124.26,
+    "team2_score": 151.14,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Jasper",
+    "team1_score": 127.02,
+    "team2_score": 135.4,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 112.5,
+    "team2_score": 127.2,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2024,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 142.96,
+    "team2_score": 112.28,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 4,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Tess",
+    "team1_score": 145.24,
+    "team2_score": 151.2,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 177.44,
+    "team2_score": 132.57,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 199.76,
+    "team2_score": 140.2,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 105.6,
+    "team2_score": 168.58,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 126.82,
+    "team2_score": 139.36,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 5,
+    "game_type": "regular",
+    "team1_manager_name": "Tess",
+    "team2_manager_name": "Jasper",
+    "team1_score": 125.8,
+    "team2_score": 146.82,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Ryan",
+    "team1_score": 145.04,
+    "team2_score": 144.14,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Boaz",
+    "team1_score": 107.25,
+    "team2_score": 127.02,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Jasper",
+    "team1_score": 145.22,
+    "team2_score": 103.44,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2024,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Tess",
+    "team1_score": 139.33,
+    "team2_score": 134.12,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 6,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 110.93,
+    "team2_score": 159.68,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 142.38,
+    "team2_score": 111.5,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Tess",
+    "team1_score": 102.72,
+    "team2_score": 139.06,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 150.32,
+    "team2_score": 102.52,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 146.92,
+    "team2_score": 148.3,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 7,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Jasper",
+    "team1_score": 129.92,
+    "team2_score": 101.02,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 193.08,
+    "team2_score": 148.22,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Dustin",
+    "team1_score": 171.54,
+    "team2_score": 167.68,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Boaz",
+    "team1_score": 139.32,
+    "team2_score": 134.3,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2024,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 119.86,
+    "team2_score": 158.42,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2024,
+    "week": 8,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Tess",
+    "team1_score": 124.73,
+    "team2_score": 116.52,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Trace",
+    "team1_score": 141.0,
+    "team2_score": 120.84,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Casey",
+    "team1_score": 94.46,
+    "team2_score": 184.34,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Ryan",
+    "team1_score": 114.38,
+    "team2_score": 135.5,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2024,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Tess",
+    "team1_score": 129.6,
+    "team2_score": 186.28,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 9,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Jasper",
+    "team1_score": 166.08,
+    "team2_score": 115.22,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 130.34,
+    "team2_score": 139.26,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 154.08,
+    "team2_score": 141.34,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Dustin",
+    "team1_score": 99.8,
+    "team2_score": 147.64,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Jasper",
+    "team1_score": 109.69,
+    "team2_score": 123.68,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 10,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Tess",
+    "team1_score": 108.62,
+    "team2_score": 123.12,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Tess",
+    "team1_score": 177.88,
+    "team2_score": 160.64,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Ryan",
+    "team1_score": 139.54,
+    "team2_score": 106.46,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Casey",
+    "team1_score": 111.82,
+    "team2_score": 116.76,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Jasper",
+    "team1_score": 198.64,
+    "team2_score": 102.12,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 11,
+    "game_type": "regular",
+    "team1_manager_name": "Boaz",
+    "team2_manager_name": "Dustin",
+    "team1_score": 105.36,
+    "team2_score": 167.38,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 166.3,
+    "team2_score": 135.12,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Tess",
+    "team1_score": 175.78,
+    "team2_score": 138.52,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Mike",
+    "team1_score": 80.4,
+    "team2_score": 142.21,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 148.53,
+    "team2_score": 163.7,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 12,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Jasper",
+    "team1_score": 108.84,
+    "team2_score": 113.36,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Casey",
+    "team1_score": 121.12,
+    "team2_score": 131.0,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Jasper",
+    "team1_score": 169.74,
+    "team2_score": 152.88,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 158.5,
+    "team2_score": 144.34,
+    "winner_manager_name": "Trace"
+  },
+  {
+    "season": 2024,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 122.3,
+    "team2_score": 151.98,
+    "winner_manager_name": "Boaz"
+  },
+  {
+    "season": 2024,
+    "week": 13,
+    "game_type": "regular",
+    "team1_manager_name": "Dustin",
+    "team2_manager_name": "Tess",
+    "team1_score": 119.98,
+    "team2_score": 156.56,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Mike",
+    "team1_score": 136.46,
+    "team2_score": 151.16,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Trace",
+    "team1_score": 196.38,
+    "team2_score": 118.22,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Dustin",
+    "team1_score": 116.35,
+    "team2_score": 160.42,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Boaz",
+    "team1_score": 171.44,
+    "team2_score": 145.22,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2024,
+    "week": 14,
+    "game_type": "regular",
+    "team1_manager_name": "Tess",
+    "team2_manager_name": "Jasper",
+    "team1_score": 113.14,
+    "team2_score": 190.28,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Boaz",
+    "team1_score": 161.16,
+    "team2_score": 144.38,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 15,
+    "game_type": "QF",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Mike",
+    "team1_score": 102.08,
+    "team2_score": 167.24,
+    "winner_manager_name": "Mike"
+  },
+  {
+    "season": 2024,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Phillip",
+    "team1_score": 194.1,
+    "team2_score": 166.52,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Jasper",
+    "team1_score": 120.86,
+    "team2_score": 182.32,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2024,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Boaz",
+    "team1_score": 186.64,
+    "team2_score": 156.02,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2024,
+    "week": 16,
+    "game_type": "SF",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Dustin",
+    "team1_score": 127.38,
+    "team2_score": 201.42,
+    "winner_manager_name": "Dustin"
+  },
+  {
+    "season": 2024,
+    "week": 16,
+    "game_type": "consolation",
+    "team1_manager_name": "Ryan",
+    "team2_manager_name": "Tess",
+    "team1_score": 103.88,
+    "team2_score": 167.66,
+    "winner_manager_name": "Tess"
+  },
+  {
+    "season": 2024,
+    "week": 17,
+    "game_type": "1st",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 196.26,
+    "team2_score": 121.44,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2024,
+    "week": 17,
+    "game_type": "3rd",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Mike",
+    "team1_score": 144.16,
+    "team2_score": 101.84,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2024,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Ryan",
+    "team1_score": 116.9,
+    "team2_score": 144.86,
+    "winner_manager_name": "Ryan"
+  },
+  {
+    "season": 2024,
+    "week": 17,
+    "game_type": "consolation",
+    "team1_manager_name": "Tess",
+    "team2_manager_name": "Jasper",
+    "team1_score": 147.64,
+    "team2_score": 182.7,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2025,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Dylan",
+    "team2_manager_name": "Dustin",
+    "team1_score": 150.1,
+    "team2_score": 103.26,
+    "winner_manager_name": "Dylan"
+  },
+  {
+    "season": 2025,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Phillip",
+    "team2_manager_name": "Tess",
+    "team1_score": 166.14,
+    "team2_score": 113.85,
+    "winner_manager_name": "Phillip"
+  },
+  {
+    "season": 2025,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Trace",
+    "team2_manager_name": "Jasper",
+    "team1_score": 118.58,
+    "team2_score": 120.6,
+    "winner_manager_name": "Jasper"
+  },
+  {
+    "season": 2025,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Casey",
+    "team2_manager_name": "Ryan",
+    "team1_score": 182.67,
+    "team2_score": 129.32,
+    "winner_manager_name": "Casey"
+  },
+  {
+    "season": 2025,
+    "week": 1,
+    "game_type": "regular",
+    "team1_manager_name": "Mike",
+    "team2_manager_name": "Boaz",
+    "team1_score": 135.06,
+    "team2_score": 115.38,
+    "winner_manager_name": "Mike"
+  }
+]
