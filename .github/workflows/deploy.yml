@@ -52,6 +52,16 @@ jobs:
       - name: Build the static site
         # Always force a refresh on deployment to get the latest stats
         run: pipenv run python build_site.py --force-refresh
+      - name: (Debug) List generated files
+        if: always() # This ensures the step runs even if the build fails
+        run: ls -R
+      - name: (Debug) Upload data and cache directories
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-data-and-cache
+          path: |
+            data/
+            cache/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

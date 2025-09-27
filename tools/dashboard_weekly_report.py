@@ -326,3 +326,5 @@ def run_report_process(target_season, last_completed_week):
                 return
 
     # --- Generate Report ---
+    # After ensuring all necessary weeks are cached, generate the report for the last completed week.
+    prepare_report_data(report_week=last_completed_week, season=target_season, cache_dir=cache_dir)
