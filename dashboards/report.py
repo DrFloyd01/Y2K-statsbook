@@ -18,6 +18,10 @@ YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 LEAGUE_ID = "1286518"
 GAME_ID = 380
 
+# --- Directory Setup ---
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
+
 def process_week(query, week, standings):
     """
     Fetches data and calculates accolades for a single week.
@@ -243,10 +247,11 @@ def main():
     print(markdown_report)
     print("="*50)
     
+    output_file = DATA_DIR / "season_summary_data.json"
     # You can still save the raw JSON data for archival purposes
-    with open("season_summary_data.json", "w") as f:
+    with open(output_file, "w") as f:
         json.dump(season_summary, f, indent=4)
-    print("\nFull season data saved to season_summary_data.json")
+    print(f"\nFull season data saved to {output_file}")
 
 if __name__ == "__main__":
     main()

@@ -12,6 +12,10 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
 YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
+# --- Directory Setup ---
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
+
 def update_h2h_records(week_results, h2h_records, season, settings):
     """
     Updates the H2H records dictionary with the results from a completed week.
@@ -83,7 +87,7 @@ def update_h2h_records(week_results, h2h_records, season, settings):
 
     return h2h_records
 
-def prepare_preview_data(preview_week, query, standings, h2h_records, season="2025", output_filename="preview_data.json"):
+def prepare_preview_data(preview_week, query, standings, h2h_records, season="2025"):
     """
     Prepares the data object for the weekly preview and saves it to a JSON file.
     """
@@ -166,26 +170,23 @@ def prepare_preview_data(preview_week, query, standings, h2h_records, season="20
         "matchups": matchups_data
     }
 
-    with open(output_filename, "w", encoding="utf-8") as f:
+    with open(DATA_DIR / "preview_data.json", "w", encoding="utf-8") as f:
         json.dump(final_data, f, indent=2)
     
-    logging.info(f"✅ Successfully saved preview data to: {output_filename}")
+    logging.info(f"✅ Successfully saved preview data to: {DATA_DIR / 'preview_data.json'}")
 
-def main():
+def run_preview_process(target_season, preview_week):
     """
     Main orchestrator for the weekly preview generation.
     """
-    # --- CONFIGURATION ---
-    TARGET_SEASON = "2025"
-    PREVIEW_WEEK = 4
-
     # --- LOAD DATA ---
-    with open("leagues.json", "r") as f:
+    with open(DATA_DIR.parent / "leagues.json", "r") as f: # leagues.json is in root
         all_leagues = json.load(f)
-    current_season_config = all_leagues[TARGET_SEASON]
+    current_season_config = all_leagues[target_season]
     
+    h2h_records_file = DATA_DIR / "h2h_records.json"
     try:
-        with open("h2h_records.json", "r") as f:
+        with open(h2h_records_file, "r") as f:
             h2h_records = json.load(f)
     except FileNotFoundError:
         logging.error("ERROR: h2h_records.json not found. Please run init_h2h_records.py first.")
@@ -198,15 +199,15 @@ def main():
     )
 
     # --- UPDATE STATE (The "Look Back" Step) ---
-    if PREVIEW_WEEK > 1:
-        update_week = PREVIEW_WEEK - 1
+    if preview_week > 1:
+        update_week = preview_week - 1
         last_week_results = query.get_league_matchups_by_week(update_week)
         
         if last_week_results and last_week_results[0].status == "postevent":
             settings = query.get_league_settings() # Get settings for the update function
-            h2h_records = update_h2h_records(last_week_results, h2h_records, TARGET_SEASON, settings)
+            h2h_records = update_h2h_records(last_week_results, h2h_records, target_season, settings)
             
-            with open("h2h_records.json", "w") as f:
+            with open(h2h_records_file, "w") as f:
                 json.dump(h2h_records, f, indent=2)
             logging.info("Successfully updated and saved h2h_records.json.\n")
         else:
@@ -216,9 +217,6 @@ def main():
     standings = query.get_league_standings()
     # This now prepares a data file instead of generating HTML
     prepare_preview_data(
-        preview_week=PREVIEW_WEEK, query=query, standings=standings, 
-        h2h_records=h2h_records, season=TARGET_SEASON
+        preview_week=preview_week, query=query, standings=standings, 
+        h2h_records=h2h_records, season=target_season
     )
-
-if __name__ == "__main__":
-    main()

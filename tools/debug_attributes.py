@@ -17,7 +17,7 @@ load_dotenv()
 YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
 YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
-with open("leagues.json", "r") as f:
+with open("leagues.json", "r") as f: # This script is run from root
     config = json.load(f)[TARGET_SEASON]
 
 query = YahooFantasySportsQuery(

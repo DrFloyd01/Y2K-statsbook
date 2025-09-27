@@ -2,9 +2,16 @@ import json
 import logging
 import pickle
 import os # <-- Included as requested
+from pathlib import Path
 from collections import defaultdict
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
+
+# --- Directory Setup ---
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
+CACHE_DIR = Path("cache")
+
 
 def build_historical_data_from_cache():
     """
@@ -28,12 +35,13 @@ def build_historical_data_from_cache():
                 return team.managers[0] # Failsafe
 
     # --- (Loading local data is the same) ---
-    logging.info("Loading raw data from cache (raw_api_cache.pkl)...")
+    cache_file = CACHE_DIR / "raw_api_cache.pkl"
+    logging.info(f"Loading raw data from cache ({cache_file})...")
     try:
-        with open("raw_api_cache.pkl", "rb") as f:
+        with open(cache_file, "rb") as f:
             raw_data = pickle.load(f)
     except FileNotFoundError:
-        logging.error("ERROR: raw_api_cache.pkl not found.")
+        logging.error(f"ERROR: {cache_file} not found. Please run build_raw_data_cache.py first.")
         return
 
     all_matchups_data = []
@@ -119,9 +127,10 @@ def build_historical_data_from_cache():
                     "winner_manager_name": winner
                 })
     
-    with open("historical_data.json", "w") as f:
+    output_file = DATA_DIR / "historical_data.json"
+    with open(output_file, "w") as f:
         json.dump(all_matchups_data, f, indent=2)
-    logging.info("\n✅ historical_data.json has been built from the local cache.")
+    logging.info(f"\n✅ {output_file} has been built from the local cache.")
 
 if __name__ == "__main__":
     build_historical_data_from_cache()

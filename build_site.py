@@ -1,9 +1,36 @@
 import json
 import logging
+import argparse
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+from yfpy.query import YahooFantasySportsQuery
 
+# Import the core logic from our tool scripts
+from tools.generate_preview import run_preview_process
+from tools.dashboard_weekly_report import run_report_process
+
+# --- Setup ---
+load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
-def generate_weekly_preview_html(data, output_filename="weekly_preview.html"):
+# --- Directory Setup ---
+DATA_DIR = Path("data")
+SITE_DIR = Path("site")
+SITE_DIR.mkdir(exist_ok=True)
+STATE_FILE = DATA_DIR / "state.json"
+
+# --- Yahoo API Credentials ---
+YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
+YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
+
+def get_current_state():
+    if not STATE_FILE.exists():
+        return {"last_processed_week": 0}
+    with open(STATE_FILE, "r") as f:
+        return json.load(f)
+
+def generate_weekly_preview_html(data):
     """
     Generates the weekly_preview.html file from a data object.
     """
@@ -100,12 +127,13 @@ def generate_weekly_preview_html(data, output_filename="weekly_preview.html"):
     html_parts.append("</div></body></html>")
     
     final_html = "\n".join(html_parts)
+    output_filename = SITE_DIR / "weekly_preview.html"
     with open(output_filename, "w", encoding="utf-8") as f:
         f.write(final_html)
     
-    logging.info(f"✅ Successfully generated HTML preview: {output_filename}")
+    logging.info(f"✅ Successfully generated HTML preview: {output_filename.name}")
 
-def generate_weekly_report_html(data, output_filename="weekly_report.html"):
+def generate_weekly_report_html(data):
     """
     Generates the weekly_report.html file from a data object.
     """
@@ -191,36 +219,85 @@ def generate_weekly_report_html(data, output_filename="weekly_report.html"):
     html_parts.append("</ul></div></body></html>")
 
     final_html = "\n".join(html_parts)
+    output_filename = SITE_DIR / "weekly_report.html"
     with open(output_filename, "w", encoding="utf-8") as f:
         f.write(final_html)
     
-    logging.info(f"✅ Successfully generated HTML report: {output_filename}")
+    logging.info(f"✅ Successfully generated HTML report: {output_filename.name}")
 
-def main():
-    """
-    Main orchestrator for building the static site from data files.
-    """
-    logging.info("--- Building Static Site ---")
-
+def build_html_from_data():
+    """Generates all HTML pages from their respective JSON data files."""
+    logging.info("\n--- Building HTML from data files ---")
     try:
-        with open("preview_data.json", "r") as f:
+        with open(DATA_DIR / "preview_data.json", "r", encoding="utf-8") as f:
             preview_data = json.load(f)
         generate_weekly_preview_html(preview_data)
     except FileNotFoundError:
         logging.warning("preview_data.json not found. Skipping weekly preview generation.")
     except Exception as e:
         logging.error(f"Error generating weekly preview: {e}")
-
+    
     try:
-        with open("report_card_data.json", "r") as f:
+        with open(DATA_DIR / "report_card_data.json", "r", encoding="utf-8") as f:
             report_data = json.load(f)
         generate_weekly_report_html(report_data)
     except FileNotFoundError:
         logging.warning("report_card_data.json not found. Skipping weekly report generation.")
     except Exception as e:
         logging.error(f"Error generating weekly report: {e}")
+    logging.info("--- HTML build complete ---")
 
-    logging.info("--- Static Site Build Complete ---")
+def main():
+    """
+    Main orchestrator. Checks for new data, refreshes if necessary, and builds the site.
+    """
+    parser = argparse.ArgumentParser(description="Build the Y2K Statsbook website.")
+    parser.add_argument('--force-refresh', action='store_true', help="Force a refresh of all data from the API.")
+    args = parser.parse_args()
+
+    # --- CONFIGURATION ---
+    TARGET_SEASON = "2025"
+
+    # --- LOAD STATE & CONFIG ---
+    state = get_current_state()
+    with open("leagues.json", "r") as f:
+        config = json.load(f)[TARGET_SEASON]
+
+    # --- CHECK IF DATA REFRESH IS NEEDED ---
+    logging.info("--- Checking for new weekly data ---")
+    query = YahooFantasySportsQuery(
+        league_id=config["league_id"], game_code="nfl", game_id=config["game_id"],
+        yahoo_consumer_key=YAHOO_CONSUMER_KEY, yahoo_consumer_secret=YAHOO_CONSUMER_SECRET
+    )
+    current_league_week = query.get_league_info().current_week
+    last_completed_week = current_league_week - 1
+
+    needs_refresh = False
+    if args.force_refresh:
+        logging.info("Force refresh flag detected. Regenerating all data.")
+        needs_refresh = True
+    elif last_completed_week > state['last_processed_week']:
+        logging.info(f"New completed week detected (Week {last_completed_week}). Regenerating data.")
+        needs_refresh = True
+    else:
+        logging.info("No new weekly data found. Building site with existing data.")
+
+    if needs_refresh:
+        logging.info("\n--- Running Data Generation Processes ---")
+        # Run the report process for the last completed week
+        run_report_process(TARGET_SEASON, last_completed_week)
+        # Run the preview process for the current week
+        run_preview_process(TARGET_SEASON, current_league_week)
+        
+        # Update state file
+        state['last_processed_week'] = last_completed_week
+        with open(STATE_FILE, "w") as f:
+            json.dump(state, f, indent=2)
+        logging.info(f"State updated. Last processed week is now {last_completed_week}.")
+
+    # --- BUILD THE HTML SITE ---
+    build_html_from_data()
+    logging.info("\n✅ Y2K Statsbook build complete!")
 
 if __name__ == "__main__":
     main()

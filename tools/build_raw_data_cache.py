@@ -13,6 +13,10 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
 YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
+# --- Directory Setup ---
+CACHE_DIR = Path("cache")
+CACHE_DIR.mkdir(exist_ok=True)
+
 def cache_all_raw_data():
     """
     Connects to the API one last time to fetch all raw matchup data
@@ -66,10 +70,11 @@ def cache_all_raw_data():
                 logging.info(f"Skipping Week {week} (not yet played).")
 
     # Save the entire collection of raw data to a single file
-    with open("raw_api_cache.pkl", "wb") as f:
+    output_file = CACHE_DIR / "raw_api_cache.pkl"
+    with open(output_file, "wb") as f:
         pickle.dump(complete_raw_data, f)
         
-    logging.info("\n✅ Success! All raw API data saved to raw_api_cache.pkl")
+    logging.info(f"\n✅ Success! All raw API data saved to {output_file}")
 
 if __name__ == "__main__":
     cache_all_raw_data()

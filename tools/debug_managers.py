@@ -17,7 +17,7 @@ YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
 YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
 try:
-    with open("leagues.json", "r") as f:
+    with open("leagues.json", "r") as f: # This script is run from root
         all_leagues = json.load(f)
 except FileNotFoundError:
     logging.error("leagues.json not found!")
