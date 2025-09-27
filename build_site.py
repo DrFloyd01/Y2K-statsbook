@@ -19,9 +19,11 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 DATA_DIR = Path("data")
 CACHE_DIR = Path("cache")
 SITE_DIR = Path("site")
+TEMPLATES_DIR = Path("templates")
 
 DATA_DIR.mkdir(exist_ok=True)
 SITE_DIR.mkdir(exist_ok=True)
+TEMPLATES_DIR.mkdir(exist_ok=True)
 CACHE_DIR.mkdir(exist_ok=True) # yfpy will use this
 STATE_FILE = DATA_DIR / "state.json"
 
@@ -230,9 +232,37 @@ def generate_weekly_report_html(data):
     
     logging.info(f"✅ Successfully generated HTML report: {output_filename.name}")
 
+def generate_index_html():
+    """
+    Generates the main index.html landing page.
+    """
+    try:
+        with open(TEMPLATES_DIR / "index.html", "r", encoding="utf-8") as f:
+            template_html = f.read()
+    except FileNotFoundError:
+        logging.error("Could not find templates/index.html. Cannot build index page.")
+        return
+
+    # Conditionally create the links
+    preview_link_html = '<a href="weekly_preview.html">» Weekly Matchup Preview</a>' if (DATA_DIR / "preview_data.json").exists() else ''
+    report_link_html = '<a href="weekly_report.html">» Weekly Report Card</a>' if (DATA_DIR / "report_card_data.json").exists() else ''
+
+    # Replace placeholders
+    html = template_html.replace("{PREVIEW_LINK}", preview_link_html)
+    html = html.replace("{REPORT_LINK}", report_link_html)
+
+    with open(SITE_DIR / "index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    logging.info("✅ Successfully generated HTML index: index.html")
+
 def build_html_from_data():
     """Generates all HTML pages from their respective JSON data files."""
     logging.info("\n--- Building HTML from data files ---")
+    # Clear the site directory first to ensure no old files remain
+    for item in SITE_DIR.glob('*'):
+        if item.is_file():
+            item.unlink()
+
     try:
         with open(DATA_DIR / "preview_data.json", "r", encoding="utf-8") as f:
             preview_data = json.load(f)
@@ -250,6 +280,9 @@ def build_html_from_data():
         logging.warning("report_card_data.json not found. Skipping weekly report generation.")
     except Exception as e:
         logging.error(f"Error generating weekly report: {e}")
+    
+    # Always generate the index page
+    generate_index_html()
     logging.info("--- HTML build complete ---")
 
 def main():
