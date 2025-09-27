@@ -1,476 +1,118 @@
 {
-  "Trace-cooper": {
-    "manager1_name": "Trace",
-    "manager2_name": "cooper",
-    "reg_wins_1": 1,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "Trace",
-        "type": "1st",
-        "season": 2022
-      }
-    ],
-    "streak_holder": "Trace",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2023,
-      "week": 8
-    }
-  },
   "Phillip-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Phillip",
-    "reg_wins_1": 7,
-    "reg_wins_2": 10,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 2,
-    "playoff_history": [
-      {
-        "winner": "Phillip",
-        "type": "1st",
-        "season": 2018
-      },
-      {
-        "winner": "Phillip",
-        "type": "SF",
-        "season": 2020
-      },
-      {
-        "winner": "Trace",
-        "type": "SF",
-        "season": 2022
-      }
-    ],
-    "streak_holder": "Phillip",
-    "streak_len": 4,
-    "last_game": {
-      "season": 2024,
-      "week": 14
-    }
-  },
-  "Ryan-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Ryan",
-    "reg_wins_1": 4,
-    "reg_wins_2": 8,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Ryan",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 17
-    }
-  },
-  "Casey-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Casey",
-    "reg_wins_1": 4,
-    "reg_wins_2": 9,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "Trace",
-        "type": "SF",
-        "season": 2018
-      }
-    ],
-    "streak_holder": "Casey",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 11
-    }
-  },
-  "Boaz-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Boaz",
-    "reg_wins_1": 2,
-    "reg_wins_2": 4,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Trace",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 8
-    }
-  },
-  "Jasper-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Jasper",
-    "reg_wins_1": 2,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "Trace",
-        "type": "QF",
-        "season": 2022
-      }
-    ],
-    "streak_holder": "Jasper",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2025,
-      "week": 1
-    }
-  },
-  "Dustin-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Dustin",
-    "reg_wins_1": 3,
-    "reg_wins_2": 4,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dustin",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 10
-    }
-  },
-  "Dylan-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Dylan",
-    "reg_wins_1": 7,
-    "reg_wins_2": 8,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "Trace",
-        "type": "3rd",
-        "season": 2020
-      }
-    ],
-    "streak_holder": "Dylan",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 9
-    }
-  },
-  "Trace-nick": {
-    "manager1_name": "Trace",
-    "manager2_name": "nick",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "nick",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 6
-    }
-  },
-  "--hidden---Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "--hidden--",
-    "reg_wins_1": 3,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Trace",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2018,
-      "week": 11
-    }
-  },
-  "Torin-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Torin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Trace",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2023,
-      "week": 15
-    }
-  },
-  "Tess-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Tess",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Tess",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 7
-    }
-  },
-  "Mike-Trace": {
-    "manager1_name": "Trace",
-    "manager2_name": "Mike",
-    "reg_wins_1": 9,
-    "reg_wins_2": 7,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 12
-    }
-  },
-  "Phillip-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Phillip",
-    "reg_wins_1": 1,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Phillip",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 10
-    }
-  },
-  "Ryan-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Ryan",
-    "reg_wins_1": 1,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "cooper",
-        "type": "SF",
-        "season": 2022
-      }
-    ],
-    "streak_holder": "Ryan",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 16
-    }
-  },
-  "Casey-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Casey",
-    "reg_wins_1": 1,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Casey",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2023,
-      "week": 7
-    }
-  },
-  "Boaz-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Boaz",
-    "reg_wins_1": 3,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "cooper",
-        "type": "QF",
-        "season": 2022
-      }
-    ],
-    "streak_holder": "cooper",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 14
-    }
-  },
-  "Jasper-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Jasper",
-    "reg_wins_1": 0,
-    "reg_wins_2": 3,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Jasper",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2023,
-      "week": 5
-    }
-  },
-  "Dustin-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Dustin",
-    "reg_wins_1": 3,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dustin",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 12
-    }
-  },
-  "Dylan-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Dylan",
-    "reg_wins_1": 0,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dylan",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2023,
-      "week": 17
-    }
-  },
-  "cooper-nick": {
-    "manager1_name": "cooper",
-    "manager2_name": "nick",
-    "reg_wins_1": 1,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "cooper",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 15
-    }
-  },
-  "Torin-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Torin",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Torin",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 4
-    }
-  },
-  "Mike-cooper": {
-    "manager1_name": "cooper",
-    "manager2_name": "Mike",
-    "reg_wins_1": 1,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 9
-    }
-  },
-  "Phillip-Ryan": {
     "manager1_name": "Phillip",
-    "manager2_name": "Ryan",
+    "manager2_name": "Trace",
     "reg_wins_1": 10,
-    "reg_wins_2": 4,
-    "playoff_wins_1": 1,
+    "reg_wins_2": 7,
+    "playoff_wins_1": 2,
     "playoff_wins_2": 1,
     "playoff_history": [
       {
         "winner": "Phillip",
         "type": "1st",
+        "season": 2018
+      },
+      {
+        "winner": "Phillip",
+        "type": "SF",
         "season": 2020
       },
       {
-        "winner": "Ryan",
-        "type": "3rd",
+        "winner": "Trace",
+        "type": "SF",
         "season": 2022
       }
     ],
     "streak_holder": "Phillip",
     "streak_len": 4,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2020,
+      "week": 15
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 5
+    },
     "last_game": {
       "season": 2024,
-      "week": 11
+      "week": 14
     }
   },
-  "Casey-Phillip": {
+  "Phillip-cooper": {
     "manager1_name": "Phillip",
-    "manager2_name": "Casey",
-    "reg_wins_1": 10,
-    "reg_wins_2": 5,
+    "manager2_name": "cooper",
+    "reg_wins_1": 1,
+    "reg_wins_2": 1,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
-    "streak_holder": "Casey",
-    "streak_len": 2,
+    "streak_holder": "Phillip",
+    "streak_len": 1,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 8
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 8
+    },
     "last_game": {
-      "season": 2024,
+      "season": 2023,
+      "week": 10
+    }
+  },
+  "Phillip-nick": {
+    "manager1_name": "Phillip",
+    "manager2_name": "nick",
+    "reg_wins_1": 1,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Phillip",
+    "streak_len": 1,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 9
+    },
+    "last_game": {
+      "season": 2023,
       "week": 9
     }
   },
-  "Boaz-Phillip": {
+  "Phillip-Tess": {
     "manager1_name": "Phillip",
-    "manager2_name": "Boaz",
+    "manager2_name": "Tess",
     "reg_wins_1": 2,
-    "reg_wins_2": 3,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "Phillip",
-        "type": "QF",
-        "season": 2024
-      }
-    ],
-    "streak_holder": "Phillip",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 15
-    }
-  },
-  "Jasper-Phillip": {
-    "manager1_name": "Phillip",
-    "manager2_name": "Jasper",
-    "reg_wins_1": 3,
-    "reg_wins_2": 2,
+    "reg_wins_2": 1,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
     "streak_holder": "Phillip",
-    "streak_len": 1,
-    "last_game": {
+    "streak_len": 2,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
       "season": 2024,
-      "week": 13
+      "week": 12
+    },
+    "longest_streak_end_game": {
+      "season": 2025,
+      "week": 1
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 1
     }
   },
   "Dustin-Phillip": {
@@ -489,59 +131,68 @@
     ],
     "streak_holder": "Phillip",
     "streak_len": 1,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2021,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 6
+    },
     "last_game": {
       "season": 2024,
       "week": 8
     }
   },
-  "Dylan-Phillip": {
+  "Jasper-Phillip": {
     "manager1_name": "Phillip",
-    "manager2_name": "Dylan",
-    "reg_wins_1": 9,
-    "reg_wins_2": 6,
-    "playoff_wins_1": 2,
-    "playoff_wins_2": 2,
-    "playoff_history": [
-      {
-        "winner": "Phillip",
-        "type": "SF",
-        "season": 2018
-      },
-      {
-        "winner": "Phillip",
-        "type": "3rd",
-        "season": 2019
-      },
-      {
-        "winner": "Dylan",
-        "type": "SF",
-        "season": 2021
-      },
-      {
-        "winner": "Dylan",
-        "type": "SF",
-        "season": 2024
-      }
-    ],
-    "streak_holder": "Dylan",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 16
-    }
-  },
-  "Phillip-nick": {
-    "manager1_name": "Phillip",
-    "manager2_name": "nick",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
+    "manager2_name": "Jasper",
+    "reg_wins_1": 10,
+    "reg_wins_2": 2,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
     "streak_holder": "Phillip",
-    "streak_len": 1,
+    "streak_len": 8,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 3
+    },
     "last_game": {
-      "season": 2023,
+      "season": 2025,
+      "week": 3
+    }
+  },
+  "Casey-Phillip": {
+    "manager1_name": "Phillip",
+    "manager2_name": "Casey",
+    "reg_wins_1": 10,
+    "reg_wins_2": 5,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Casey",
+    "streak_len": 2,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 14
+    },
+    "longest_streak_end_game": {
+      "season": 2020,
+      "week": 14
+    },
+    "last_game": {
+      "season": 2024,
       "week": 9
     }
   },
@@ -555,39 +206,86 @@
     "playoff_history": [],
     "streak_holder": "--hidden--",
     "streak_len": 1,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2018,
+      "week": 2
+    },
+    "longest_streak_end_game": {
+      "season": 2018,
+      "week": 7
+    },
     "last_game": {
       "season": 2018,
       "week": 12
     }
   },
-  "Phillip-Torin": {
+  "Phillip-Ryan": {
     "manager1_name": "Phillip",
-    "manager2_name": "Torin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
+    "manager2_name": "Ryan",
+    "reg_wins_1": 13,
+    "reg_wins_2": 4,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 1,
+    "playoff_history": [
+      {
+        "winner": "Phillip",
+        "type": "1st",
+        "season": 2020
+      },
+      {
+        "winner": "Ryan",
+        "type": "3rd",
+        "season": 2022
+      }
+    ],
     "streak_holder": "Phillip",
-    "streak_len": 1,
-    "last_game": {
+    "streak_len": 7,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
       "season": 2023,
-      "week": 6
-    }
-  },
-  "Phillip-Tess": {
-    "manager1_name": "Phillip",
-    "manager2_name": "Tess",
-    "reg_wins_1": 2,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Phillip",
-    "streak_len": 2,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 11
+    },
     "last_game": {
       "season": 2025,
-      "week": 1
+      "week": 2
+    }
+  },
+  "Boaz-Phillip": {
+    "manager1_name": "Phillip",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 2,
+    "reg_wins_2": 3,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Phillip",
+        "type": "QF",
+        "season": 2024
+      }
+    ],
+    "streak_holder": "Phillip",
+    "streak_len": 1,
+    "longest_streak_holder": "Boaz",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2021,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2021,
+      "week": 14
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 15
     }
   },
   "Mike-Phillip": {
@@ -621,24 +319,1598 @@
     ],
     "streak_holder": "Phillip",
     "streak_len": 2,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 9,
+    "longest_streak_start_game": {
+      "season": 2020,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 16
+    },
     "last_game": {
       "season": 2024,
       "week": 17
     }
   },
-  "Casey-Ryan": {
-    "manager1_name": "Ryan",
+  "Dylan-Phillip": {
+    "manager1_name": "Phillip",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 9,
+    "reg_wins_2": 6,
+    "playoff_wins_1": 2,
+    "playoff_wins_2": 2,
+    "playoff_history": [
+      {
+        "winner": "Phillip",
+        "type": "SF",
+        "season": 2018
+      },
+      {
+        "winner": "Phillip",
+        "type": "3rd",
+        "season": 2019
+      },
+      {
+        "winner": "Dylan",
+        "type": "SF",
+        "season": 2021
+      },
+      {
+        "winner": "Dylan",
+        "type": "SF",
+        "season": 2024
+      }
+    ],
+    "streak_holder": "Dylan",
+    "streak_len": 3,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 6
+    },
+    "longest_streak_end_game": {
+      "season": 2020,
+      "week": 1
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 16
+    }
+  },
+  "Phillip-Torin": {
+    "manager1_name": "Phillip",
+    "manager2_name": "Torin",
+    "reg_wins_1": 1,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Phillip",
+    "streak_len": 1,
+    "longest_streak_holder": "Phillip",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 6
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 6
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 6
+    }
+  },
+  "Trace-cooper": {
+    "manager1_name": "Trace",
+    "manager2_name": "cooper",
+    "reg_wins_1": 1,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Trace",
+        "type": "1st",
+        "season": 2022
+      }
+    ],
+    "streak_holder": "Trace",
+    "streak_len": 2,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 12
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 8
+    }
+  },
+  "Trace-nick": {
+    "manager1_name": "Trace",
+    "manager2_name": "nick",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "nick",
+    "streak_len": 1,
+    "longest_streak_holder": "nick",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 6
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 6
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 6
+    }
+  },
+  "Tess-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Tess",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Tess",
+    "streak_len": 1,
+    "longest_streak_holder": "Tess",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 7
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 7
+    }
+  },
+  "Dustin-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Dustin",
+    "reg_wins_1": 3,
+    "reg_wins_2": 4,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 3,
+    "longest_streak_holder": "Dustin",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 10
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 10
+    }
+  },
+  "Jasper-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Jasper",
+    "reg_wins_1": 2,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Trace",
+        "type": "QF",
+        "season": 2022
+      }
+    ],
+    "streak_holder": "Jasper",
+    "streak_len": 2,
+    "longest_streak_holder": "Trace",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 15
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 1
+    }
+  },
+  "Casey-Trace": {
+    "manager1_name": "Trace",
     "manager2_name": "Casey",
+    "reg_wins_1": 4,
+    "reg_wins_2": 9,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Trace",
+        "type": "SF",
+        "season": 2018
+      }
+    ],
+    "streak_holder": "Casey",
+    "streak_len": 3,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2019,
+      "week": 16
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 11
+    }
+  },
+  "--hidden---Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "--hidden--",
+    "reg_wins_1": 3,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Trace",
+    "streak_len": 3,
+    "longest_streak_holder": "Trace",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2018,
+      "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2018,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2018,
+      "week": 11
+    }
+  },
+  "Ryan-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 4,
+    "reg_wins_2": 8,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Ryan",
+    "streak_len": 1,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2020,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2020,
+      "week": 14
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 17
+    }
+  },
+  "Boaz-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 9,
+    "reg_wins_2": 4,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Trace",
+    "streak_len": 8,
+    "longest_streak_holder": "Boaz",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 2
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 3
+    }
+  },
+  "Mike-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Mike",
+    "reg_wins_1": 9,
+    "reg_wins_2": 7,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Mike",
+    "streak_len": 3,
+    "longest_streak_holder": "Trace",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2020,
+      "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2020,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 12
+    }
+  },
+  "Dylan-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Dylan",
     "reg_wins_1": 10,
+    "reg_wins_2": 8,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Trace",
+        "type": "3rd",
+        "season": 2020
+      }
+    ],
+    "streak_holder": "Trace",
+    "streak_len": 3,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2020,
+      "week": 2
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 2
+    }
+  },
+  "Torin-Trace": {
+    "manager1_name": "Trace",
+    "manager2_name": "Torin",
+    "reg_wins_1": 1,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Trace",
+    "streak_len": 2,
+    "longest_streak_holder": "Trace",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 10
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 15
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 15
+    }
+  },
+  "cooper-nick": {
+    "manager1_name": "cooper",
+    "manager2_name": "nick",
+    "reg_wins_1": 1,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "cooper",
+    "streak_len": 1,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 2
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 2
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 15
+    }
+  },
+  "Dustin-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Dustin",
+    "reg_wins_1": 3,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 1,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 1
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 12
+    }
+  },
+  "Jasper-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Jasper",
+    "reg_wins_1": 0,
+    "reg_wins_2": 3,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Jasper",
+    "streak_len": 3,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 5
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 5
+    }
+  },
+  "Casey-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Casey",
+    "reg_wins_1": 1,
     "reg_wins_2": 2,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
     "streak_holder": "Casey",
+    "streak_len": 2,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 11
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 7
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 7
+    }
+  },
+  "Ryan-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 1,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "cooper",
+        "type": "SF",
+        "season": 2022
+      }
+    ],
+    "streak_holder": "Ryan",
     "streak_len": 1,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 16
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 6
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 16
+    }
+  },
+  "Boaz-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 3,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "cooper",
+        "type": "QF",
+        "season": 2022
+      }
+    ],
+    "streak_holder": "cooper",
+    "streak_len": 1,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 15
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 14
+    }
+  },
+  "Mike-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Mike",
+    "reg_wins_1": 1,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Mike",
+    "streak_len": 1,
+    "longest_streak_holder": "cooper",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 7
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 9
+    }
+  },
+  "Dylan-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 0,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dylan",
+    "streak_len": 3,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 17
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 17
+    }
+  },
+  "Torin-cooper": {
+    "manager1_name": "cooper",
+    "manager2_name": "Torin",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Torin",
+    "streak_len": 1,
+    "longest_streak_holder": "Torin",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 4
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 4
+    }
+  },
+  "Dustin-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Dustin",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 1,
+    "longest_streak_holder": "Dustin",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 5
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 5
+    }
+  },
+  "Jasper-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Jasper",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Jasper",
+    "streak_len": 1,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 4
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 4
+    }
+  },
+  "Casey-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Casey",
+    "reg_wins_1": 1,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "nick",
+    "streak_len": 1,
+    "longest_streak_holder": "nick",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 11
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 11
+    }
+  },
+  "Ryan-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Ryan",
+    "streak_len": 1,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 10
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 10
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 10
+    }
+  },
+  "Boaz-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 2,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "nick",
+    "streak_len": 2,
+    "longest_streak_holder": "nick",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 12
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 12
+    }
+  },
+  "Mike-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Mike",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Mike",
+    "streak_len": 1,
+    "longest_streak_holder": "Mike",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 8
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 8
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 8
+    }
+  },
+  "Dylan-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dylan",
+    "streak_len": 1,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 7
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 7
+    }
+  },
+  "Torin-nick": {
+    "manager1_name": "nick",
+    "manager2_name": "Torin",
+    "reg_wins_1": 0,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Torin",
+    "streak_len": 3,
+    "longest_streak_holder": "Torin",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 16
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 16
+    }
+  },
+  "Dustin-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Dustin",
+    "reg_wins_1": 2,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Tess",
+    "streak_len": 2,
+    "longest_streak_holder": "Tess",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 13
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 13
+    }
+  },
+  "Jasper-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Jasper",
+    "reg_wins_1": 0,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Jasper",
+    "streak_len": 3,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 17
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 17
+    }
+  },
+  "Casey-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Casey",
+    "reg_wins_1": 0,
+    "reg_wins_2": 8,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Casey",
+    "streak_len": 8,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 6
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 6
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 3
+    }
+  },
+  "Ryan-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 1,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Tess",
+    "streak_len": 2,
+    "longest_streak_holder": "Tess",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 10
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 16
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 16
+    }
+  },
+  "Boaz-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 1,
+    "reg_wins_2": 3,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Boaz",
+    "streak_len": 3,
+    "longest_streak_holder": "Tess",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 9
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 2
+    }
+  },
+  "Mike-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Mike",
+    "reg_wins_1": 0,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Mike",
+    "streak_len": 1,
+    "longest_streak_holder": "Mike",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 8
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 8
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 8
+    }
+  },
+  "Dylan-Tess": {
+    "manager1_name": "Tess",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 0,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dylan",
+    "streak_len": 2,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 2
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 11
+    }
+  },
+  "Dustin-Jasper": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Jasper",
+    "reg_wins_1": 4,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Dustin",
+        "type": "SF",
+        "season": 2023
+      }
+    ],
+    "streak_holder": "Dustin",
+    "streak_len": 5,
+    "longest_streak_holder": "Dustin",
+    "longest_streak_len": 5,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 8
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 9
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 9
+    }
+  },
+  "Casey-Dustin": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Casey",
+    "reg_wins_1": 8,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 6,
+    "longest_streak_holder": "Dustin",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 10
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 14
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 2
+    }
+  },
+  "Dustin-Ryan": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 2,
+    "reg_wins_2": 4,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 1,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2021,
+      "week": 10
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 7
+    }
+  },
+  "Boaz-Dustin": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 6,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 3,
+    "longest_streak_holder": "Dustin",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2021,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 3
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 11
+    }
+  },
+  "Dustin-Mike": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Mike",
+    "reg_wins_1": 4,
+    "reg_wins_2": 9,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 1,
+    "playoff_history": [
+      {
+        "winner": "Mike",
+        "type": "QF",
+        "season": 2021
+      },
+      {
+        "winner": "Dustin",
+        "type": "SF",
+        "season": 2024
+      }
+    ],
+    "streak_holder": "Mike",
+    "streak_len": 7,
+    "longest_streak_holder": "Dustin",
+    "longest_streak_len": 5,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 16
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 3
+    }
+  },
+  "Dustin-Dylan": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 2,
+    "reg_wins_2": 5,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 1,
+    "playoff_history": [
+      {
+        "winner": "Dylan",
+        "type": "1st",
+        "season": 2024
+      }
+    ],
+    "streak_holder": "Dylan",
+    "streak_len": 4,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2024,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2025,
+      "week": 1
+    },
     "last_game": {
       "season": 2025,
       "week": 1
+    }
+  },
+  "Dustin-Torin": {
+    "manager1_name": "Dustin",
+    "manager2_name": "Torin",
+    "reg_wins_1": 1,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dustin",
+    "streak_len": 1,
+    "longest_streak_holder": "Torin",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 2
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 2
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 13
+    }
+  },
+  "Casey-Jasper": {
+    "manager1_name": "Jasper",
+    "manager2_name": "Casey",
+    "reg_wins_1": 3,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Jasper",
+        "type": "QF",
+        "season": 2023
+      }
+    ],
+    "streak_holder": "Jasper",
+    "streak_len": 3,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 15
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 10
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 10
+    }
+  },
+  "Jasper-Ryan": {
+    "manager1_name": "Jasper",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 3,
+    "reg_wins_2": 2,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Jasper",
+    "streak_len": 3,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 8
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 12
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 12
+    }
+  },
+  "Boaz-Jasper": {
+    "manager1_name": "Jasper",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 1,
+    "reg_wins_2": 3,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Boaz",
+    "streak_len": 2,
+    "longest_streak_holder": "Boaz",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 16
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 7
+    }
+  },
+  "Jasper-Mike": {
+    "manager1_name": "Jasper",
+    "manager2_name": "Mike",
+    "reg_wins_1": 5,
+    "reg_wins_2": 3,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 1,
+    "playoff_history": [
+      {
+        "winner": "Mike",
+        "type": "3rd",
+        "season": 2023
+      }
+    ],
+    "streak_holder": "Jasper",
+    "streak_len": 3,
+    "longest_streak_holder": "Mike",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 6
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 11
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 2
+    }
+  },
+  "Dylan-Jasper": {
+    "manager1_name": "Jasper",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 3,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Dylan",
+    "streak_len": 1,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 10
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 8
+    }
+  },
+  "Jasper-Torin": {
+    "manager1_name": "Jasper",
+    "manager2_name": "Torin",
+    "reg_wins_1": 2,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Jasper",
+    "streak_len": 2,
+    "longest_streak_holder": "Jasper",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 12
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 12
+    }
+  },
+  "--hidden---Casey": {
+    "manager1_name": "Casey",
+    "manager2_name": "--hidden--",
+    "reg_wins_1": 2,
+    "reg_wins_2": 1,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "--hidden--",
+    "streak_len": 1,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2018,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2018,
+      "week": 9
+    },
+    "last_game": {
+      "season": 2018,
+      "week": 14
+    }
+  },
+  "Casey-Ryan": {
+    "manager1_name": "Casey",
+    "manager2_name": "Ryan",
+    "reg_wins_1": 2,
+    "reg_wins_2": 10,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Casey",
+    "streak_len": 1,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 7,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2021,
+      "week": 1
+    },
+    "last_game": {
+      "season": 2025,
+      "week": 1
+    }
+  },
+  "Boaz-Casey": {
+    "manager1_name": "Casey",
+    "manager2_name": "Boaz",
+    "reg_wins_1": 3,
+    "reg_wins_2": 4,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Casey",
+    "streak_len": 1,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 16
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 3
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 16
+    }
+  },
+  "Casey-Mike": {
+    "manager1_name": "Casey",
+    "manager2_name": "Mike",
+    "reg_wins_1": 9,
+    "reg_wins_2": 7,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 1,
+    "playoff_history": [
+      {
+        "winner": "Mike",
+        "type": "QF",
+        "season": 2024
+      }
+    ],
+    "streak_holder": "Mike",
+    "streak_len": 1,
+    "longest_streak_holder": "Mike",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2020,
+      "week": 12
+    },
+    "longest_streak_end_game": {
+      "season": 2021,
+      "week": 7
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 15
+    }
+  },
+  "Casey-Dylan": {
+    "manager1_name": "Casey",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 8,
+    "reg_wins_2": 9,
+    "playoff_wins_1": 1,
+    "playoff_wins_2": 0,
+    "playoff_history": [
+      {
+        "winner": "Casey",
+        "type": "3rd",
+        "season": 2018
+      }
+    ],
+    "streak_holder": "Casey",
+    "streak_len": 4,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 4,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 13
+    },
+    "longest_streak_end_game": {
+      "season": 2020,
+      "week": 13
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 13
+    }
+  },
+  "Casey-Torin": {
+    "manager1_name": "Casey",
+    "manager2_name": "Torin",
+    "reg_wins_1": 1,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Casey",
+    "streak_len": 1,
+    "longest_streak_holder": "Casey",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 8
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 8
+    },
+    "last_game": {
+      "season": 2023,
+      "week": 8
+    }
+  },
+  "--hidden---Mike": {
+    "manager1_name": "--hidden--",
+    "manager2_name": "Mike",
+    "reg_wins_1": 3,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "Mike",
+    "streak_len": 1,
+    "longest_streak_holder": "--hidden--",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2018,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2018,
+      "week": 13
+    },
+    "last_game": {
+      "season": 2018,
+      "week": 16
+    }
+  },
+  "--hidden---Dylan": {
+    "manager1_name": "--hidden--",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 2,
+    "reg_wins_2": 0,
+    "playoff_wins_1": 0,
+    "playoff_wins_2": 0,
+    "playoff_history": [],
+    "streak_holder": "--hidden--",
+    "streak_len": 2,
+    "longest_streak_holder": "--hidden--",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2018,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2018,
+      "week": 10
+    },
+    "last_game": {
+      "season": 2018,
+      "week": 10
     }
   },
   "Boaz-Ryan": {
@@ -651,115 +1923,19 @@
     "playoff_history": [],
     "streak_holder": "Ryan",
     "streak_len": 1,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2022,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 13
+    },
     "last_game": {
       "season": 2024,
       "week": 14
-    }
-  },
-  "Jasper-Ryan": {
-    "manager1_name": "Ryan",
-    "manager2_name": "Jasper",
-    "reg_wins_1": 2,
-    "reg_wins_2": 3,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Jasper",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 12
-    }
-  },
-  "Dustin-Ryan": {
-    "manager1_name": "Ryan",
-    "manager2_name": "Dustin",
-    "reg_wins_1": 4,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dustin",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 7
-    }
-  },
-  "Dylan-Ryan": {
-    "manager1_name": "Ryan",
-    "manager2_name": "Dylan",
-    "reg_wins_1": 8,
-    "reg_wins_2": 3,
-    "playoff_wins_1": 3,
-    "playoff_wins_2": 0,
-    "playoff_history": [
-      {
-        "winner": "Ryan",
-        "type": "SF",
-        "season": 2019
-      },
-      {
-        "winner": "Ryan",
-        "type": "SF",
-        "season": 2020
-      },
-      {
-        "winner": "Ryan",
-        "type": "1st",
-        "season": 2021
-      }
-    ],
-    "streak_holder": "Dylan",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 6
-    }
-  },
-  "Ryan-nick": {
-    "manager1_name": "Ryan",
-    "manager2_name": "nick",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Ryan",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 10
-    }
-  },
-  "Ryan-Torin": {
-    "manager1_name": "Ryan",
-    "manager2_name": "Torin",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Torin",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 7
-    }
-  },
-  "Ryan-Tess": {
-    "manager1_name": "Ryan",
-    "manager2_name": "Tess",
-    "reg_wins_1": 1,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Tess",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2024,
-      "week": 16
     }
   },
   "Mike-Ryan": {
@@ -783,258 +1959,85 @@
     ],
     "streak_holder": "Ryan",
     "streak_len": 1,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2019,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2019,
+      "week": 8
+    },
     "last_game": {
       "season": 2024,
       "week": 9
     }
   },
-  "Boaz-Casey": {
-    "manager1_name": "Casey",
-    "manager2_name": "Boaz",
-    "reg_wins_1": 3,
-    "reg_wins_2": 4,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Casey",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 16
-    }
-  },
-  "Casey-Jasper": {
-    "manager1_name": "Casey",
-    "manager2_name": "Jasper",
-    "reg_wins_1": 1,
-    "reg_wins_2": 3,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 1,
-    "playoff_history": [
-      {
-        "winner": "Jasper",
-        "type": "QF",
-        "season": 2023
-      }
-    ],
-    "streak_holder": "Jasper",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 10
-    }
-  },
-  "Casey-Dustin": {
-    "manager1_name": "Casey",
-    "manager2_name": "Dustin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 5,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dustin",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 14
-    }
-  },
-  "Casey-Dylan": {
-    "manager1_name": "Casey",
+  "Dylan-Ryan": {
+    "manager1_name": "Ryan",
     "manager2_name": "Dylan",
     "reg_wins_1": 8,
-    "reg_wins_2": 9,
-    "playoff_wins_1": 1,
+    "reg_wins_2": 10,
+    "playoff_wins_1": 3,
     "playoff_wins_2": 0,
     "playoff_history": [
       {
-        "winner": "Casey",
-        "type": "3rd",
-        "season": 2018
-      }
-    ],
-    "streak_holder": "Casey",
-    "streak_len": 4,
-    "last_game": {
-      "season": 2024,
-      "week": 13
-    }
-  },
-  "Casey-nick": {
-    "manager1_name": "Casey",
-    "manager2_name": "nick",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "nick",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 11
-    }
-  },
-  "--hidden---Casey": {
-    "manager1_name": "Casey",
-    "manager2_name": "--hidden--",
-    "reg_wins_1": 2,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "--hidden--",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2018,
-      "week": 14
-    }
-  },
-  "Casey-Torin": {
-    "manager1_name": "Casey",
-    "manager2_name": "Torin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Casey",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 8
-    }
-  },
-  "Casey-Tess": {
-    "manager1_name": "Casey",
-    "manager2_name": "Tess",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Casey",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 6
-    }
-  },
-  "Casey-Mike": {
-    "manager1_name": "Casey",
-    "manager2_name": "Mike",
-    "reg_wins_1": 9,
-    "reg_wins_2": 7,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 1,
-    "playoff_history": [
+        "winner": "Ryan",
+        "type": "SF",
+        "season": 2019
+      },
       {
-        "winner": "Mike",
-        "type": "QF",
-        "season": 2024
-      }
-    ],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 15
-    }
-  },
-  "Boaz-Jasper": {
-    "manager1_name": "Boaz",
-    "manager2_name": "Jasper",
-    "reg_wins_1": 3,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Boaz",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2024,
-      "week": 7
-    }
-  },
-  "Boaz-Dustin": {
-    "manager1_name": "Boaz",
-    "manager2_name": "Dustin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 6,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dustin",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 11
-    }
-  },
-  "Boaz-Dylan": {
-    "manager1_name": "Boaz",
-    "manager2_name": "Dylan",
-    "reg_wins_1": 4,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 1,
-    "playoff_history": [
+        "winner": "Ryan",
+        "type": "SF",
+        "season": 2020
+      },
       {
-        "winner": "Dylan",
-        "type": "QF",
+        "winner": "Ryan",
+        "type": "1st",
         "season": 2021
       }
     ],
-    "streak_holder": "Boaz",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2024,
+    "streak_holder": "Dylan",
+    "streak_len": 8,
+    "longest_streak_holder": "Ryan",
+    "longest_streak_len": 9,
+    "longest_streak_start_game": {
+      "season": 2020,
       "week": 10
-    }
-  },
-  "Boaz-nick": {
-    "manager1_name": "Boaz",
-    "manager2_name": "nick",
-    "reg_wins_1": 0,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "nick",
-    "streak_len": 2,
-    "last_game": {
+    },
+    "longest_streak_end_game": {
       "season": 2023,
       "week": 12
-    }
-  },
-  "Boaz-Torin": {
-    "manager1_name": "Boaz",
-    "manager2_name": "Torin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Boaz",
-    "streak_len": 1,
+    },
     "last_game": {
-      "season": 2023,
-      "week": 5
+      "season": 2025,
+      "week": 3
     }
   },
-  "Boaz-Tess": {
-    "manager1_name": "Boaz",
-    "manager2_name": "Tess",
+  "Ryan-Torin": {
+    "manager1_name": "Ryan",
+    "manager2_name": "Torin",
     "reg_wins_1": 0,
     "reg_wins_2": 1,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
-    "streak_holder": "Tess",
+    "streak_holder": "Torin",
     "streak_len": 1,
+    "longest_streak_holder": "Torin",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 7
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 7
+    },
     "last_game": {
-      "season": 2024,
-      "week": 9
+      "season": 2023,
+      "week": 7
     }
   },
   "Boaz-Mike": {
@@ -1053,233 +2056,125 @@
     ],
     "streak_holder": "Mike",
     "streak_len": 1,
+    "longest_streak_holder": "Boaz",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2021,
+      "week": 3
+    },
+    "longest_streak_end_game": {
+      "season": 2022,
+      "week": 6
+    },
     "last_game": {
       "season": 2025,
       "week": 1
     }
   },
-  "Dustin-Jasper": {
-    "manager1_name": "Jasper",
-    "manager2_name": "Dustin",
-    "reg_wins_1": 0,
-    "reg_wins_2": 4,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 1,
-    "playoff_history": [
-      {
-        "winner": "Dustin",
-        "type": "SF",
-        "season": 2023
-      }
-    ],
-    "streak_holder": "Dustin",
-    "streak_len": 5,
-    "last_game": {
-      "season": 2024,
-      "week": 9
-    }
-  },
-  "Dylan-Jasper": {
-    "manager1_name": "Jasper",
+  "Boaz-Dylan": {
+    "manager1_name": "Boaz",
     "manager2_name": "Dylan",
-    "reg_wins_1": 3,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dylan",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 8
-    }
-  },
-  "Jasper-nick": {
-    "manager1_name": "Jasper",
-    "manager2_name": "nick",
-    "reg_wins_1": 1,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Jasper",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 4
-    }
-  },
-  "Jasper-Torin": {
-    "manager1_name": "Jasper",
-    "manager2_name": "Torin",
-    "reg_wins_1": 2,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Jasper",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2023,
-      "week": 12
-    }
-  },
-  "Jasper-Tess": {
-    "manager1_name": "Jasper",
-    "manager2_name": "Tess",
-    "reg_wins_1": 2,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Jasper",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2024,
-      "week": 17
-    }
-  },
-  "Jasper-Mike": {
-    "manager1_name": "Jasper",
-    "manager2_name": "Mike",
-    "reg_wins_1": 2,
-    "reg_wins_2": 3,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 1,
-    "playoff_history": [
-      {
-        "winner": "Mike",
-        "type": "3rd",
-        "season": 2023
-      }
-    ],
-    "streak_holder": "Mike",
-    "streak_len": 4,
-    "last_game": {
-      "season": 2024,
-      "week": 11
-    }
-  },
-  "Dustin-Dylan": {
-    "manager1_name": "Dustin",
-    "manager2_name": "Dylan",
-    "reg_wins_1": 2,
-    "reg_wins_2": 5,
+    "reg_wins_1": 4,
+    "reg_wins_2": 2,
     "playoff_wins_1": 0,
     "playoff_wins_2": 1,
     "playoff_history": [
       {
         "winner": "Dylan",
-        "type": "1st",
-        "season": 2024
+        "type": "QF",
+        "season": 2021
       }
     ],
-    "streak_holder": "Dylan",
-    "streak_len": 4,
-    "last_game": {
-      "season": 2025,
+    "streak_holder": "Boaz",
+    "streak_len": 2,
+    "longest_streak_holder": "Boaz",
+    "longest_streak_len": 2,
+    "longest_streak_start_game": {
+      "season": 2024,
       "week": 1
+    },
+    "longest_streak_end_game": {
+      "season": 2024,
+      "week": 10
+    },
+    "last_game": {
+      "season": 2024,
+      "week": 10
     }
   },
-  "Dustin-nick": {
-    "manager1_name": "Dustin",
-    "manager2_name": "nick",
+  "Boaz-Torin": {
+    "manager1_name": "Boaz",
+    "manager2_name": "Torin",
     "reg_wins_1": 1,
     "reg_wins_2": 0,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
-    "streak_holder": "Dustin",
+    "streak_holder": "Boaz",
     "streak_len": 1,
+    "longest_streak_holder": "Boaz",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 5
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 5
+    },
     "last_game": {
       "season": 2023,
       "week": 5
     }
   },
-  "Dustin-Torin": {
-    "manager1_name": "Dustin",
-    "manager2_name": "Torin",
-    "reg_wins_1": 1,
-    "reg_wins_2": 1,
+  "Dylan-Mike": {
+    "manager1_name": "Mike",
+    "manager2_name": "Dylan",
+    "reg_wins_1": 9,
+    "reg_wins_2": 7,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
-    "streak_holder": "Dustin",
+    "streak_holder": "Mike",
     "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 13
-    }
-  },
-  "Dustin-Tess": {
-    "manager1_name": "Dustin",
-    "manager2_name": "Tess",
-    "reg_wins_1": 0,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Tess",
-    "streak_len": 2,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 3,
+    "longest_streak_start_game": {
+      "season": 2018,
+      "week": 4
+    },
+    "longest_streak_end_game": {
+      "season": 2018,
+      "week": 14
+    },
     "last_game": {
       "season": 2024,
-      "week": 13
+      "week": 14
     }
   },
-  "Dustin-Mike": {
-    "manager1_name": "Dustin",
-    "manager2_name": "Mike",
-    "reg_wins_1": 4,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 1,
-    "playoff_wins_2": 1,
-    "playoff_history": [
-      {
-        "winner": "Mike",
-        "type": "QF",
-        "season": 2021
-      },
-      {
-        "winner": "Dustin",
-        "type": "SF",
-        "season": 2024
-      }
-    ],
-    "streak_holder": "Dustin",
-    "streak_len": 5,
-    "last_game": {
-      "season": 2024,
-      "week": 16
-    }
-  },
-  "Dylan-nick": {
-    "manager1_name": "Dylan",
-    "manager2_name": "nick",
+  "Mike-Torin": {
+    "manager1_name": "Mike",
+    "manager2_name": "Torin",
     "reg_wins_1": 1,
     "reg_wins_2": 0,
     "playoff_wins_1": 0,
     "playoff_wins_2": 0,
     "playoff_history": [],
-    "streak_holder": "Dylan",
+    "streak_holder": "Mike",
     "streak_len": 1,
+    "longest_streak_holder": "Mike",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 11
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 11
+    },
     "last_game": {
       "season": 2023,
-      "week": 7
-    }
-  },
-  "--hidden---Dylan": {
-    "manager1_name": "Dylan",
-    "manager2_name": "--hidden--",
-    "reg_wins_1": 0,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "--hidden--",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2018,
-      "week": 10
+      "week": 11
     }
   },
   "Dylan-Torin": {
@@ -1292,114 +2187,19 @@
     "playoff_history": [],
     "streak_holder": "Dylan",
     "streak_len": 1,
+    "longest_streak_holder": "Dylan",
+    "longest_streak_len": 1,
+    "longest_streak_start_game": {
+      "season": 2023,
+      "week": 9
+    },
+    "longest_streak_end_game": {
+      "season": 2023,
+      "week": 9
+    },
     "last_game": {
       "season": 2023,
       "week": 9
-    }
-  },
-  "Dylan-Tess": {
-    "manager1_name": "Dylan",
-    "manager2_name": "Tess",
-    "reg_wins_1": 2,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Dylan",
-    "streak_len": 2,
-    "last_game": {
-      "season": 2024,
-      "week": 11
-    }
-  },
-  "Dylan-Mike": {
-    "manager1_name": "Dylan",
-    "manager2_name": "Mike",
-    "reg_wins_1": 7,
-    "reg_wins_2": 9,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 14
-    }
-  },
-  "Torin-nick": {
-    "manager1_name": "nick",
-    "manager2_name": "Torin",
-    "reg_wins_1": 0,
-    "reg_wins_2": 2,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Torin",
-    "streak_len": 3,
-    "last_game": {
-      "season": 2023,
-      "week": 16
-    }
-  },
-  "Mike-nick": {
-    "manager1_name": "nick",
-    "manager2_name": "Mike",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 8
-    }
-  },
-  "--hidden---Mike": {
-    "manager1_name": "--hidden--",
-    "manager2_name": "Mike",
-    "reg_wins_1": 3,
-    "reg_wins_2": 0,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2018,
-      "week": 16
-    }
-  },
-  "Mike-Torin": {
-    "manager1_name": "Torin",
-    "manager2_name": "Mike",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2023,
-      "week": 11
-    }
-  },
-  "Mike-Tess": {
-    "manager1_name": "Tess",
-    "manager2_name": "Mike",
-    "reg_wins_1": 0,
-    "reg_wins_2": 1,
-    "playoff_wins_1": 0,
-    "playoff_wins_2": 0,
-    "playoff_history": [],
-    "streak_holder": "Mike",
-    "streak_len": 1,
-    "last_game": {
-      "season": 2024,
-      "week": 8
     }
   }
 }

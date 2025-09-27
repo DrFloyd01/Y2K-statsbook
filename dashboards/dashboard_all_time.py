@@ -77,7 +77,7 @@ def print_leaderboard(stats, game_type):
         losses = data[f'{prefix}losses']
         ties = data[f'{prefix}ties']
         
-        total_games = wins + losses
+        total_games = wins + losses + ties
         if total_games == 0: continue # Skip managers with no games of this type
 
         win_pct = wins / total_games
@@ -89,11 +89,14 @@ def print_leaderboard(stats, game_type):
 
     print(f"\n--- 🏈 Y2K All-Time {game_type} Leaderboard 🏈 ---")
     print("-" * 52)
-    print(f"{'Rank':<5} {'Manager':<18} {'Record (W-L)':<18} {'Win %':<7}")
+    print(f"{'Rank':<5} {'Manager':<18} {'Record':<18} {'Win %':<7}")
     print("-" * 52)
     for i, entry in enumerate(leaderboard):
         rank = i + 1
-        record_str = f"{entry['wins']}-{entry['losses']}"
+        if entry['ties'] > 0:
+            record_str = f"{entry['wins']}-{entry['losses']}-{entry['ties']}"
+        else:
+            record_str = f"{entry['wins']}-{entry['losses']}"
         win_pct_str = f"{entry['win_pct']:.3f}"
         print(f"{rank:<5} {entry['name']:<18} {record_str:<18} {win_pct_str:<7}")
     print("-" * 52)

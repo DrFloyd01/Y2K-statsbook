@@ -37,6 +37,32 @@ def calculate_h2h_for_pair(name1, name2, all_matchups):
             else:
                 n2_reg_wins += 1
 
+    # --- Streak Calculations ---
+    # Longest streak calculation
+    longest_streak_holder, longest_streak_len = None, 0
+    longest_streak_start_game, longest_streak_end_game = None, None
+    current_streak_start_game = None
+    current_streak_holder, current_streak_len = None, 0
+    for game in relevant_games:
+        winner = game.get('winner_manager_name')
+        if not winner: # Skip ties
+            current_streak_holder, current_streak_len = None, 0
+            continue
+        
+        if winner == current_streak_holder:
+            current_streak_len += 1
+        else:
+            # New streak starts
+            current_streak_holder = winner
+            current_streak_len = 1
+            current_streak_start_game = {"season": game['season'], "week": game['week']}
+        
+        if current_streak_len > longest_streak_len:
+            longest_streak_len = current_streak_len
+            longest_streak_holder = current_streak_holder
+            longest_streak_start_game = current_streak_start_game
+            longest_streak_end_game = {"season": game['season'], "week": game['week']}
+
     streak_holder_name, streak_len = None, 0
     last_game = relevant_games[-1]
     if last_game['winner_manager_name']:
@@ -57,6 +83,10 @@ def calculate_h2h_for_pair(name1, name2, all_matchups):
         "playoff_history": playoff_history, # <-- Add the new list to the record
         "streak_holder": streak_holder_name,
         "streak_len": streak_len,
+        "longest_streak_holder": longest_streak_holder,
+        "longest_streak_len": longest_streak_len,
+        "longest_streak_start_game": longest_streak_start_game,
+        "longest_streak_end_game": longest_streak_end_game,
         "last_game": {"season": last_game['season'], "week": last_game['week']}
     }
 

@@ -83,11 +83,11 @@ def update_h2h_records(week_results, h2h_records, season, settings):
 
     return h2h_records
 
-def generate_weekly_preview(preview_week, query, standings, h2h_records, season="2025"):
+def prepare_preview_data(preview_week, query, standings, h2h_records, season="2025", output_filename="preview_data.json"):
     """
-    Generates the preview for the upcoming week using the updated H2H data.
+    Prepares the data object for the weekly preview and saves it to a JSON file.
     """
-    logging.info(f"\n🏈 {season} Y2K: Week {preview_week} Preview 🏈\n")
+    logging.info(f"Preparing preview data for Week {preview_week}...")
     
     team_data_map = {}
     for team in standings.teams:
@@ -106,6 +106,7 @@ def generate_weekly_preview(preview_week, query, standings, h2h_records, season=
         team_data_map[m.teams[1].team_key]['rank']
     ))
 
+    matchups_data = []
     for matchup in matchups:
         team1_data = team_data_map[matchup.teams[0].team_key]
         team2_data = team_data_map[matchup.teams[1].team_key]
@@ -116,58 +117,67 @@ def generate_weekly_preview(preview_week, query, standings, h2h_records, season=
         if team1_data['rank'] > team2_data['rank']:
             team1_data, team2_data = team2_data, team1_data
 
-        print("="*40 + "\n")
-        print(f"{team1_data['rank']}. {team1_data['name']} {team1_data['record']} vs {team2_data['rank']}. {team2_data['name']} {team2_data['record']}")
-        
-        # This clean if/else block prevents the double printing
+        h2h_data_for_matchup = None
         if h2h:
-            # Determine which manager is which for displaying records correctly
             if h2h['manager1_name'] == team1_data['manager_name']:
                 reg_h2h = f"{h2h['reg_wins_1']}-{h2h['reg_wins_2']}"
                 playoff_record_str = f"{h2h['playoff_wins_1']}-{h2h['playoff_wins_2']}"
             else:
                 reg_h2h = f"{h2h['reg_wins_2']}-{h2h['reg_wins_1']}"
                 playoff_record_str = f"{h2h['playoff_wins_2']}-{h2h['playoff_wins_1']}"
+            
+            streak_info = "No Streak"
+            if h2h.get('streak_holder'):
+                last_game = h2h['last_game']
+                season_short = str(last_game['season'])[-2:]
+                streak_info = f"<span class='streak-holder'>{h2h['streak_holder']} W{h2h['streak_len']}</span> (Last game: Wk{last_game['week']}'{season_short})"
 
-            playoff_h2h_display = playoff_record_str
-
+            playoff_h2h_display = f"<strong>Playoffs H2H:</strong> {playoff_record_str}"
             if h2h.get('playoff_history'):
                 p1_wins = [f"{g['type']}'{str(g['season'])[-2:]}" for g in h2h['playoff_history'] if g['winner'] == h2h['manager1_name']]
                 p2_wins = [f"{g['type']}'{str(g['season'])[-2:]}" for g in h2h['playoff_history'] if g['winner'] == h2h['manager2_name']]
                 
                 if h2h['manager1_name'] == team1_data['manager_name']:
-                    wins_str, losses_str = ", ".join(p1_wins), ", ".join(p2_wins)
+                    wins_str = f" ({team1_data['manager_name']}: {', '.join(p1_wins)})" if p1_wins else ""
+                    losses_str = f" ({team2_data['manager_name']}: {', '.join(p2_wins)})" if p2_wins else ""
                 else:
-                    wins_str, losses_str = ", ".join(p2_wins), ", ".join(p1_wins)
+                    wins_str = f" ({team1_data['manager_name']}: {', '.join(p2_wins)})" if p2_wins else ""
+                    losses_str = f" ({team2_data['manager_name']}: {', '.join(p1_wins)})" if p1_wins else ""
 
-                history_str = wins_str
-                if losses_str: history_str += f"; {losses_str}"
-                if history_str: playoff_h2h_display += f", {history_str}"
-
-            print(f"Season H2H: {reg_h2h}")
+                if wins_str or losses_str:
+                    playoff_h2h_display += f"<span class='playoff-details'>{wins_str}{losses_str}</span>"
             
-            if h2h.get('streak_holder'):
-                last_game = h2h['last_game']
-                season_short = str(last_game['season'])[-2:]
-                streak_info = f"{h2h['streak_holder']} W{h2h['streak_len']}, Wk{last_game['week']}'{season_short}"
-                print(f"Streak: {streak_info}")
-            else:
-                print("Streak: No Streak")
+            h2h_data_for_matchup = {
+                "reg_h2h": reg_h2h,
+                "streak_info": streak_info,
+                "playoff_h2h_display": playoff_h2h_display
+            }
 
-            print(f"Playoffs H2H: {playoff_h2h_display}\n")
-        else:
-            print("Season H2H: 0-0")
-            print("Streak: First Meeting")
-            print("Playoff H2H: 0-0\n")
+        matchups_data.append({
+            "team1": team1_data,
+            "team2": team2_data,
+            "h2h": h2h_data_for_matchup
+        })
 
-        print("[Your narrative snippet about the matchup...]\n")
+    # Final data object to be saved
+    final_data = {
+        "season": season,
+        "preview_week": preview_week,
+        "matchups": matchups_data
+    }
+
+    with open(output_filename, "w", encoding="utf-8") as f:
+        json.dump(final_data, f, indent=2)
+    
+    logging.info(f"✅ Successfully saved preview data to: {output_filename}")
+
 def main():
     """
     Main orchestrator for the weekly preview generation.
     """
     # --- CONFIGURATION ---
     TARGET_SEASON = "2025"
-    PREVIEW_WEEK = 2 
+    PREVIEW_WEEK = 4
 
     # --- LOAD DATA ---
     with open("leagues.json", "r") as f:
@@ -204,8 +214,11 @@ def main():
 
     # --- GENERATE PREVIEW (The "Look Forward" Step) ---
     standings = query.get_league_standings()
-    generate_weekly_preview(PREVIEW_WEEK, query, standings, h2h_records, TARGET_SEASON)
-
+    # This now prepares a data file instead of generating HTML
+    prepare_preview_data(
+        preview_week=PREVIEW_WEEK, query=query, standings=standings, 
+        h2h_records=h2h_records, season=TARGET_SEASON
+    )
 
 if __name__ == "__main__":
     main()
