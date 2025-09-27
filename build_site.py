@@ -9,6 +9,7 @@ from yfpy.query import YahooFantasySportsQuery
 # Import the core logic from our tool scripts
 from tools.generate_preview import run_preview_process
 from tools.dashboard_weekly_report import run_report_process
+from tools.init_history import run_full_historical_build
 
 # --- Setup ---
 load_dotenv()
@@ -16,8 +17,12 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # --- Directory Setup ---
 DATA_DIR = Path("data")
+CACHE_DIR = Path("cache")
 SITE_DIR = Path("site")
+
+DATA_DIR.mkdir(exist_ok=True)
 SITE_DIR.mkdir(exist_ok=True)
+CACHE_DIR.mkdir(exist_ok=True) # yfpy will use this
 STATE_FILE = DATA_DIR / "state.json"
 
 # --- Yahoo API Credentials ---
@@ -255,6 +260,12 @@ def main():
     parser.add_argument('--force-refresh', action='store_true', help="Force a refresh of all data from the API.")
     args = parser.parse_args()
 
+    # --- ONE-TIME SETUP CHECK ---
+    # If the core historical data file is missing, run the full one-time build process.
+    if not (DATA_DIR / "h2h_records.json").exists():
+        logging.warning("Core historical data not found. Running one-time setup...")
+        run_full_historical_build()
+
     # --- CONFIGURATION ---
     TARGET_SEASON = "2025"
 
@@ -279,6 +290,10 @@ def main():
         needs_refresh = True
     elif last_completed_week > state['last_processed_week']:
         logging.info(f"New completed week detected (Week {last_completed_week}). Regenerating data.")
+        needs_refresh = True
+    # Add a check to see if data files are missing, which happens on a cold start.
+    elif not (DATA_DIR / "preview_data.json").exists() or not (DATA_DIR / "report_card_data.json").exists():
+        logging.info("Data files are missing. Triggering a data generation process.")
         needs_refresh = True
     else:
         logging.info("No new weekly data found. Building site with existing data.")

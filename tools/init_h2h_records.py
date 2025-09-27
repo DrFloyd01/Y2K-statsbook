@@ -90,10 +90,10 @@ def calculate_h2h_for_pair(name1, name2, all_matchups):
         "last_game": {"season": last_game['season'], "week": last_game['week']}
     }
 
-def main():
+def initialize_h2h_records():
     logging.info("Loading historical data...")
     try:
-        with open("historical_data.json", "r") as f:
+        with open("data/historical_data.json", "r") as f:
             historical_data = json.load(f)
     except FileNotFoundError:
         logging.error("ERROR: historical_data.json not found. Please run the updated build_history.py first.")
@@ -122,10 +122,10 @@ def main():
             all_h2h_records[key] = h2h_record
 
     # 4. Save the final dictionary to a new file
-    with open("h2h_records.json", "w") as f:
+    with open("data/h2h_records.json", "w") as f:
         json.dump(all_h2h_records, f, indent=2)
         
     logging.info("\n✅ Success! h2h_records.json has been created based on manager nicknames.")
 
 if __name__ == "__main__":
-    main()
+    initialize_h2h_records()

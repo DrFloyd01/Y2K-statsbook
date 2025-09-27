@@ -29,14 +29,29 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Cache pipenv dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
       - name: Install Pipenv
         run: pip install pipenv
       - name: Install dependencies
-        run: pipenv install
+        # Use --deploy to ensure Pipfile.lock is up-to-date
+        run: pipenv install --deploy
+      - name: Restore data cache
+        uses: actions/cache@v4
+        id: data-cache
+        with:
+          path: |
+            data/
+            cache/
+          key: ${{ runner.os }}-data-cache
       - name: Create .env file from multi-line secret
         run: echo "${{ secrets.YAHOO_ENV_FILE }}" > .env
       - name: Build the static site
-        run: pipenv run python build_site.py
+        # Always force a refresh on deployment to get the latest stats
+        run: pipenv run python build_site.py --force-refresh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
