@@ -267,7 +267,8 @@ def main():
     logging.info("--- Checking for new weekly data ---")
     query = YahooFantasySportsQuery(
         league_id=config["league_id"], game_code="nfl", game_id=config["game_id"],
-        yahoo_consumer_key=YAHOO_CONSUMER_KEY, yahoo_consumer_secret=YAHOO_CONSUMER_SECRET
+        yahoo_consumer_key=YAHOO_CONSUMER_KEY, yahoo_consumer_secret=YAHOO_CONSUMER_SECRET,
+        env_file_location=Path("."), save_token_data_to_env_file=True
     )
     current_league_week = query.get_league_info().current_week
     last_completed_week = current_league_week - 1

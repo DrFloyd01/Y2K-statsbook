@@ -9,6 +9,7 @@ Welcome to the official statsbook for the Y2K CPU Machinations fantasy football 
     *   An "Alternative Universe" standings table (based on median score).
     *   Weekly accolades like "Top Points," "Tough Luck Loss," and "Biggest Blowout."
 *   **Interactive Placeholders:** The pages include UI for comments and reactions, ready to be wired up to a backend in the future.
+*   **Automated Deployment:** Pushes to the `main` branch automatically build and deploy the site to GitHub Pages.
 *   **Intelligent Build Process:** A single command (`python build_site.py`) is smart enough to know when a new week has been completed and will automatically refresh the data.
 
 ## Getting Started
@@ -70,6 +71,16 @@ After the script finishes, you can find the generated website in the `site/` dir
     python build_site.py --force-refresh
     ```
 
+## Deployment
+
+This project is configured for continuous deployment to GitHub Pages via GitHub Actions. The workflow is defined in `.github/workflows/deploy.yml`.
+
+For the deployment to succeed, the following repository secrets must be set in your GitHub repository's **Settings > Secrets and variables > Actions**:
+
+*   `YAHOO_CONSUMER_KEY`: Your Yahoo API consumer key.
+*   `YAHOO_CONSUMER_SECRET`: Your Yahoo API consumer secret.
+*   `YAHOO_PRIVATE_JSON`: The full JSON content of the `private.json` file generated after the first successful local authentication.
+
 ## Project Structure
 
 *   `build_site.py`: The main entry point for the project.
@@ -81,6 +92,6 @@ After the script finishes, you can find the generated website in the `site/` dir
 
 ## What's Next? The "D'OH!" Award
 
-The next major feature on the roadmap is to implement one of the least coveted fantasy accolades: the **"D'OH!" Award**.
+The next major feature on the roadmap is to implement one of the most coveted fantasy accolades: the **"D'OH!" Award**.
 
 This will involve fetching player-level data for each team to calculate the "optimal" lineup for the week. We will then identify managers who lost but would have won if they had set their lineup optimally, immortalizing their poor coaching decisions in the weekly report.

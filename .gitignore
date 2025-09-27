@@ -9,9 +9,6 @@ venv/
 __pycache__/
 *.pyc
 
-# Yahoo Fantasy Python library token data
-private.json
-
 # Cache directory for weekly data
 cache/
 
