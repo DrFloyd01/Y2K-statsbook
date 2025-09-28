@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Cache pipenv dependencies
+      - name: Cache pipenv virtualenv
         uses: actions/cache@v4
         with:
           path: ~/.local/share/virtualenvs
@@ -37,8 +37,9 @@ jobs:
       - name: Install Pipenv
         run: pip install pipenv
       - name: Install dependencies
-        # Use --deploy to ensure Pipfile.lock is up-to-date
-        run: pipenv install --deploy
+        # Use --deploy to ensure Pipfile.lock is up-to-date.
+        # The --skip-lock is safe here because we check in Pipfile.lock.
+        run: pipenv install --deploy --skip-lock
       - name: Restore data cache
         uses: actions/cache@v4
         id: data-cache

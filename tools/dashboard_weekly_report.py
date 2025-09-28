@@ -18,6 +18,11 @@ YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
+def default_alt_standing():
+    """Provides a default dictionary for a new manager in alt_standings.
+    This is here for pickle compatibility with older cache files."""
+    return {'wins': 0, 'losses': 0, 'pf': 0.0}
+
 def calculate_standings_from_matchups(max_week, cache_dir):
     """
     Calculates the "real" league standings up to a specific week by processing
@@ -65,7 +70,7 @@ def process_and_cache_week(week, query, cache_dir):
         pickle.dump(matchups, f)
 
     # Load the previous week's alternative standings to build upon
-    alt_standings = defaultdict(lambda: {'wins': 0, 'losses': 0, 'pf': 0.0})
+    alt_standings = defaultdict(default_alt_standing)
     if week > 1:
         prev_alt_standings_cache = cache_dir / f"week_{week - 1}_alt_standings.pkl"
         if prev_alt_standings_cache.exists():
