@@ -65,8 +65,6 @@ def generate_weekly_preview_html(data):
         .record {{ font-style: normal; color: #aaa; font-weight: normal; }}
         .h2h-stats p {{ margin: 5px 0; font-size: 0.9em; }}
         .h2h-stats strong {{ color: #cfc; }}
-        .streak-holder {{ font-weight: bold; color: #afa; }}
-        .playoff-details {{ font-size: 0.85em; color: #aaa; }}
         .commissioner-note {{ background: #020; border: 1px dashed #070; padding: 10px 15px; margin-top: 15px; color: #afc; }}
         .commissioner-note h4 {{ margin: 0 0 5px 0; color: #fff; font-size: 1em; }}
         .social-section {{ margin-top: 20px; border-top: 1px solid #050; padding-top: 15px; }}

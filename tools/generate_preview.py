@@ -132,9 +132,20 @@ def prepare_preview_data(preview_week, query, standings, h2h_records, season="20
             
             streak_info = "No Streak"
             if h2h.get('streak_holder'):
-                last_game = h2h['last_game']
-                season_short = str(last_game['season'])[-2:]
-                streak_info = f"<span class='streak-holder'>{h2h['streak_holder']} W{h2h['streak_len']}</span> (Last game: Wk{last_game['week']}'{season_short})"
+                streak_holder = h2h['streak_holder']
+                streak_len = h2h['streak_len']
+                
+                # Find all games in the current streak
+                streak_games_info = []
+                # The history is already sorted chronologically
+                for game in reversed(h2h.get('playoff_history', []) + h2h.get('regular_history', [])):
+                    if len(streak_games_info) < streak_len and game['winner'] == streak_holder:
+                        game_type = game.get('type', f"Wk{game['week']}")
+                        season_short = str(game['season'])[-2:]
+                        streak_games_info.append(f"{game_type}'{season_short}")
+                    elif len(streak_games_info) >= streak_len:
+                        break
+                streak_info = f"{streak_holder} W{streak_len} ({', '.join(reversed(streak_games_info))})"
 
             playoff_h2h_display = f"<strong>Playoffs H2H:</strong> {playoff_record_str}"
             if h2h.get('playoff_history'):
@@ -149,7 +160,7 @@ def prepare_preview_data(preview_week, query, standings, h2h_records, season="20
                     losses_str = f" ({team2_data['manager_name']}: {', '.join(p1_wins)})" if p1_wins else ""
 
                 if wins_str or losses_str:
-                    playoff_h2h_display += f"<span class='playoff-details'>{wins_str}{losses_str}</span>"
+                    playoff_h2h_display += f"{wins_str}{losses_str}"
             
             h2h_data_for_matchup = {
                 "reg_h2h": reg_h2h,
