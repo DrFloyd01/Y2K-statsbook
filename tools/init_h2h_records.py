@@ -97,15 +97,19 @@ def calculate_h2h_for_pair(name1, name2, all_matchups):
     }
 
 def initialize_h2h_records():
-    logging.info("Loading historical data...")
+    """
+    Builds the entire h2h_records.json from historical_data.json.
+    This is the definitive source for H2H data.
+    """
+    logging.info("Building H2H records from historical_data.json...")
     try:
         with open("data/historical_data.json", "r") as f:
             historical_data = json.load(f)
     except FileNotFoundError:
-        logging.error("ERROR: historical_data.json not found. Please run the updated build_history.py first.")
+        logging.error("ERROR: historical_data.json not found. Please run init_history.py first.")
         return
 
-    # 1. Identify all unique managers by nickname
+    # Identify all unique managers by nickname
     manager_names = set()
     for game in historical_data:
         manager_names.add(game['team1_manager_name'])
@@ -113,12 +117,12 @@ def initialize_h2h_records():
     
     logging.info(f"Found {len(manager_names)} unique managers in league history.")
 
-    # 2. Generate all unique pairs of managers
+    # Generate all unique pairs of managers
     manager_pairs = list(itertools.combinations(manager_names, 2))
     
     logging.info(f"Calculating H2H records for {len(manager_pairs)} unique pairs...")
 
-    # 3. Calculate H2H for each pair and store it
+    # Calculate H2H for each pair and store it
     all_h2h_records = {}
     for name1, name2 in manager_pairs:
         h2h_record = calculate_h2h_for_pair(name1, name2, historical_data)
@@ -127,7 +131,7 @@ def initialize_h2h_records():
             key = "-".join(sorted([name1, name2]))
             all_h2h_records[key] = h2h_record
 
-    # 4. Save the final dictionary to a new file
+    # Save the final dictionary to a new file
     with open("data/h2h_records.json", "w") as f:
         json.dump(all_h2h_records, f, indent=2)
         

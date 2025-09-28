@@ -31,6 +31,13 @@ STATE_FILE = DATA_DIR / "state.json"
 YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
 YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
+# --- Pickle Compatibility Fix ---
+# This function is added here to allow unpickling of old cache files that
+# were created when this function was defined in a different module.
+# Once all cache files are regenerated, this can be removed.
+def default_alt_standing():
+    return {'wins': 0, 'losses': 0, 'pf': 0.0}
+
 def get_current_state():
     if not STATE_FILE.exists():
         return {"last_processed_week": 0}

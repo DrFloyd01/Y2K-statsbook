@@ -5,6 +5,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 from yfpy.query import YahooFantasySportsQuery
 
+# Import the definitive H2H builder
+from .build_history import build_historical_data_from_cache
+from .init_h2h_records import initialize_h2h_records
+
 # --- Setup ---
 load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(message)s')
@@ -15,88 +19,6 @@ YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 # --- Directory Setup ---
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
-
-def update_h2h_records(week_results, h2h_records, season, settings):
-    """
-    Updates the H2H records dictionary with the results from a completed week.
-    """
-    logging.info(f"Updating H2H records with Week {week_results[0].week} results...")
-    
-    playoff_start_week = int(settings.playoff_start_week)
-    num_playoff_teams = int(settings.num_playoff_teams)
-
-    for matchup in week_results:
-        manager1 = matchup.teams[0].managers[0]
-        manager2 = matchup.teams[1].managers[0]
-
-        if manager1.nickname == '--hidden--' or manager2.nickname == '--hidden--':
-            continue
-
-        key = "-".join(sorted([manager1.nickname, manager2.nickname]))
-        if key not in h2h_records:
-            continue
-        
-        # Determine game_type using the same logic as build_history
-        game_type = "regular"
-        if matchup.is_playoffs:
-            if matchup.is_consolation: game_type = "consolation"
-            elif matchup.is_third_place: game_type = "3rd"
-            else:
-                week_offset = matchup.week - playoff_start_week
-                if num_playoff_teams >= 6:
-                    if week_offset == 0: game_type = "QF"
-                    elif week_offset == 1: game_type = "SF"
-                    else: game_type = "1st"
-                else:
-                    if week_offset == 0: game_type = "SF"
-                    else: game_type = "1st"
-
-        if game_type == 'consolation':
-            continue
-
-        record = h2h_records[key]
-        
-        winner_name = None
-        if not matchup.is_tied:
-            winner_name = manager1.nickname if matchup.winner_team_key == matchup.teams[0].team_key else manager2.nickname
-
-        if not winner_name:
-            continue
-
-        # Ensure the history lists exist before trying to append to them
-        if 'playoff_history' not in record:
-            record['playoff_history'] = []
-        if 'regular_history' not in record:
-            record['regular_history'] = []
-
-        # Determine if manager1 or manager2 in the record won
-        is_manager1_winner = (winner_name == record['manager1_name'])
-
-        if game_type in ['QF', 'SF', '1st', '3rd']:
-            if is_manager1_winner: record['playoff_wins_1'] += 1
-            else: record['playoff_wins_2'] += 1
-            record['playoff_history'].append({
-                "winner": winner_name, "type": game_type, 
-                "season": int(season), "week": matchup.week
-            })
-        else: # game_type is 'regular'
-            if is_manager1_winner: record['reg_wins_1'] += 1
-            else: record['reg_wins_2'] += 1
-            record['regular_history'].append({
-                "winner": winner_name, "type": game_type, 
-                "season": int(season), "week": matchup.week
-            })
-        # Update streak
-        if record['streak_holder'] == winner_name:
-            record['streak_len'] += 1
-        else:
-            record['streak_holder'] = winner_name
-            record['streak_len'] = 1
-
-        # FIX 2: Use the 'season' variable passed into the function
-        record['last_game'] = {"season": int(season), "week": matchup.week}
-
-    return h2h_records
 
 def prepare_preview_data(preview_week, query, standings, h2h_records, season="2025"):
     """
@@ -148,18 +70,24 @@ def prepare_preview_data(preview_week, query, standings, h2h_records, season="20
                 
                 # Find all games in the current streak
                 streak_games_info = []
-                # The history is already sorted chronologically
-                for game in reversed(h2h.get('playoff_history', []) + h2h.get('regular_history', [])):
-                    if len(streak_games_info) < streak_len and game['winner'] == streak_holder:
-                        game_type = game.get('type', f"Wk{game['week']}")
+                # Combine and sort all games, checking for both history keys
+                all_games = (h2h.get('playoff_history') or []) + (h2h.get('regular_history') or [])
+                all_games.sort(key=lambda g: (g.get('season', 0), g.get('week', 0)))
+
+                for game in reversed(all_games):
+                    # Ensure game is a dict and has a winner before processing
+                    if isinstance(game, dict) and game.get('winner') == streak_holder and game.get('type'):
+                        game_type = f"Wk{game['week']}" if game['type'] == 'regular' else game['type']
                         season_short = str(game['season'])[-2:]
                         streak_games_info.append(f"{game_type}'{season_short}")
-                    elif len(streak_games_info) >= streak_len:
+                        if len(streak_games_info) == streak_len:
+                            break
+                    else:
                         break
                 streak_info = f"{streak_holder} W{streak_len} ({', '.join(reversed(streak_games_info))})"
 
             playoff_h2h_display = f"<strong>Playoffs H2H:</strong> {playoff_record_str}"
-            if h2h.get('playoff_history'):
+            if h2h.get('playoff_history') and (h2h.get('playoff_wins_1', 0) > 0 or h2h.get('playoff_wins_2', 0) > 0):
                 p1_wins = [f"{g['type']}'{str(g['season'])[-2:]}" for g in h2h['playoff_history'] if g['winner'] == h2h['manager1_name']]
                 p2_wins = [f"{g['type']}'{str(g['season'])[-2:]}" for g in h2h['playoff_history'] if g['winner'] == h2h['manager2_name']]
                 
@@ -220,24 +148,20 @@ def run_preview_process(target_season, preview_week):
         env_file_location=Path("."), save_token_data_to_env_file=True
     )
 
-    # --- UPDATE STATE (The "Look Back" Step) ---
-    if preview_week > 1:
-        update_week = preview_week - 1
-        last_week_results = query.get_league_matchups_by_week(update_week)
-        
-        if last_week_results and last_week_results[0].status == "postevent":
-            settings = query.get_league_settings() # Get settings for the update function
-            h2h_records = update_h2h_records(last_week_results, h2h_records, target_season, settings)
-            
-            with open(h2h_records_file, "w") as f:
-                json.dump(h2h_records, f, indent=2)
-            logging.info("Successfully updated and saved h2h_records.json.\n")
-        else:
-            logging.info(f"Week {update_week} results not final yet. Skipping H2H update.\n")
+    # --- REBUILD H2H DATA ---
+    # This is the crucial fix. Instead of a faulty incremental update, we now
+    # rebuild the entire historical record every time. This ensures that any
+    # new data (from the report card process) or logic changes are included.
+    logging.info("\nRebuilding historical data to ensure H2H records are fresh...")
+    build_historical_data_from_cache() # This now includes the latest week's data
+    initialize_h2h_records()           # This rebuilds h2h_records.json from the above
+    logging.info("H2H records are now up-to-date.\n")
 
     # --- GENERATE PREVIEW (The "Look Forward" Step) ---
     standings = query.get_league_standings()
-    # This now prepares a data file instead of generating HTML
+    # Reload the freshly built H2H records before preparing the preview
+    with open(h2h_records_file, "r") as f:
+        h2h_records = json.load(f)
     prepare_preview_data(
         preview_week=preview_week, query=query, standings=standings, 
         h2h_records=h2h_records, season=target_season
