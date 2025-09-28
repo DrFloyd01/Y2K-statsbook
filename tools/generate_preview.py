@@ -69,12 +69,17 @@ def update_h2h_records(week_results, h2h_records, season, settings):
         if game_type in ['QF', 'SF', '1st', '3rd']:
             if is_manager1_winner: record['playoff_wins_1'] += 1
             else: record['playoff_wins_2'] += 1
-            # Add the game to the playoff history
-            record['playoff_history'].append({"winner": winner_name, "type": game_type, "season": int(season)})
+            record['playoff_history'].append({
+                "winner": winner_name, "type": game_type, 
+                "season": int(season), "week": matchup.week
+            })
         else: # game_type is 'regular'
             if is_manager1_winner: record['reg_wins_1'] += 1
             else: record['reg_wins_2'] += 1
-        
+            record['regular_history'].append({
+                "winner": winner_name, "type": game_type, 
+                "season": int(season), "week": matchup.week
+            })
         # Update streak
         if record['streak_holder'] == winner_name:
             record['streak_len'] += 1

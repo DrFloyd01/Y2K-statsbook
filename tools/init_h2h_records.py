@@ -17,25 +17,30 @@ def calculate_h2h_for_pair(name1, name2, all_matchups):
     n1_reg_wins, n2_reg_wins = 0, 0
     n1_playoff_wins, n2_playoff_wins = 0, 0
     playoff_history = []
+    regular_history = []
 
     # <<< FIX IS HERE: Use game_type to correctly assign wins >>>
     for game in relevant_games:
         # Ignore consolation games completely
         if game['game_type'] == 'consolation':
             continue
+        
+        game_info = {"winner": game['winner_manager_name'], "type": game['game_type'], "season": game['season'], "week": game['week']}
 
         if game['winner_manager_name'] == name1:
             if game['game_type'] in ['QF', 'SF', '1st', '3rd']: 
                 n1_playoff_wins += 1
-                playoff_history.append({"winner": name1, "type": game['game_type'], "season": game['season']})
+                playoff_history.append(game_info)
             else:
                 n1_reg_wins += 1
+                regular_history.append(game_info)
         elif game['winner_manager_name'] == name2:
             if game['game_type'] in ['QF', 'SF', '1st', '3rd']: 
                 n2_playoff_wins += 1
-                playoff_history.append({"winner": name2, "type": game['game_type'], "season": game['season']})
+                playoff_history.append(game_info)
             else:
                 n2_reg_wins += 1
+                regular_history.append(game_info)
 
     # --- Streak Calculations ---
     # Longest streak calculation
@@ -80,7 +85,8 @@ def calculate_h2h_for_pair(name1, name2, all_matchups):
         "reg_wins_2": n2_reg_wins,
         "playoff_wins_1": n1_playoff_wins,
         "playoff_wins_2": n2_playoff_wins,
-        "playoff_history": playoff_history, # <-- Add the new list to the record
+        "playoff_history": playoff_history,
+        "regular_history": regular_history,
         "streak_holder": streak_holder_name,
         "streak_len": streak_len,
         "longest_streak_holder": longest_streak_holder,
