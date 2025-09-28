@@ -63,6 +63,12 @@ def update_h2h_records(week_results, h2h_records, season, settings):
         if not winner_name:
             continue
 
+        # Ensure the history lists exist before trying to append to them
+        if 'playoff_history' not in record:
+            record['playoff_history'] = []
+        if 'regular_history' not in record:
+            record['regular_history'] = []
+
         # Determine if manager1 or manager2 in the record won
         is_manager1_winner = (winner_name == record['manager1_name'])
 
