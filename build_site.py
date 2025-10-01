@@ -1,6 +1,7 @@
 import json
 import logging
 import argparse
+import re
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -19,10 +20,12 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 DATA_DIR = Path("data")
 CACHE_DIR = Path("cache")
 SITE_DIR = Path("site")
+NOTES_DIR = Path("notes")
 TEMPLATES_DIR = Path("templates")
 
 DATA_DIR.mkdir(exist_ok=True)
 SITE_DIR.mkdir(exist_ok=True)
+NOTES_DIR.mkdir(exist_ok=True)
 TEMPLATES_DIR.mkdir(exist_ok=True)
 CACHE_DIR.mkdir(exist_ok=True) # yfpy will use this
 STATE_FILE = DATA_DIR / "state.json"
@@ -44,10 +47,42 @@ def get_current_state():
     with open(STATE_FILE, "r") as f:
         return json.load(f)
 
+def parse_notes_file(notes_file_path):
+    """Parses a markdown notes file and returns a dictionary of notes keyed by matchup."""
+    notes = {}
+    if not notes_file_path.exists():
+        return notes
+
+    try:
+        with open(notes_file_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Split content by '---' which separates matchups
+        matchup_sections = content.split('---')
+
+        for section in matchup_sections:
+            if not section.strip():
+                continue
+
+            # Find the matchup header, e.g., "## Matchup: Team A vs. Team B"
+            header_match = re.search(r"##\s*Matchup:\s*(.+?)\s*vs\s*(.+)", section)
+            if header_match:
+                team1_name = header_match.group(1).strip()
+                team2_name = header_match.group(2).strip()
+                
+                # Extract the note content from the blockquote
+                note_match = re.search(r">\s*(.*)", section, re.DOTALL)
+                note_content = note_match.group(1).strip() if note_match else ""
+                
+                # Use a sorted tuple of team names as the key to ensure consistency
+                matchup_key = tuple(sorted((team1_name, team2_name)))
+                notes[matchup_key] = note_content
+    except Exception as e:
+        logging.error(f"Error parsing notes file {notes_file_path}: {e}")
+    return notes
+
 def generate_weekly_preview_html(data):
-    """
-    Generates the weekly_preview.html file from a data object.
-    """
+    """Generates the weekly_preview.html file from a data object."""
     season = data['season']
     preview_week = data['preview_week']
 
@@ -91,10 +126,17 @@ def generate_weekly_preview_html(data):
         <h1>{season} Y2K: Week {preview_week} Preview</h1>
     """]
 
+    # --- Load Commissioner Notes ---
+    notes_file = NOTES_DIR / f"week_{preview_week}_notes.md"
+    commissioner_notes = parse_notes_file(notes_file)
+    if not commissioner_notes:
+        logging.warning(f"Could not find or parse notes file: {notes_file.name}. Using placeholder text.")
+
     for matchup in data['matchups']:
         team1_data = matchup['team1']
         team2_data = matchup['team2']
         h2h = matchup['h2h']
+        matchup_key = tuple(sorted((team1_data['name'], team2_data['name'])))
 
         html_parts.append('<div class="matchup">')
         html_parts.append(f"""
@@ -117,11 +159,14 @@ def generate_weekly_preview_html(data):
 
         html_parts.append('</div>') # End h2h-stats
 
+        # --- Get Commissioner's Note ---
+        note_text = commissioner_notes.get(matchup_key, "This is where the commissioner's analysis of the matchup will go, providing expert insight and witty commentary.")
+
         # --- Commissioner's Note & Social Section ---
-        html_parts.append("""
+        html_parts.append(f"""
             <div class="commissioner-note">
                 <h4>Commissioner's Note</h4>
-                <p>This is where the commissioner's analysis of the matchup will go, providing expert insight and witty commentary.</p>
+                <p>{note_text}</p>
             </div>
             <div class="social-section">
                 <div class="reactions">
@@ -145,10 +190,7 @@ def generate_weekly_preview_html(data):
     
     logging.info(f"✅ Successfully generated HTML preview: {output_filename.name}")
 
-def generate_weekly_report_html(data):
-    """
-    Generates the weekly_report.html file from a data object.
-    """
+def generate_weekly_report_html(data): # ... (rest of the function is unchanged)
     report_week = data['report_week']
 
     html_parts = [f"""
@@ -238,9 +280,7 @@ def generate_weekly_report_html(data):
     logging.info(f"✅ Successfully generated HTML report: {output_filename.name}")
 
 def generate_index_html():
-    """
-    Generates the main index.html landing page.
-    """
+    """Generates the main index.html landing page."""
     try:
         with open(TEMPLATES_DIR / "index.html", "r", encoding="utf-8") as f:
             template_html = f.read()
@@ -260,8 +300,30 @@ def generate_index_html():
         f.write(html)
     logging.info("✅ Successfully generated HTML index: index.html")
 
+def generate_notes_template_if_needed(preview_data):
+    """Creates a markdown template for commissioner notes if it doesn't exist."""
+    preview_week = preview_data['preview_week']
+    notes_file = NOTES_DIR / f"week_{preview_week}_notes.md"
+
+    if notes_file.exists():
+        return
+
+    logging.info(f"Generating new notes template: {notes_file.name}")
+    template_parts = [f"# Week {preview_week} Preview Notes\n"]
+
+    for matchup in preview_data['matchups']:
+        team1_name = matchup['team1']['name']
+        team2_name = matchup['team2']['name']
+        template_parts.append(f"## Matchup: {team1_name} vs {team2_name}\n\n> Add your commissioner's note for this matchup here.\n\n---\n")
+
+    with open(notes_file, "w", encoding="utf-8") as f:
+        f.write("".join(template_parts))
+
 def build_html_from_data():
-    """Generates all HTML pages from their respective JSON data files."""
+    """
+    Generates all HTML pages from their respective JSON data files.
+    Also generates a notes template if one doesn't exist for the current preview week.
+    """
     logging.info("\n--- Building HTML from data files ---")
     # Clear the site directory first to ensure no old files remain
     for item in SITE_DIR.glob('*'):
@@ -271,6 +333,7 @@ def build_html_from_data():
     try:
         with open(DATA_DIR / "preview_data.json", "r", encoding="utf-8") as f:
             preview_data = json.load(f)
+        generate_notes_template_if_needed(preview_data)
         generate_weekly_preview_html(preview_data)
     except FileNotFoundError:
         logging.warning("preview_data.json not found. Skipping weekly preview generation.")
