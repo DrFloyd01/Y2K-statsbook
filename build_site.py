@@ -227,7 +227,7 @@ def generate_weekly_report_html(data):
     html_parts.append("""
     <h2>🌌 Universe Comparison 🌌</h2>
     <div class="standings-container">
-        <div class="manager-row" style="font-weight: bold; background: #030;">
+        <div class="manager-row" style="font-weight: bold; background: #030; font-size: 0.8em;">
             <div class="alt-stats">Alt. Universe (Rank, Rec, PF)</div>
             <div class="manager-delta">Manager (Real - Alt)</div>
             <div class="real-stats">(Rec, PF/PA, Rank) Real Universe</div>
@@ -242,7 +242,7 @@ def generate_weekly_report_html(data):
         html_parts.append('<div class="manager-row">')
         html_parts.append(f'''
             <div class="alt-stats">
-                {row["alt_rank"]} {row['alt_record']} ({row['alt_pf']:.2f})
+                {row["alt_rank"]} {row['alt_record']} ({row['alt_pf']:.2f} <span style="color: #aaa;">{row['stdev']}</span>)
             </div>
             <div class="manager-delta">
                 <div class="name">{row['manager']}</div>
@@ -495,9 +495,9 @@ def main():
                     logging.error(f"Error removing cache file {item}: {e}")
 
         logging.info("\n--- Running Data Generation Processes ---")
+        generate_accolades_data() # Must run first to build historical accolade records
         run_report_process(TARGET_SEASON, last_completed_week)
         run_preview_process(TARGET_SEASON, current_league_week)
-        generate_accolades_data()
 
         state['last_processed_week'] = last_completed_week
         with open(STATE_FILE, "w") as f:

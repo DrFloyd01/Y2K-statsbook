@@ -4,6 +4,7 @@ import os
 import pickle
 from pathlib import Path
 from collections import defaultdict
+import statistics
 from dotenv import load_dotenv
 from yfpy.query import YahooFantasySportsQuery
 
@@ -148,9 +149,9 @@ def calculate_weekly_accolades(week, cache_dir):
             weekly_accolades.append({"title": accolade["title"],"key": accolade["key"],"field": accolade["field"],"comparison": accolade["comparison"],"details_template": accolade["details_template"],"winner_data": accolade['data']})
     return weekly_accolades
 
-def prepare_report_data(report_week, season, cache_dir, seasonal_accolades):
+def prepare_report_data(report_week, season, cache_dir, seasonal_accolades, all_scores_by_manager):
     logging.info(f"\nGenerating report for Week {report_week}...")
-    report_data = {"report_week": report_week, "season": season, "alt_standings_rows": [], "accolades": []}
+    report_data = {"report_week": report_week, "season": season, "alt_standings_rows": [], "accolades": [], "manager_stdevs": {}}
 
     try:
         with open(DATA_DIR / "accolades_data.json", "r") as f:
@@ -159,6 +160,12 @@ def prepare_report_data(report_week, season, cache_dir, seasonal_accolades):
         all_time_records = accolades_data.get('all_time_records', {})
     except FileNotFoundError:
         per_season_records, all_time_records = {}, {}
+
+    # Calculate standard deviation for each manager
+    for manager, scores in all_scores_by_manager.items():
+        if len(scores) > 1:
+            stdev = statistics.stdev(scores)
+            report_data["manager_stdevs"][manager] = f"±{stdev:.2f}"
 
     current_week_accolades = seasonal_accolades.get(str(season), {}).get(str(report_week), [])
 
@@ -175,7 +182,10 @@ def prepare_report_data(report_week, season, cache_dir, seasonal_accolades):
         data = accolade['winner_data']
         current_value = data[accolade['field']]
         all_time_list = all_time_records.get(accolade['key'], [])
-        if any((accolade['comparison'] == 'gt' and current_value > r[accolade['field']]) or (accolade['comparison'] == 'lt' and current_value < r[accolade['field']]) for r in all_time_list) or len(all_time_list) < 3:
+        # Check for a new record, but only if all_time_records were successfully loaded.
+        # The `and all_time_records` check prevents false positives if the file is missing.
+        is_top_3_contender = len(all_time_list) < 3 or any((accolade['comparison'] == 'gt' and current_value > r[accolade['field']]) or (accolade['comparison'] == 'lt' and current_value < r[accolade['field']]) for r in all_time_list)
+        if all_time_records and is_top_3_contender:
             record_status = f"New All-Time Top 3!"
         season_record = per_season_records.get(accolade['key'], {})
         if not record_status and season_record and 'manager' in season_record and ((accolade['comparison'] == 'gt' and current_value > season_record[accolade['field']]) or (accolade['comparison'] == 'lt' and current_value < season_record[accolade['field']])):
@@ -226,6 +236,7 @@ def prepare_report_data(report_week, season, cache_dir, seasonal_accolades):
         alt_win_marker = "🌌" if manager in alt_winners_this_week else ""
         real_win_marker = "✅" if weekly_score_data and weekly_score_data['is_winner'] else ""
         report_data['alt_standings_rows'].append({
+            "stdev": report_data["manager_stdevs"].get(manager, "N/A"),
             "alt_rank": alt_rank, "alt_delta_class": alt_delta_class, "alt_delta_str": alt_delta_str, "alt_win_marker": alt_win_marker,
             "current_real_rank": current_real_rank, "real_delta_class": real_delta_class, "real_delta_str": real_delta_str, "real_win_marker": real_win_marker,
             "manager": manager, "weekly_score": weekly_score_data['score'],
@@ -258,12 +269,22 @@ def run_report_process(target_season, last_completed_week):
     cache_dir = Path("cache")
     cache_dir.mkdir(exist_ok=True)
     
+    all_scores_by_manager = defaultdict(list)
     seasonal_accolades = {str(target_season): {}}
     for week in range(1, last_completed_week + 1):
-        if not (cache_dir / f"week_{week}_matchups.pkl").exists():
+        week_matchups_file = cache_dir / f"week_{week}_matchups.pkl"
+        if not week_matchups_file.exists():
             if not process_and_cache_week(week, query, cache_dir):
                 logging.error(f"Failed to process week {week} for history. Aborting report generation.")
                 return
+        
+        # Collect all scores for standard deviation calculation
+        with open(week_matchups_file, "rb") as f:
+            matchups = pickle.load(f)
+        for m in matchups:
+            for team in m.teams:
+                all_scores_by_manager[team.managers[0].nickname].append(team.points)
+
         weekly_accolades = calculate_weekly_accolades(week, cache_dir)
         if weekly_accolades:
             seasonal_accolades[str(target_season)][str(week)] = weekly_accolades
@@ -273,4 +294,4 @@ def run_report_process(target_season, last_completed_week):
         json.dump(seasonal_accolades, f, indent=2)
     logging.info(f"✅ Successfully built and saved seasonal accolade history.")
 
-    prepare_report_data(report_week=last_completed_week, season=target_season, cache_dir=cache_dir, seasonal_accolades=seasonal_accolades)
+    prepare_report_data(report_week=last_completed_week, season=target_season, cache_dir=cache_dir, seasonal_accolades=seasonal_accolades, all_scores_by_manager=all_scores_by_manager)
