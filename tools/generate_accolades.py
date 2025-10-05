@@ -1,6 +1,11 @@
 import json
 import statistics
+import logging
 from collections import defaultdict
+from pathlib import Path
+
+# --- Directory Setup ---
+DATA_DIR = Path("data")
 
 # --- CONFIGURATION ---
 MANAGERS_TO_MERGE = {
@@ -12,11 +17,12 @@ SEASONS_TO_HIDE = [2025]
 
 def load_historical_data():
     """Loads the historical_data.json file."""
+    historical_data_file = DATA_DIR / "historical_data.json"
     try:
-        with open("historical_data.json", "r") as f:
+        with open(historical_data_file, "r") as f:
             return json.load(f)
     except FileNotFoundError:
-        print("ERROR: historical_data.json not found. Please run build_history.py first.")
+        logging.error(f"ERROR: {historical_data_file} not found. Please run build_history.py first.")
         return None
 
 def process_data(historical_data):
@@ -135,11 +141,13 @@ def merge_and_tally_stats(seasonal_accolades):
         'smallest_margin_defeat': {'margin': float('inf')},
         'blowout_win': {'margin': 0}
     })
-    # This will store the most extreme instance of each accolade
+    # This will store the top 3 most extreme instances of each accolade
     all_time_records = {
-        'top_points': {'score': 0}, 'highest_scoring_loss': {'score': 0},
-        'lowest_scoring_win': {'score': float('inf')}, 'smallest_margin_defeat': {'margin': float('inf')},
-        'blowout_win': {'margin': 0}
+        'top_points': [],
+        'highest_scoring_loss': [],
+        'lowest_scoring_win': [],
+        'smallest_margin_defeat': [],
+        'blowout_win': []
     }
 
     for season, accolades in seasonal_accolades.items():
@@ -174,37 +182,40 @@ def merge_and_tally_stats(seasonal_accolades):
             stdev = statistics.stdev(scores)
             all_time_stats[manager]['all_time_stdev'] = stdev
 
-
-    # Find all-time and per-season record holders for single events
+    # Find per-season record holders for single events
     for season, accolades in seasonal_accolades.items():
-        for key in all_time_records.keys():
+        for key in per_season_records[season].keys():
             if key in accolades:
-                # Per-Season
                 if key == 'top_points' or key == 'highest_scoring_loss':
                     seasonal_best = max(accolades[key], key=lambda x: x['score'])
                     if seasonal_best['score'] > per_season_records[season][key]['score']:
                         per_season_records[season][key] = seasonal_best
-                    if seasonal_best['score'] > all_time_records[key]['score']:
-                        all_time_records[key] = seasonal_best
                 elif key == 'lowest_scoring_win':
                     seasonal_worst = min(accolades[key], key=lambda x: x['score'])
                     if seasonal_worst['score'] < per_season_records[season][key]['score']:
                         per_season_records[season][key] = seasonal_worst
-                    if seasonal_worst['score'] < all_time_records[key]['score']:
-                        all_time_records[key] = seasonal_worst
                 elif key == 'smallest_margin_defeat' or key == 'blowout_win':
                     comparator = min if key == 'smallest_margin_defeat' else max
                     seasonal_extreme = comparator(accolades[key], key=lambda x: x['margin'])
-                    
-                    # Per-Season
                     current_seasonal_extreme_margin = per_season_records[season][key]['margin']
                     if (comparator(seasonal_extreme['margin'], current_seasonal_extreme_margin) == seasonal_extreme['margin']):
                          per_season_records[season][key] = seasonal_extreme
 
-                    # All-Time
-                    current_all_time_extreme_margin = all_time_records[key]['margin']
-                    if (comparator(seasonal_extreme['margin'], current_all_time_extreme_margin) == seasonal_extreme['margin']):
-                        all_time_records[key] = seasonal_extreme
+    # Find top 3 all-time records
+    all_instances = defaultdict(list)
+    for accolades in seasonal_accolades.values():
+        for key in all_time_records.keys():
+            if key in accolades:
+                all_instances[key].extend(accolades[key])
+
+    for key, instances in all_instances.items():
+        if not instances:
+            continue
+        # Filter out any potential None or non-dict items before sorting
+        valid_instances = [i for i in instances if isinstance(i, dict)]
+        reverse_sort = key in ['top_points', 'highest_scoring_loss', 'blowout_win']
+        sort_key = 'score' if 'score' in valid_instances[0] else 'margin'
+        all_time_records[key] = sorted(valid_instances, key=lambda x: x.get(sort_key, 0), reverse=reverse_sort)[:3]
 
     return all_time_stats, per_season_stats, all_time_records, per_season_records
 
@@ -306,12 +317,12 @@ def print_leaderboards(all_time_stats, per_season_stats, all_time_records, per_s
         
         holder = board[0]
         count = all_time_stats[holder][key]
-        record = all_time_records.get(key)
+        record_list = all_time_records.get(key, [])
 
         print(f"\n{count_title}")
         print(f"  - Most: {holder} ({count} times)")
-        if record and 'manager' in record:
-            print(f"  - Record: {_format_record_string(record)}")
+        if record_list and 'manager' in record_list[0]:
+            print(f"  - Record: {_format_record_string(record_list[0])}")
 
     # --- Per-Season Leaderboards ---
     for season in sorted(per_season_stats.keys()):
@@ -352,19 +363,44 @@ def print_leaderboards(all_time_stats, per_season_stats, all_time_records, per_s
             if record and 'manager' in record:
                 print(f"  - {record_title}: {_format_record_string(record)}")
 
-def main():
+def generate_accolades_data():
+    """
+    Runs the full accolade calculation process and saves the results to a JSON file.
+    """
+    logging.info("Generating all-time accolade data...")
     historical_data = load_historical_data()
     if not historical_data:
-        return
+        return None
 
-    print("Processing historical data for accolades...")
     seasonal_accolades = process_data(historical_data)
-    
-    print("Tallying stats and merging manager data...")
     all_time_stats, per_season_stats, all_time_records, per_season_records = merge_and_tally_stats(seasonal_accolades)
-    
     final_ranks = calculate_final_ranks(historical_data, per_season_stats.keys())
-    print_leaderboards(all_time_stats, per_season_stats, all_time_records, per_season_records, final_ranks)
+
+    # Bundle everything for JSON output
+    output_data = {
+        "all_time_stats": all_time_stats,
+        "per_season_stats": per_season_stats,
+        "all_time_records": all_time_records,
+        "per_season_records": per_season_records,
+        "final_ranks_by_season": final_ranks
+    }
+    
+    output_file = DATA_DIR / "accolades_data.json"
+    with open(output_file, "w") as f:
+        json.dump(output_data, f, indent=2)
+    
+    logging.info(f"✅ Successfully saved accolade data to: {output_file.name}")
+    return all_time_stats, per_season_stats, all_time_records, per_season_records, final_ranks
+
+def main():
+    """
+    Standalone execution entry point for debugging or manual runs.
+    """
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
+    results = generate_accolades_data()
+    if results:
+        all_time_stats, per_season_stats, all_time_records, per_season_records, final_ranks = results
+        print_leaderboards(all_time_stats, per_season_stats, all_time_records, per_season_records, final_ranks)
 
 if __name__ == "__main__":
     main()

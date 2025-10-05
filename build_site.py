@@ -11,6 +11,7 @@ from yfpy.query import YahooFantasySportsQuery
 from tools.generate_preview import run_preview_process
 from tools.dashboard_weekly_report import run_report_process
 from tools.init_history import run_full_historical_build
+from tools.generate_accolades import generate_accolades_data
 
 # --- Setup ---
 load_dotenv()
@@ -35,12 +36,6 @@ YAHOO_CONSUMER_KEY = os.environ.get("YAHOO_CONSUMER_KEY")
 YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
 # --- Pickle Compatibility Fix ---
-# This function is added here to allow unpickling of old cache files that
-# were created when this function was defined in a different module.
-# Once all cache files are regenerated, this can be removed.
-def default_alt_standing():
-    return {'wins': 0, 'losses': 0, 'pf': 0.0}
-
 def get_current_state():
     if not STATE_FILE.exists():
         return {"last_processed_week": 0}
@@ -57,24 +52,18 @@ def parse_notes_file(notes_file_path):
         with open(notes_file_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        # Split content by '---' which separates matchups
         matchup_sections = content.split('---')
 
         for section in matchup_sections:
             if not section.strip():
                 continue
 
-            # Find the matchup header, e.g., "## Matchup: Team A vs. Team B"
             header_match = re.search(r"##\s*Matchup:\s*(.+?)\s*vs\s*(.+)", section)
             if header_match:
                 team1_name = header_match.group(1).strip()
                 team2_name = header_match.group(2).strip()
-                
-                # Extract the note content from the blockquote
                 note_match = re.search(r">\s*(.*)", section, re.DOTALL)
                 note_content = note_match.group(1).strip() if note_match else ""
-                
-                # Use a sorted tuple of team names as the key to ensure consistency
                 matchup_key = tuple(sorted((team1_name, team2_name)))
                 notes[matchup_key] = note_content
     except Exception as e:
@@ -108,16 +97,7 @@ def generate_weekly_preview_html(data):
         .h2h-stats p {{ margin: 5px 0; font-size: 0.9em; }}
         .h2h-stats strong {{ color: #cfc; }}
         .commissioner-note {{ background: #020; border: 1px dashed #070; padding: 10px 15px; margin-top: 15px; color: #afc; }}
-        .commissioner-note h4 {{ margin: 0 0 5px 0; color: #fff; font-size: 1em; }}
-        .social-section {{ margin-top: 20px; border-top: 1px solid #050; padding-top: 15px; }}
-        .reactions button {{ background: #020; border: 1px solid #070; color: #0f0; padding: 5px 10px; margin-right: 5px; cursor: pointer; }}
-        .reactions button:hover {{ background: #040; color: #fff; }}
-        .comments {{ margin-top: 15px; }}
-        .comment {{ margin-bottom: 10px; font-size: 0.9em; }}
-        .comment-author {{ font-weight: bold; color: #fff; }}
-        .comment-reply {{ margin-left: 20px; border-left: 1px solid #050; padding-left: 10px; }}
-        .comment-form textarea {{ background: #010; color: #0f0; border: 1px solid #070; width: 100%; padding: 8px; font-family: 'Courier New', Courier, monospace; margin-bottom: 5px; }}
-        .comment-form button {{ background: #030; border: 1px solid #090; color: #fff; padding: 8px 15px; cursor: pointer; font-weight: bold; }}
+        .commissioner-note p {{ margin-top: 5px; }}
     </style>
 </head>
 <body>
@@ -126,27 +106,24 @@ def generate_weekly_preview_html(data):
         <h1>{season} Y2K: Week {preview_week} Preview</h1>
     """]
 
-    # --- Load Commissioner Notes ---
     notes_file = NOTES_DIR / f"week_{preview_week}_notes.md"
     commissioner_notes = parse_notes_file(notes_file)
     if not commissioner_notes:
         logging.warning(f"Could not find or parse notes file: {notes_file.name}. Using placeholder text.")
 
     for matchup in data['matchups']:
-        team1_data = matchup['team1']
-        team2_data = matchup['team2']
-        h2h = matchup['h2h']
+        team1_data = matchup['team1']; team2_data = matchup['team2']; h2h = matchup['h2h']
         matchup_key = tuple(sorted((team1_data['name'], team2_data['name'])))
 
         html_parts.append('<div class="matchup">')
-        html_parts.append(f"""
+        html_parts.append(f'''
             <div class="matchup-header">
-                {team1_data['rank']}. <span class="team-name">{team1_data['name']}</span> <span class="record">{team1_data['record']}</span>
+                {team1_data["rank"]}. <span class="team-name">{team1_data['name']}</span> <span class="record">{team1_data['record']}</span>
                 vs 
-                {team2_data['rank']}. <span class="team-name">{team2_data['name']}</span> <span class="record">{team2_data['record']}</span>
+                {team2_data["rank"]}. <span class="team-name">{team2_data['name']}</span> <span class="record">{team2_data['record']}</span>
             </div>
             <div class="h2h-stats">
-        """)
+        ''')
 
         if h2h:
             html_parts.append(f"<p><strong>Season H2H:</strong> {h2h['reg_h2h']}</p>")
@@ -157,29 +134,14 @@ def generate_weekly_preview_html(data):
             html_parts.append("<p><strong>Streak:</strong> First Meeting</p>")
             html_parts.append("<p><strong>Playoffs H2H:</strong> 0-0</p>")
 
-        html_parts.append('</div>') # End h2h-stats
-
-        # --- Get Commissioner's Note ---
+        html_parts.append('</div>')
         note_text = commissioner_notes.get(matchup_key, "This is where the commissioner's analysis of the matchup will go, providing expert insight and witty commentary.")
-
-        # --- Commissioner's Note & Social Section ---
-        html_parts.append(f"""
+        html_parts.append(f'''
             <div class="commissioner-note">
-                <h4>Commissioner's Note</h4>
                 <p>{note_text}</p>
             </div>
-            <div class="social-section">
-                <div class="reactions">
-                    <button>👍</button> <button>🔥</button> <button>🤣</button> <button>🗑️</button>
-                </div>
-                <div class="comments">
-                    <div class="comment"><span class="comment-author">Boaz:</span> This is a certified lock of the week.</div>
-                    <div class="comment comment-reply"><span class="comment-author">Dylan:</span> You wish. Prepare to get wrecked. <button class="reactions" style="padding: 2px 5px; font-size: 0.8em;">Reply</button></div>
-                    <form class="comment-form" style="margin-top: 15px;"><textarea rows="2" placeholder="> Add a comment..."></textarea><button type="submit">Submit</button></form>
-                </div>
-            </div>
-        """)
-        html_parts.append('</div>') # End matchup
+        ''')
+        html_parts.append('</div>')
 
     html_parts.append("</div></body></html>")
     
@@ -190,7 +152,7 @@ def generate_weekly_preview_html(data):
     
     logging.info(f"✅ Successfully generated HTML preview: {output_filename.name}")
 
-def generate_weekly_report_html(data): # ... (rest of the function is unchanged)
+def generate_weekly_report_html(data):
     report_week = data['report_week']
 
     html_parts = [f"""
@@ -209,68 +171,91 @@ def generate_weekly_report_html(data): # ... (rest of the function is unchanged)
         h1, h2 {{ color: #0f0; text-align: center; border-bottom: 1px solid #0f0; padding-bottom: 10px; margin-top: 25px; letter-spacing: 2px; }}
         h1 {{ font-size: 1.8em; }}
         h2 {{ font-size: 1.4em; }}
-        table {{ width: 100%; border-collapse: collapse; margin-top: 15px; border: 1px solid #050; }}
-        th, td {{ padding: 4px 6px; text-align: left; border: 1px solid #050; }}
-        thead th {{ background-color: #030; font-weight: bold; color: #fff; }}
-        tbody tr:nth-child(even) {{ background-color: #010; }}
         .delta-pos {{ color: #3f3; }}
         .delta-neg {{ color: #f33; }}
-        .accolades {{ margin-top: 20px; padding: 0; list-style: none; }}
-        .accolades li {{ background: #010; border: 1px solid #050; padding: 15px; margin-bottom: 15px; }}
-        .accolades strong {{ color: #fff; }}
-        .accolades .count {{ color: #aaa; font-size: 0.9em; }}
-        .social-section {{ margin-top: 15px; border-top: 1px solid #050; padding-top: 10px; }}
-        .reactions button {{ background: #020; border: 1px solid #070; color: #0f0; padding: 5px 10px; margin-right: 5px; cursor: pointer; }}
-        .reactions button:hover {{ background: #040; color: #fff; }}
-        .comments {{ margin-top: 10px; }}
-        .comment {{ margin-bottom: 8px; font-size: 0.9em; }}
-        .comment-author {{ font-weight: bold; color: #fff; }}
-        .comment-form textarea {{ background: #010; color: #0f0; border: 1px solid #070; width: 100%; padding: 8px; font-family: 'Courier New', Courier, monospace; margin-bottom: 5px; font-size: 0.9em; }}
-        .comment-form button {{ background: #030; border: 1px solid #090; color: #fff; padding: 5px 10px; cursor: pointer; font-weight: bold; font-size: 0.9em; }}
+        
+        /* New Standings Layout */
+        .standings-container {{ display: flex; flex-direction: column; gap: 5px; }}
+        .manager-row {{ display: flex; justify-content: space-between; align-items: center; padding: 8px; border: 1px solid #050; }}
+        .manager-row:nth-child(odd) {{ background-color: #010; }}
+        .alt-stats, .real-stats {{ flex: 1; font-size: 0.9em; }}
+        .real-stats {{ text-align: right; }}
+        .manager-delta {{ flex: 0 0 200px; text-align: center; }}
+        .manager-delta .name {{ font-size: 1.1em; color: #cfc; font-weight: bold; }}
+        .manager-delta .delta-line {{ border-bottom: 1px dashed #070; margin: 3px 0; }}
+
+        /* Accolades */
+        .accolades-grid {{ display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }}
+        .accolade-card {{ background: #010; border: 1px solid #050; padding: 15px; box-sizing: border-box; flex: 1 1 30%; min-width: 250px; text-align: center; }}
+        .accolade-card h3 {{ margin: 0 0 10px 0; font-size: 1.1em; color: #fff; }}
+        .accolade-card .manager {{ font-size: 1.2em; font-weight: bold; color: #cfc; margin-bottom: 5px; }}
+        .accolade-card .details {{ font-size: 0.9em; color: #aaa; margin-bottom: 10px; }}
+        .accolade-summary {{ font-size: 0.8em; color: #888; margin-top: 10px; border-top: 1px dashed #050; padding-top: 10px; }}
+        .record-status {{ margin-top: 10px; padding: 5px; background: #310; border: 1px dashed #a30; color: #fd7; font-weight: bold; }}
+        .record-status.all-time {{ background: #500; border-color: #f00; color: #f77; }}
     </style>
 </head>
 <body>
 <div class="container">
     <div class="nav-bar"><a href="index.html">« System.Index</a></div>
     <h1>{data['season']} Y2K: Week {report_week} Report Card</h1>
+    
+    <h2>🏆 Weekly Accolades 🏆</h2><div class='accolades-grid'>
     """]
 
-    html_parts.append("<h2>🌌 Alternative Universe Standings 🌌</h2>")
-    html_parts.append("<table><thead><tr><th>Alt</th><th>ΔA</th><th>W?</th><th>Real</th><th>ΔR</th><th>W?</th><th>Name</th><th>Wk Score</th><th>Total PF</th><th>Alt Rec</th><th>Real Rec</th></tr></thead><tbody>")
+    for accolade in data['accolades']:
+        record_html = ""
+        if accolade.get('record_status'):
+            status_class = "all-time" if "All-Time" in accolade['record_status'] else ""
+            record_html = f"<div class='record-status {status_class}'>{accolade['record_status']}</div>"
+        
+        summary_html = ""
+        if accolade.get('summary'):
+            summary_html = f"<div class='accolade-summary'>{accolade['summary']}</div>"
+
+        html_parts.append(f"""
+        <div class="accolade-card">
+            <h3>{accolade['title']}</h3>
+            <div class="manager">{accolade['manager']}</div>
+            <div class="details">{accolade['details']}</div>
+            {record_html}
+            {summary_html}
+        </div>
+        """)
+    html_parts.append("</div>")
+
+    html_parts.append("""
+    <h2>🌌 Universe Comparison 🌌</h2>
+    <div class="standings-container">
+        <div class="manager-row" style="font-weight: bold; background: #030;">
+            <div class="alt-stats">Alt. Universe (Rank, Rec, PF)</div>
+            <div class="manager-delta">Manager (Real - Alt)</div>
+            <div class="real-stats">(Rec, PF/PA, Rank) Real Universe</div>
+        </div>
+    """)
 
     for row in data['alt_standings_rows']:
-        html_parts.append(f"""
-            <tr>
-                <td>{row['alt_rank']}</td>
-                <td class='{row['alt_delta_class']}'>{row['alt_delta_str']}</td>
-                <td>{row['alt_win_marker']}</td>
-                <td>{row['current_real_rank']}</td>
-                <td class='{row['real_delta_class']}'>{row['real_delta_str']}</td>
-                <td>{row['real_win_marker']}</td>
-                <td>{row['manager']}</td>
-                <td>{row['weekly_score']:.2f}</td>
-                <td>{row['total_pf']:.2f}</td>
-                <td>{row['alt_record']}</td>
-                <td>{row['real_record']}</td>
-            </tr>
-        """)
+        delta = row['current_real_rank'] - row['alt_rank']
+        delta_str = f"({delta:+})"
+        delta_class = "delta-pos" if delta < 0 else "delta-neg" if delta > 0 else ""
 
-    html_parts.append("</tbody></table>")
-
-    html_parts.append("<h2>🏆 Weekly Accolades 🏆</h2><ul class='accolades'>")
-    for accolade in data['accolades']:
-        html_parts.append(f"""
-        <li>
-            <p>{accolade}</p>
-            <div class="social-section">
-                <div class="reactions">
-                    <button>👍</button> <button>😢</button> <button>🤣</button>
-                </div>
-                <form class="comment-form" style="margin-top: 10px;"><textarea rows="1" placeholder="> React..."></textarea><button type="submit">Submit</button></form>
+        html_parts.append('<div class="manager-row">')
+        html_parts.append(f'''
+            <div class="alt-stats">
+                {row["alt_rank"]} {row['alt_record']} ({row['alt_pf']:.2f})
             </div>
-        </li>
-        """)
-    html_parts.append("</ul></div></body></html>")
+            <div class="manager-delta">
+                <div class="name">{row['manager']}</div>
+                <div class="delta-line"></div>
+                <div class="{delta_class}">{delta_str}</div>
+            </div>
+            <div class="real-stats">
+                {row['real_record']} ({row['real_pf']:.2f}/{row['real_pa']:.2f}) {row["current_real_rank"]}
+            </div>
+        ''')
+        html_parts.append('</div>')
+
+    html_parts.append("</div></div></body></html>")
 
     final_html = "\n".join(html_parts)
     output_filename = SITE_DIR / "weekly_report.html"
@@ -278,6 +263,102 @@ def generate_weekly_report_html(data): # ... (rest of the function is unchanged)
         f.write(final_html)
     
     logging.info(f"✅ Successfully generated HTML report: {output_filename.name}")
+
+def generate_accolades_html(data):
+    """Generates the all_time_accolades.html file."""
+    all_time_stats = data['all_time_stats']
+    all_time_records = data['all_time_records']
+    
+    MANAGERS_TO_HIDE = ["cooper", "nick", "Torin", "--hidden--"]
+    hidden_lower = [h.lower() for h in MANAGERS_TO_HIDE]
+    
+    def get_filtered_managers(stats_dict):
+        return [m for m in stats_dict if m.lower() not in hidden_lower]
+
+    def _format_record_string(record):
+        manager = record.get('manager', 'N/A'); opponent = record.get('opponent', 'N/A')
+        season_str = str(record.get('season', ''))[-2:]; week_str = record.get('week', '')
+        if 'score' in record:
+            return f"{record['score']:.2f} pts (by {manager} vs {opponent}, Wk {week_str}'{season_str})"
+        elif 'margin' in record:
+            return f"{record['margin']:.2f} pts (by {manager} vs {opponent}, Wk {week_str}'{season_str})"
+        return "N/A"
+
+    html_parts = [f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Y2K CPU Machinations :: All-Time Accolades ::</title>
+    <style>
+        body {{ font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; background-color: #000; color: #0f0; font-size: 0.9em; }}
+        .container {{ max-width: 950px; margin: 20px auto; background: #000; padding: 20px; border: 1px solid #0f0; }}
+        .nav-bar {{ background-color: #010; padding: 5px; border: 1px solid #0f0; margin-bottom: 20px; text-align: center; }}
+        .nav-bar a {{ color: #0f0; text-decoration: none; font-weight: bold; }}
+        .nav-bar a:hover {{ color: #fff; }}
+        h1, h2 {{ color: #0f0; text-align: center; border-bottom: 1px solid #0f0; padding-bottom: 10px; margin-top: 25px; letter-spacing: 2px; }}
+        h1 {{ font-size: 1.8em; }}; h2 {{ font-size: 1.4em; }}
+        table {{ width: 100%; border-collapse: collapse; margin-top: 15px; border: 1px solid #050; }}
+        th, td {{ padding: 4px 6px; text-align: left; border: 1px solid #050; }}
+        thead th {{ background-color: #030; font-weight: bold; color: #fff; }}
+        tbody tr:nth-child(even) {{ background-color: #010; }}
+        .podium {{ display: flex; justify-content: space-around; text-align: center; margin-top: 20px; }}
+        .podium-item {{ background: #010; border: 1px solid #050; padding: 15px; width: 48%; box-sizing: border-box; }}
+        .podium-item h3 {{ margin: 0 0 10px 0; color: #fff; }}
+        .podium-item p {{ margin: 8px 0; }}
+        .podium-rank-1 {{ font-size: 1.0em; color: #cfc; }}
+        .podium-rank-2, .podium-rank-3 {{ font-size: 0.9em; color: #afc; }}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="nav-bar"><a href="index.html">« System.Index</a></div>
+    <h1>👑 All-Time Accolade Leaderboard 👑</h1>
+    """]
+
+    html_parts.append("<h2>🏆 All-Time Records Podium 🏆</h2><div class='podium'>")
+    podium_accolades = {
+        'top_points': "🌋 Highest Scores", 'highest_scoring_loss': "💔 Toughest Losses",
+        'blowout_win': "💥 Biggest Blowouts", 'lowest_scoring_win': "🍀 Luckiest Wins",
+        'smallest_margin_defeat': "🤏 Heartbreak Losses"
+    }
+    for key, title in podium_accolades.items():
+        records = all_time_records.get(key, [])
+        html_parts.append(f"<div class='podium-item'><h3>{title}</h3>")
+        if records:
+            for i, record in enumerate(records):
+                rank = i + 1
+                html_parts.append(f"<p class='podium-rank-{rank}'>{rank}. {_format_record_string(record)}</p>")
+        else:
+            html_parts.append("<p>No records found.</p>")
+        html_parts.append("</div>")
+    html_parts.append("</div>")
+
+    html_parts.append("<h2>📊 All-Time Leaderboards 📊</h2>")
+    accolade_map = {
+        'top_points': "🌋 Top Point Weeks", 'highest_scoring_loss': "💔 Tough Luck Losses",
+        'lowest_scoring_win': "🍀 Luckiest Wins", 'smallest_margin_defeat': "🤏 Heartbreak Losses",
+        'blowout_win': "💥 Biggest Blowouts"
+    }
+    all_time_managers = get_filtered_managers(all_time_stats)
+    for key, title in accolade_map.items():
+        board = sorted(all_time_managers, key=lambda m: all_time_stats[m].get(key, 0), reverse=True)
+        html_parts.append(f"<h3>{title}</h3><table><thead><tr><th>Rank</th><th>Manager</th><th>Count</th></tr></thead><tbody>")
+        for i, manager in enumerate(board):
+            count = all_time_stats.get(manager, {}).get(key, 0)
+            if count == 0: continue
+            html_parts.append(f"<tr><td>{i+1}</td><td>{manager}</td><td>{count}</td></tr>")
+        html_parts.append("</tbody></table>")
+
+    html_parts.append("</div></body></html>")
+    
+    final_html = "\n".join(html_parts)
+    output_filename = SITE_DIR / "all_time_accolades.html"
+    with open(output_filename, "w", encoding="utf-8") as f:
+        f.write(final_html)
+    
+    logging.info(f"✅ Successfully generated HTML accolades page: {output_filename.name}")
 
 def generate_index_html():
     """Generates the main index.html landing page."""
@@ -288,13 +369,13 @@ def generate_index_html():
         logging.error("Could not find templates/index.html. Cannot build index page.")
         return
 
-    # Conditionally create the links
     preview_link_html = '<a href="weekly_preview.html">» Weekly Matchup Preview</a>' if (DATA_DIR / "preview_data.json").exists() else ''
     report_link_html = '<a href="weekly_report.html">» Weekly Report Card</a>' if (DATA_DIR / "report_card_data.json").exists() else ''
+    accolades_link_html = '<a href="all_time_accolades.html">» All-Time Accolades</a>' if (DATA_DIR / "accolades_data.json").exists() else ''
 
-    # Replace placeholders
     html = template_html.replace("{PREVIEW_LINK}", preview_link_html)
     html = html.replace("{REPORT_LINK}", report_link_html)
+    html = html.replace("{ACCOLADES_LINK}", accolades_link_html)
 
     with open(SITE_DIR / "index.html", "w", encoding="utf-8") as f:
         f.write(html)
@@ -325,7 +406,6 @@ def build_html_from_data():
     Also generates a notes template if one doesn't exist for the current preview week.
     """
     logging.info("\n--- Building HTML from data files ---")
-    # Clear the site directory first to ensure no old files remain
     for item in SITE_DIR.glob('*'):
         if item.is_file():
             item.unlink()
@@ -349,7 +429,15 @@ def build_html_from_data():
     except Exception as e:
         logging.error(f"Error generating weekly report: {e}")
     
-    # Always generate the index page
+    try:
+        with open(DATA_DIR / "accolades_data.json", "r", encoding="utf-8") as f:
+            accolades_data = json.load(f)
+        generate_accolades_html(accolades_data)
+    except FileNotFoundError:
+        logging.warning("accolades_data.json not found. Skipping all-time accolades generation.")
+    except Exception as e:
+        logging.error(f"Error generating all-time accolades: {e}")
+
     generate_index_html()
     logging.info("--- HTML build complete ---")
 
@@ -361,21 +449,16 @@ def main():
     parser.add_argument('--force-refresh', action='store_true', help="Force a refresh of all data from the API.")
     args = parser.parse_args()
 
-    # --- ONE-TIME SETUP CHECK ---
-    # If the core historical data file is missing, run the full one-time build process.
     if not (DATA_DIR / "h2h_records.json").exists():
         logging.warning("Core historical data not found. Running one-time setup...")
         run_full_historical_build()
 
-    # --- CONFIGURATION ---
     TARGET_SEASON = "2025"
 
-    # --- LOAD STATE & CONFIG ---
     state = get_current_state()
     with open("leagues.json", "r") as f:
         config = json.load(f)[TARGET_SEASON]
 
-    # --- CHECK IF DATA REFRESH IS NEEDED ---
     logging.info("--- Checking for new weekly data ---")
     query = YahooFantasySportsQuery(
         league_id=config["league_id"], game_code="nfl", game_id=config["game_id"],
@@ -392,7 +475,6 @@ def main():
     elif last_completed_week > state['last_processed_week']:
         logging.info(f"New completed week detected (Week {last_completed_week}). Regenerating data.")
         needs_refresh = True
-    # Add a check to see if data files are missing, which happens on a cold start.
     elif not (DATA_DIR / "preview_data.json").exists() or not (DATA_DIR / "report_card_data.json").exists():
         logging.info("Data files are missing. Triggering a data generation process.")
         needs_refresh = True
@@ -401,18 +483,15 @@ def main():
 
     if needs_refresh:
         logging.info("\n--- Running Data Generation Processes ---")
-        # Run the report process for the last completed week
         run_report_process(TARGET_SEASON, last_completed_week)
-        # Run the preview process for the current week
         run_preview_process(TARGET_SEASON, current_league_week)
-        
-        # Update state file
+        generate_accolades_data()
+
         state['last_processed_week'] = last_completed_week
         with open(STATE_FILE, "w") as f:
             json.dump(state, f, indent=2)
         logging.info(f"State updated. Last processed week is now {last_completed_week}.")
 
-    # --- BUILD THE HTML SITE ---
     build_html_from_data()
     logging.info("\n✅ Y2K Statsbook build complete!")
 
