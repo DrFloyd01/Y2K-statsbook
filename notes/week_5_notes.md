@@ -1,7 +1,7 @@
 # Week 5 Preview Notes
 ## Matchup: Ho Chi Win City vs Sweaty Slammers
 
-> GOTW: Big time showdown between storied rivals. Sweaty Slammers carries wilted roses into this one, having gotten the best of Ho Chi Win City for the past two years, albeit having only met on those two occasions. Here the first of (at least) two matchups of these juggarnauts.
+> Big time showdown between storied rivals. Sweaty Slammers carries wilted roses into this one, having gotten the best of Ho Chi Win City for the past two years, albeit having only met on those two occasions. Here the first of (at least) two matchups of these juggarnauts this year.
 
 ---
 ## Matchup: Globo Gym vs Tess Finesse
@@ -11,7 +11,7 @@
 ---
 ## Matchup: Blue's Balls vs Dusty’s Dingleberries
 
-> Co-GOTW: In an alternate universe, these two teams are nearly flipped! Dusty (5th, 2-2, 505 PF) and Jasper (8th, 1-3, 519 PF). It's not exactly that Blue's Balls has been bad; rather, they've been exceptionally good at scoring just enough to win. All three of the wins were good for the lowest winnning score accolade (3/4 on offer).  And finally, Blue's Balls is out to avenge a L5 that dates back to 2022, having never topped Dusty's squad..
+> GOTW: In an alternate universe this year, these two teams are nearly flipped! Dusty (5th, 2-2, 505 PF) and Jasper (8th, 1-3, 519 PF). It's not exactly that Blue's Balls has been bad; rather, they've been exceptionally good at scoring just enough to win. All three of their wins were good for the lowest winnning score accolade (3/4 on offer).  But top of mind has to be that Blue's Balls is out to avenge a L5 that amounts to having never bested Dusty's squad.
 
 ---
 ## Matchup: Gl Hf (you’re gay) vs Devil Jelq with Me
