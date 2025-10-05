@@ -482,6 +482,18 @@ def main():
         logging.info("No new weekly data found. Building site with existing data.")
 
     if needs_refresh:
+        logging.info("Clearing weekly cache files...")
+        # Preserve the main historical data cache, but clear out any weekly
+        # or other temporary cache files.
+        preserved_cache_file = "raw_api_cache.pkl"
+        for item in CACHE_DIR.glob('*'):
+            if item.is_file() and item.name != preserved_cache_file:
+                try:
+                    item.unlink()
+                    logging.info(f"  - Removed {item.name}")
+                except OSError as e:
+                    logging.error(f"Error removing cache file {item}: {e}")
+
         logging.info("\n--- Running Data Generation Processes ---")
         run_report_process(TARGET_SEASON, last_completed_week)
         run_preview_process(TARGET_SEASON, current_league_week)
