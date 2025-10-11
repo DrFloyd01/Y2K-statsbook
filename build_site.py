@@ -37,13 +37,27 @@ YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 
 # --- Pickle Compatibility Fix ---
 def get_current_state():
+    """
+    Retrieves the last processed week from the state file.
+
+    Returns:
+        dict: A dictionary containing the last processed week.
+    """
     if not STATE_FILE.exists():
         return {"last_processed_week": 0}
     with open(STATE_FILE, "r") as f:
         return json.load(f)
 
 def parse_notes_file(notes_file_path):
-    """Parses a markdown notes file and returns a dictionary of notes keyed by matchup."""
+    """
+    Parses a markdown notes file and returns a dictionary of notes keyed by matchup.
+
+    Args:
+        notes_file_path (Path): The path to the markdown notes file.
+
+    Returns:
+        dict: A dictionary of notes keyed by matchup.
+    """
     notes = {}
     if not notes_file_path.exists():
         return notes
@@ -71,7 +85,12 @@ def parse_notes_file(notes_file_path):
     return notes
 
 def generate_weekly_preview_html(data):
-    """Generates the weekly_preview.html file from a data object."""
+    """
+    Generates the weekly_preview.html file from a data object.
+
+    Args:
+        data (dict): A dictionary containing the preview data.
+    """
     season = data['season']
     preview_week = data['preview_week']
 
@@ -153,6 +172,12 @@ def generate_weekly_preview_html(data):
     logging.info(f"✅ Successfully generated HTML preview: {output_filename.name}")
 
 def generate_weekly_report_html(data):
+    """
+    Generates the weekly_report.html file from a data object.
+
+    Args:
+        data (dict): A dictionary containing the report data.
+    """
     report_week = data['report_week']
 
     html_parts = [f"""
@@ -265,7 +290,12 @@ def generate_weekly_report_html(data):
     logging.info(f"✅ Successfully generated HTML report: {output_filename.name}")
 
 def generate_accolades_html(data):
-    """Generates the all_time_accolades.html file."""
+    """
+    Generates the all_time_accolades.html file from a data object.
+
+    Args:
+        data (dict): A dictionary containing the accolades data.
+    """
     all_time_stats = data['all_time_stats']
     all_time_records = data['all_time_records']
     
@@ -361,7 +391,9 @@ def generate_accolades_html(data):
     logging.info(f"✅ Successfully generated HTML accolades page: {output_filename.name}")
 
 def generate_index_html():
-    """Generates the main index.html landing page."""
+    """
+    Generates the main index.html landing page.
+    """
     try:
         with open(TEMPLATES_DIR / "index.html", "r", encoding="utf-8") as f:
             template_html = f.read()
@@ -382,7 +414,12 @@ def generate_index_html():
     logging.info("✅ Successfully generated HTML index: index.html")
 
 def generate_notes_template_if_needed(preview_data):
-    """Creates a markdown template for commissioner notes if it doesn't exist."""
+    """
+    Creates a markdown template for commissioner notes if it doesn't exist.
+
+    Args:
+        preview_data (dict): A dictionary containing the preview data.
+    """
     preview_week = preview_data['preview_week']
     notes_file = NOTES_DIR / f"week_{preview_week}_notes.md"
 

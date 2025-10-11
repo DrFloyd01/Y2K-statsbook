@@ -20,12 +20,27 @@ DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
 def default_standing_factory():
-    """Provides a default dictionary for team standings."""
+    """
+    Provides a default dictionary for team standings.
+
+    Returns:
+        dict: A dictionary with default values for team standings.
+    """
     return {'wins': 0, 'losses': 0, 'ties': 0, 'pf': 0.0, 'pa': 0.0}
 
 default_alt_standing_factory = default_standing_factory
 
 def calculate_standings_from_matchups(max_week, cache_dir):
+    """
+    Calculates standings from cached matchup data.
+
+    Args:
+        max_week (int): The maximum week to process.
+        cache_dir (Path): The path to the cache directory.
+
+    Returns:
+        dict: A dictionary of team standings.
+    """
     records = defaultdict(default_standing_factory)
     for week in range(1, max_week + 1):
         matchups_file = cache_dir / f"week_{week}_matchups.pkl"
@@ -56,6 +71,17 @@ def calculate_standings_from_matchups(max_week, cache_dir):
     return standings
 
 def process_and_cache_week(week, query, cache_dir):
+    """
+    Processes and caches data for a given week.
+
+    Args:
+        week (int): The week to process.
+        query (YahooFantasySportsQuery): An authenticated yfpy query object.
+        cache_dir (Path): The path to the cache directory.
+
+    Returns:
+        bool: True if the week was processed successfully, False otherwise.
+    """
     logging.info(f"--- Processing and caching data for Week {week} ---")
     matchups_cache_file = cache_dir / f"week_{week}_matchups.pkl"
     alt_standings_cache_file = cache_dir / f"week_{week}_alt_standings.pkl"
@@ -97,6 +123,16 @@ def process_and_cache_week(week, query, cache_dir):
     return True
 
 def calculate_weekly_accolades(week, cache_dir):
+    """
+    Calculates weekly accolades from cached matchup data.
+
+    Args:
+        week (int): The week to process.
+        cache_dir (Path): The path to the cache directory.
+
+    Returns:
+        list: A list of weekly accolades.
+    """
     matchups_cache_file = cache_dir / f"week_{week}_matchups.pkl"
     if not matchups_cache_file.exists(): return None
     with open(matchups_cache_file, "rb") as f:
@@ -150,6 +186,16 @@ def calculate_weekly_accolades(week, cache_dir):
     return weekly_accolades
 
 def prepare_report_data(report_week, season, cache_dir, seasonal_accolades, all_scores_by_manager):
+    """
+    Prepares the data for the weekly report.
+
+    Args:
+        report_week (int): The week to report on.
+        season (str): The season to report on.
+        cache_dir (Path): The path to the cache directory.
+        seasonal_accolades (dict): A dictionary of seasonal accolades.
+        all_scores_by_manager (dict): A dictionary of all scores by manager.
+    """
     logging.info(f"\nGenerating report for Week {report_week}...")
     report_data = {"report_week": report_week, "season": season, "alt_standings_rows": [], "accolades": [], "manager_stdevs": {}}
 
@@ -250,6 +296,13 @@ def prepare_report_data(report_week, season, cache_dir, seasonal_accolades, all_
     logging.info(f"✅ Successfully saved report card data to: {output_filename.name}")
 
 def run_report_process(target_season, last_completed_week):
+    """
+    Runs the weekly report process.
+
+    Args:
+        target_season (str): The season to process.
+        last_completed_week (int): The last completed week of the season.
+    """
     try:
         with open(DATA_DIR.parent / "leagues.json", "r") as f:
             all_leagues = json.load(f)

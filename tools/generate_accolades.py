@@ -16,7 +16,12 @@ MANAGERS_TO_HIDE = ["cooper", "nick", "Torin", "--hidden--"]
 SEASONS_TO_HIDE = [2025]
 
 def load_historical_data():
-    """Loads the historical_data.json file."""
+    """
+    Loads the historical_data.json file.
+
+    Returns:
+        list: A list of historical data.
+    """
     historical_data_file = DATA_DIR / "historical_data.json"
     try:
         with open(historical_data_file, "r") as f:
@@ -28,6 +33,12 @@ def load_historical_data():
 def process_data(historical_data):
     """
     Processes historical data to calculate accolades and alternative standings.
+
+    Args:
+        historical_data (list): A list of historical data.
+
+    Returns:
+        dict: A dictionary of seasonal accolades.
     """
     # Group games by season and week
     games_by_week = defaultdict(list)
@@ -129,6 +140,12 @@ def process_data(historical_data):
 def merge_and_tally_stats(seasonal_accolades):
     """
     Merges manager data and tallies the accolades for final display.
+
+    Args:
+        seasonal_accolades (dict): A dictionary of seasonal accolades.
+
+    Returns:
+        tuple: A tuple containing all-time stats, per-season stats, all-time records, and per-season records.
     """
     all_time_stats = defaultdict(lambda: defaultdict(int))
     per_season_stats = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
@@ -220,7 +237,15 @@ def merge_and_tally_stats(seasonal_accolades):
     return all_time_stats, per_season_stats, all_time_records, per_season_records
 
 def _format_record_string(record):
-    """Helper to format the record detail string."""
+    """
+    Helper to format the record detail string.
+
+    Args:
+        record (dict): A dictionary containing the record data.
+
+    Returns:
+        str: A formatted string for the record.
+    """
     manager = MANAGERS_TO_MERGE.get(record.get('manager'), record.get('manager'))
     opponent = MANAGERS_TO_MERGE.get(record.get('opponent'), record.get('opponent'))
     season_str = str(record.get('season', ''))[-2:]
@@ -237,6 +262,13 @@ def _format_record_string(record):
 def calculate_final_ranks(historical_data, seasons_to_process):
     """
     Calculates the final rank for each manager for each season.
+
+    Args:
+        historical_data (list): A list of historical data.
+        seasons_to_process (list): A list of seasons to process.
+
+    Returns:
+        dict: A dictionary of final ranks by season.
     """
     final_ranks_by_season = defaultdict(dict)
     for season in seasons_to_process:
@@ -271,6 +303,13 @@ def calculate_final_ranks(historical_data, seasons_to_process):
 def print_leaderboards(all_time_stats, per_season_stats, all_time_records, per_season_records, final_ranks_by_season):
     """
     Prints all the calculated leaderboards in a readable format.
+
+    Args:
+        all_time_stats (dict): A dictionary of all-time stats.
+        per_season_stats (dict): A dictionary of per-season stats.
+        all_time_records (dict): A dictionary of all-time records.
+        per_season_records (dict): A dictionary of per-season records.
+        final_ranks_by_season (dict): A dictionary of final ranks by season.
     """
     hidden_lower = [h.lower() for h in MANAGERS_TO_HIDE]
 
@@ -366,6 +405,9 @@ def print_leaderboards(all_time_stats, per_season_stats, all_time_records, per_s
 def generate_accolades_data():
     """
     Runs the full accolade calculation process and saves the results to a JSON file.
+
+    Returns:
+        tuple: A tuple containing all-time stats, per-season stats, all-time records, and per-season records.
     """
     logging.info("Generating all-time accolade data...")
     historical_data = load_historical_data()

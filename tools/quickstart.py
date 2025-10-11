@@ -40,6 +40,12 @@ data = Data(data_dir)
 
 # set desired season year
 def get_season():
+    """
+    Returns the current season.
+
+    Returns:
+        int: The current season.
+    """
     # season = 2012
     # season = 2013
     # season = 2014
@@ -62,6 +68,12 @@ test_season = get_season()
 
 # set desired week
 def get_chosen_week():
+    """
+    Returns the chosen week.
+
+    Returns:
+        int: The chosen week.
+    """
     chosen_week = 1
     return chosen_week
 
@@ -71,6 +83,12 @@ test_chosen_week = get_chosen_week()
 
 # set desired date
 def get_chosen_date():
+    """
+    Returns the chosen date.
+
+    Returns:
+        str: The chosen date.
+    """
     # HOCKEY
     # chosen_date = "2013-04-15"  # NHL - 2013 (for 2012 season)
     chosen_date = "2021-10-25"  # NHL - 2021
@@ -90,6 +108,12 @@ test_chosen_date = get_chosen_date()
 
 # set desired Yahoo Fantasy Sports game code
 def get_game_code():
+    """
+    Returns the game code.
+
+    Returns:
+        str: The game code.
+    """
     # FOOTBALL
     game_code = "nfl"  # NFL
 
@@ -110,6 +134,12 @@ test_game_code = get_game_code()
 
 # set desired Yahoo Fantasy Sports game ID (see the get_all_yahoo_fantasy_game_keys query to retrieve values)
 def get_game_id():
+    """
+    Returns the game ID.
+
+    Returns:
+        int: The game ID.
+    """
     # FOOTBALL
     # game_id = 331  # NFL - 2014
     # game_id = 348  # NFL - 2015 (divisions)
@@ -143,6 +173,12 @@ test_game_id = get_game_id()
 
 # set desired Yahoo Fantasy Sports game key (see the get_all_yahoo_fantasy_game_keys query to retrieve values)
 def get_game_key():
+    """
+    Returns the game key.
+
+    Returns:
+        str: The game key.
+    """
     # FOOTBALL
     # game_key = "331"  # NFL - 2014
     # game_key = "348"  # NFL - 2015 (divisions)
@@ -177,6 +213,12 @@ test_game_key = get_game_key()
 
 # set desired league ID (see README.md for finding value)
 def get_league_id():
+    """
+    Returns the league ID.
+
+    Returns:
+        str: The league ID.
+    """
     # FOOTBALL
     # league_id = "907359"  # NFL - 2015 (divisions)
     # league_id = "79230"  # NFL - 2019
@@ -212,6 +254,12 @@ test_league_id = get_league_id()
 
 # set desired team ID within desired league
 def get_team_id():
+    """
+    Returns the team ID.
+
+    Returns:
+        int: The team ID.
+    """
     # FOOTBALL
     team_id = 1  # NFL
 
@@ -226,6 +274,12 @@ test_team_id = get_team_id()
 
 # set desired team name within desired league
 def get_team_name():
+    """
+    Returns the team name.
+
+    Returns:
+        str: The team name.
+    """
     # FOOTBALL
     team_name = "The Waterboys"  # NFL
 
@@ -240,6 +294,12 @@ test_team_name = get_team_name()
 
 # set desired team ID within desired league
 def get_player_id():
+    """
+    Returns the player ID.
+
+    Returns:
+        int: The player ID.
+    """
     # FOOTBALL
     player_id = 30123  # NFL: Patrick Mahomes - 2020/2021/2023/2024
 
@@ -262,6 +322,12 @@ test_player_id = get_player_id()
 
 # set the maximum number players you wish the get_league_players query to retrieve
 def get_league_player_limit():
+    """
+    Returns the league player limit.
+
+    Returns:
+        int: The league player limit.
+    """
     league_player_limit = 101
 
     return league_player_limit
