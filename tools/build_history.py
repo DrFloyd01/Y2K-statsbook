@@ -23,6 +23,13 @@ def build_historical_data_from_cache():
     def get_primary_manager(team, operator_nickname):
         """
         Selects the primary manager, prioritizing non-operators in co-manager situations.
+
+        Args:
+            team (Team): A team object from the Yahoo Fantasy API.
+            operator_nickname (str): The nickname of the operator running the script.
+
+        Returns:
+            Manager: The primary manager of the team.
         """
         if len(team.managers) == 1:
             return team.managers[0]

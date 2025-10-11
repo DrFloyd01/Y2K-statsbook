@@ -23,6 +23,13 @@ DATA_DIR.mkdir(exist_ok=True)
 def prepare_preview_data(preview_week, query, standings, h2h_records, season="2025"):
     """
     Prepares the data object for the weekly preview and saves it to a JSON file.
+
+    Args:
+        preview_week (int): The week to preview.
+        query (YahooFantasySportsQuery): An authenticated yfpy query object.
+        standings (Standings): The league standings.
+        h2h_records (dict): A dictionary of head-to-head records.
+        season (str, optional): The season to preview. Defaults to "2025".
     """
     logging.info(f"Preparing preview data for Week {preview_week}...")
     
@@ -128,6 +135,10 @@ def prepare_preview_data(preview_week, query, standings, h2h_records, season="20
 def run_preview_process(target_season, preview_week):
     """
     Main orchestrator for the weekly preview generation.
+
+    Args:
+        target_season (str): The season to process.
+        preview_week (int): The week to preview.
     """
     # --- LOAD DATA ---
     with open(DATA_DIR.parent / "leagues.json", "r") as f: # leagues.json is in root
