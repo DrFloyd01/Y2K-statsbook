@@ -12,6 +12,8 @@ from tools.generate_preview import run_preview_process
 from tools.dashboard_weekly_report import run_report_process
 from tools.init_history import run_full_historical_build
 from tools.generate_accolades import generate_accolades_data
+from tools.build_raw_data_cache import update_raw_data_cache
+from tools.build_raw_data_cache import cache_all_raw_data
 
 # --- Setup ---
 load_dotenv()
@@ -319,8 +321,10 @@ def generate_accolades_html(data):
 
     html_parts.append("<h2>🏆 All-Time Records Podium 🏆</h2><div class='podium'>")
     podium_accolades = {
-        'top_points': "🌋 Highest Scores", 'highest_scoring_loss': "💔 Toughest Losses",
-        'blowout_win': "💥 Biggest Blowouts", 'lowest_scoring_win': "🍀 Luckiest Wins",
+        'top_points': "🌋 Highest Scores",
+        'highest_scoring_loss': "💔 Toughest Losses",
+        'blowout_win': "💥 Biggest Blowouts",
+        'lowest_scoring_win': "🍀 Luckiest Wins",
         'smallest_margin_defeat': "🤏 Heartbreak Losses"
     }
     for key, title in podium_accolades.items():
@@ -495,9 +499,15 @@ def main():
                     logging.error(f"Error removing cache file {item}: {e}")
 
         logging.info("\n--- Running Data Generation Processes ---")
-        generate_accolades_data() # Must run first to build historical accolade records
+        # Run data generation processes in the correct order
+        # 1. Process last week's results to create report data and cache weekly results.
         run_report_process(TARGET_SEASON, last_completed_week)
+        # 1a. Update the raw data cache with the new week's data.
+        update_raw_data_cache(TARGET_SEASON, last_completed_week)
+        # 2. Rebuild historical data (including the new week) and generate preview data.
         run_preview_process(TARGET_SEASON, current_league_week)
+        # 3. Generate all-time accolades from the fully updated historical data.
+        generate_accolades_data()
 
         state['last_processed_week'] = last_completed_week
         with open(STATE_FILE, "w") as f:

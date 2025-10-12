@@ -17,6 +17,48 @@ YAHOO_CONSUMER_SECRET = os.environ.get("YAHOO_CONSUMER_SECRET")
 CACHE_DIR = Path("cache")
 CACHE_DIR.mkdir(exist_ok=True)
 
+def update_raw_data_cache(season, week):
+    """
+    Efficiently updates the raw_api_cache.pkl with a single week's data
+    from the weekly cache files.
+    """
+    logging.info(f"Updating raw_api_cache.pkl with data for {season}, Week {week}...")
+    
+    raw_cache_file = CACHE_DIR / "raw_api_cache.pkl"
+    weekly_cache_file = CACHE_DIR / f"week_{week}_matchups.pkl"
+
+    if not weekly_cache_file.exists():
+        logging.error(f"ERROR: Cannot find weekly cache file: {weekly_cache_file.name}. Aborting update.")
+        return
+
+    # Load the main raw data cache, or initialize if it doesn't exist
+    raw_data = {}
+    if raw_cache_file.exists():
+        with open(raw_cache_file, "rb") as f:
+            try:
+                raw_data = pickle.load(f)
+            except EOFError:
+                logging.warning("raw_api_cache.pkl is empty or corrupted. Starting fresh.")
+
+    # Load the new weekly data
+    with open(weekly_cache_file, "rb") as f:
+        weekly_matchups = pickle.load(f)
+
+    # Ensure the season and weeks structure exists
+    if season not in raw_data:
+        raw_data[season] = {"weeks": {}}
+    elif "weeks" not in raw_data[season]:
+        raw_data[season]["weeks"] = {}
+
+    # Add or overwrite the specific week's data
+    raw_data[season]["weeks"][str(week)] = weekly_matchups
+
+    # Save the updated data back to the main cache
+    with open(raw_cache_file, "wb") as f:
+        pickle.dump(raw_data, f)
+    
+    logging.info(f"✅ Successfully updated {raw_cache_file.name} with Week {week} data.")
+
 def cache_all_raw_data():
     """
     Connects to the API one last time to fetch all raw matchup data

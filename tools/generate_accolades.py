@@ -13,7 +13,7 @@ MANAGERS_TO_MERGE = {
 }
 MANAGERS_TO_HIDE = ["cooper", "nick", "Torin", "--hidden--"]
 # Hides the current season from calculations.
-SEASONS_TO_HIDE = [2025]
+SEASONS_TO_HIDE = []
 
 def load_historical_data():
     """Loads the historical_data.json file."""
@@ -31,9 +31,8 @@ def process_data(historical_data):
     """
     # Group games by season and week
     games_by_week = defaultdict(list)
-    for game in [g for g in historical_data if g['season'] not in SEASONS_TO_HIDE]:
-        if game.get("game_type") == "regular":
-            games_by_week[f"{game['season']}-{game['week']}"].append(game)
+    for game in [g for g in historical_data if g['season'] not in SEASONS_TO_HIDE and g.get("game_type") != "consolation"]:
+        games_by_week[f"{game['season']}-{game['week']}"].append(game)
 
     # This will store the raw data for each accolade, per season
     seasonal_accolades = defaultdict(lambda: defaultdict(lambda: []))
@@ -194,19 +193,22 @@ def merge_and_tally_stats(seasonal_accolades):
                     seasonal_worst = min(accolades[key], key=lambda x: x['score'])
                     if seasonal_worst['score'] < per_season_records[season][key]['score']:
                         per_season_records[season][key] = seasonal_worst
-                elif key == 'smallest_margin_defeat' or key == 'blowout_win':
-                    comparator = min if key == 'smallest_margin_defeat' else max
-                    seasonal_extreme = comparator(accolades[key], key=lambda x: x['margin'])
-                    current_seasonal_extreme_margin = per_season_records[season][key]['margin']
-                    if (comparator(seasonal_extreme['margin'], current_seasonal_extreme_margin) == seasonal_extreme['margin']):
-                         per_season_records[season][key] = seasonal_extreme
+                elif key == 'smallest_margin_defeat':
+                    seasonal_best = min(accolades[key], key=lambda x: x['margin'])
+                    if seasonal_best['margin'] < per_season_records[season][key]['margin']:
+                        per_season_records[season][key] = seasonal_best
+                elif key == 'blowout_win':
+                    seasonal_best = max(accolades[key], key=lambda x: x['margin'])
+                    if seasonal_best['margin'] > per_season_records[season][key]['margin']:
+                        per_season_records[season][key] = seasonal_best
 
     # Find top 3 all-time records
     all_instances = defaultdict(list)
-    for accolades in seasonal_accolades.values():
+    # Correctly gather all instances from every week across all seasons
+    for season_data in seasonal_accolades.values():
         for key in all_time_records.keys():
-            if key in accolades:
-                all_instances[key].extend(accolades[key])
+            if key in season_data:
+                all_instances[key].extend(season_data[key])
 
     for key, instances in all_instances.items():
         if not instances:

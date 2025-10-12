@@ -82,8 +82,6 @@ def prepare_preview_data(preview_week, query, standings, h2h_records, season="20
                         streak_games_info.append(f"{game_type}'{season_short}")
                         if len(streak_games_info) == streak_len:
                             break
-                    else:
-                        break
                 streak_info = f"{streak_holder} W{streak_len} ({', '.join(reversed(streak_games_info))})"
 
             playoff_h2h_display = f"<strong>Playoffs H2H:</strong> {playoff_record_str}"
