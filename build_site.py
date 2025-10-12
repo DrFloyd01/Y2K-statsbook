@@ -208,8 +208,9 @@ def generate_weekly_report_html(data):
     for accolade in data['accolades']:
         record_html = ""
         if accolade.get('record_status'):
-            status_class = "all-time" if "All-Time" in accolade['record_status'] else ""
-            record_html = f"<div class='record-status {status_class}'>{accolade['record_status']}</div>"
+            record_status = accolade['record_status']
+            status_class = "all-time" if "All-Time" in record_status else ""
+            record_html = f"<div class='record-status {status_class}'>{record_status}</div>"
         
         summary_html = ""
         if accolade.get('summary'):
