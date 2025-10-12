@@ -11,9 +11,9 @@ def run_full_historical_build():
 
     # These are imported here to avoid circular dependencies and allow
     # this script to be run both as a module and standalone.
-    from build_raw_data_cache import cache_all_raw_data
-    from build_history import build_historical_data_from_cache
-    from init_h2h_records import initialize_h2h_records
+    from .build_raw_data_cache import cache_all_raw_data
+    from .build_history import build_historical_data_from_cache
+    from .init_h2h_records import initialize_h2h_records
 
     cache_all_raw_data()
     build_historical_data_from_cache()
