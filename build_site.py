@@ -504,10 +504,12 @@ def main():
         # 1. Update the raw data cache with the new week's data.
         update_raw_data_cache(TARGET_SEASON, last_completed_week)
         # 2. Rebuild historical data (this is a prerequisite for accolades).
+        run_full_historical_build()
+        # 3. Generate the preview for the current week.
         run_preview_process(TARGET_SEASON, current_league_week)
-        # 3. Generate all-time accolades from the fully updated historical data.
+        # 4. Generate all-time accolades from the fully updated historical data.
         generate_accolades_data()
-        # 4. Process last week's results, which can now compare against fresh accolades.
+        # 5. Process last week's results, which can now compare against fresh accolades.
         run_report_process(TARGET_SEASON, last_completed_week)
 
         state['last_processed_week'] = last_completed_week
