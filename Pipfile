@@ -6,8 +6,8 @@ name = "pypi"
 [packages]
 yfpy = "*"
 dotenv = "*"
-flask = "*"
 cryptography = "*"
+flask = "*"
 
 [dev-packages]
 
