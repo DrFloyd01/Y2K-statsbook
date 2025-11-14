@@ -1,0 +1,416 @@
+{
+  "xml:lang": "en-US",
+  "yahoo:uri": "/fantasy/v2/league/461.l.97974/teams",
+  "league": {
+    "allow_add_to_dl_extra_pos": 1,
+    "current_week": 11,
+    "draft_status": "postdraft",
+    "edit_key": 11,
+    "end_date": "2025-12-29",
+    "end_week": 17,
+    "felo_tier": "silver",
+    "game_code": "nfl",
+    "iris_group_chat_id": null,
+    "is_cash_league": 0,
+    "is_highscore": false,
+    "is_plus_league": 0,
+    "is_pro_league": 0,
+    "league_id": "97974",
+    "league_key": "461.l.97974",
+    "league_type": "private",
+    "league_update_timestamp": 1763107469,
+    "logo_url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/59589323742_224e33.jpg",
+    "matchup_week": 11,
+    "name": "Y2K CPU Machinations",
+    "num_teams": 10,
+    "password": null,
+    "renew": "449_548113",
+    "renewed": null,
+    "roster_type": "week",
+    "scoring_type": "head",
+    "season": 2025,
+    "short_invitation_url": "https://football.fantasysports.yahoo.com/f1/97974/invitation?key=68fa913df5cc41a6&ikey=b6206819863607a5",
+    "start_date": "2025-09-04",
+    "start_week": 1,
+    "teams": [
+      {
+        "team": {
+          "draft_grade": "C-",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/1/draftrecap",
+          "has_draft_grade": 1,
+          "is_owned_by_current_login": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 906,
+              "felo_tier": "diamond",
+              "guid": "THMCSKCBRA5BNYK6ASL3TJIHVI",
+              "image_url": "https://s.yimg.com/ag/images/4647/39244086471_5c4688_64sq.jpg",
+              "is_commissioner": 0,
+              "is_current_login": 1,
+              "manager_id": 1,
+              "nickname": "Dylan"
+            }
+          },
+          "name": "Globo Gym",
+          "number_of_moves": 29,
+          "number_of_trades": 1,
+          "previous_season_team_rank": 1,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 2
+          },
+          "team_id": 1,
+          "team_key": "461.l.97974.t.1",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/dbadbd472db7fabb333369a6ebc2fa7919cc86dc9afeea0bba9c110d5ddba3af.jpg"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/1",
+          "waiver_priority": 10
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "D+",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/2/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 854,
+              "felo_tier": "platinum",
+              "guid": "I7OPBETUN4JWBVJ3VLQ7SXOICQ",
+              "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+              "manager_id": 2,
+              "nickname": "Phillip"
+            }
+          },
+          "name": "Ho Chi Win City",
+          "number_of_moves": 12,
+          "number_of_trades": 0,
+          "previous_season_team_rank": 3,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 2,
+          "team_key": "461.l.97974.t.2",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/3f58547070dcbc65126502b74743dd91a78b9eb90f4d24fd5a66fdf5b5c9951d.jpg"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/2",
+          "waiver_priority": 6
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "C+",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/3/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 571,
+              "felo_tier": "bronze",
+              "guid": "HIYYIPRXI5N34UIKDXBFMY52GG",
+              "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+              "manager_id": 3,
+              "nickname": "Trace"
+            }
+          },
+          "name": "Gl Hf (you\u2019re gay)",
+          "number_of_moves": 17,
+          "number_of_trades": 3,
+          "previous_season_team_rank": 10,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 1
+          },
+          "team_id": 3,
+          "team_key": "461.l.97974.t.3",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_6_t.png"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/3",
+          "waiver_priority": 8
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "D",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/4/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 597,
+              "felo_tier": "bronze",
+              "guid": "HCZMFSHFJBZQQLLMEJUMZ4KJNE",
+              "image_url": "https://s.yimg.com/ag/images/d0f5261e-5a0a-474e-afc1-6ff47d7b3ade_64sq.jpg",
+              "manager_id": 4,
+              "nickname": "Casey"
+            }
+          },
+          "name": "AARPFL",
+          "number_of_moves": 15,
+          "number_of_trades": 0,
+          "previous_season_team_rank": 5,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 4,
+          "team_key": "461.l.97974.t.4",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/e6ab282de7ac645f7a955ac290d3adfed8535e939cc5ff95db93992543058548.jpg"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/4",
+          "waiver_priority": 5
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "C+",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/5/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 575,
+              "felo_tier": "bronze",
+              "guid": "ASVYW3X4AQL7WBUB3BLZTEXAGY",
+              "image_url": "https://s.yimg.com/ag/images/6191e487-134f-4581-a6d7-9477cfe3d506_64sq.jpg",
+              "manager_id": 5,
+              "nickname": "Mike"
+            }
+          },
+          "name": "Jelqaida",
+          "number_of_moves": 18,
+          "number_of_trades": 2,
+          "previous_season_team_rank": 4,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 5,
+          "team_key": "461.l.97974.t.5",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/41306cbd4ff94913740663219f6d9183a8607911de977ecf8dba7f8163a9fb0e.jpg"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/5",
+          "waiver_priority": 2
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "A-",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/6/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 574,
+              "felo_tier": "bronze",
+              "guid": "ZFG622DVV5F327CZHU5QGXAG24",
+              "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+              "manager_id": 6,
+              "nickname": "Ryan"
+            }
+          },
+          "name": "Rip Glizzy #1",
+          "number_of_moves": 6,
+          "number_of_trades": 0,
+          "previous_season_team_rank": 9,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 6,
+          "team_key": "461.l.97974.t.6",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/7c7ef0e0d00475a2f1bedfde0e92465f32fa4eb75290aaab13fb290c9f777a34.jpg"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/6",
+          "waiver_priority": 1
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "A+",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/7/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 565,
+              "felo_tier": "bronze",
+              "guid": "CFTNOSCCFMIFKJMNPMU5REN3GL",
+              "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+              "manager_id": 7,
+              "nickname": "Boaz"
+            }
+          },
+          "name": "Aaron codger",
+          "number_of_moves": 12,
+          "number_of_trades": 1,
+          "previous_season_team_rank": 6,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 7,
+          "team_key": "461.l.97974.t.7",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_7_b.png"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/7",
+          "waiver_priority": 4
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "D",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/8/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 756,
+              "felo_tier": "gold",
+              "guid": "V2R7HBXOUWSDWK6XL5DHVUUMAE",
+              "image_url": "https://s.yimg.com/ag/images/67a0bdb7-5214-4644-b2b0-dda07d732c33_64sq.jpg",
+              "manager_id": 8,
+              "nickname": "Dustin"
+            }
+          },
+          "name": "Dusty\u2019s Dingleberries",
+          "number_of_moves": 28,
+          "number_of_trades": 1,
+          "previous_season_team_rank": 2,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 2
+          },
+          "team_id": 8,
+          "team_key": "461.l.97974.t.8",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c9808bcf207698a39341473d914c36740f5f3796d74907e2ad20252a6e6472db.jpg"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/8",
+          "waiver_priority": 9
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "B+",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/9/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 593,
+              "felo_tier": "bronze",
+              "guid": "BRRJTZH2HUKARSLPH53QFE47OQ",
+              "image_url": "https://s.yimg.com/ag/images/4517/37879319400_37eefb_64sq.jpg",
+              "manager_id": 9,
+              "nickname": "Tess"
+            }
+          },
+          "name": "Tess Finesse",
+          "number_of_moves": 10,
+          "number_of_trades": 0,
+          "previous_season_team_rank": 8,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 9,
+          "team_key": "461.l.97974.t.9",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://s.yimg.com/ep/cx/blendr/v2/image-alien-png_1721174225838.png"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/9",
+          "waiver_priority": 3
+        }
+      },
+      {
+        "team": {
+          "draft_grade": "C",
+          "draft_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/10/draftrecap",
+          "has_draft_grade": 1,
+          "league_scoring_type": "head",
+          "managers": {
+            "manager": {
+              "felo_score": 668,
+              "felo_tier": "silver",
+              "guid": "EHUKF2RVITVVFESQLZO7CQ6MJI",
+              "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+              "manager_id": 10,
+              "nickname": "Jasper"
+            }
+          },
+          "name": "Blue's Balls",
+          "number_of_moves": 2,
+          "number_of_trades": 0,
+          "previous_season_team_rank": 7,
+          "roster_adds": {
+            "coverage_type": "week",
+            "coverage_value": 11,
+            "value": 0
+          },
+          "team_id": 10,
+          "team_key": "461.l.97974.t.10",
+          "team_logos": {
+            "team_logo": {
+              "size": "large",
+              "url": "https://s.yimg.com/cv/apiv2/default/nfl/nfl_7.png"
+            }
+          },
+          "url": "https://football.fantasysports.yahoo.com/f1/97974/10",
+          "waiver_priority": 7
+        }
+      }
+    ],
+    "url": "https://football.fantasysports.yahoo.com/f1/97974",
+    "weekly_deadline": null
+  },
+  "time": "88.782072067261ms",
+  "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
+  "refresh_rate": 60
+}

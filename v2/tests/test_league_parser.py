@@ -1,0 +1,42 @@
+
+import unittest
+import sys
+from pathlib import Path
+
+sys.path.append(".")
+from v2.parsers.league_parser import parse_league_data
+from v2.models.league import League, Team, Player
+
+class TestLeagueParser(unittest.TestCase):
+
+    def test_parse_league_data(self):
+        """
+        Tests that the league parser correctly transforms raw data into a League object.
+        """
+        cache_dir = Path("v2/api_cache")
+        year = 2025
+        week = 1
+
+        league = parse_league_data(cache_dir, year, week)
+
+        self.assertIsInstance(league, League)
+        self.assertEqual(league.league_id, "97974")
+        self.assertEqual(league.name, "Y2K CPU Machinations")
+        self.assertEqual(league.season, 2025)
+        self.assertEqual(len(league.teams), 10)
+
+        team = league.teams[0]
+        self.assertIsInstance(team, Team)
+        self.assertEqual(team.team_id, 1)
+        self.assertEqual(team.manager_name, "Dylan")
+        self.assertEqual(len(team.roster), 18)
+
+        player = team.roster[0]
+        self.assertIsInstance(player, Player)
+        self.assertEqual(player.player_id, 30977)
+        self.assertEqual(player.name, "Josh Allen")
+        self.assertEqual(player.position, "QB")
+        self.assertEqual(player.nfl_team, "Buf")
+
+if __name__ == '__main__':
+    unittest.main()
