@@ -11,6 +11,7 @@ __pycache__/
 
 # Cache directory for weekly data
 cache/
+v2/api_cache/
 
 # Generated data and site directories
 data/
