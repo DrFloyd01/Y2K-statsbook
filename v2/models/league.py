@@ -66,6 +66,28 @@ class Schedule:
     playoffs: Dict[int, List[Matchup]] = field(default_factory=dict)
 
 @dataclass
+class H2HRecord:
+    """Represents a head-to-head record between two managers."""
+    manager_name: str
+    opponent_name: str
+    season_wins: int = 0
+    season_losses: int = 0
+    playoff_wins: int = 0
+    playoff_losses: int = 0
+
+
+@dataclass
+class Accolade:
+    """Represents a single accolade instance."""
+    name: str
+    manager_name: str
+    week: int
+    season: int
+    magnitude: float
+    opponent_manager_name: str = ""
+
+
+@dataclass
 class League:
     """The main container class for all league data."""
     league_id: str
@@ -76,3 +98,5 @@ class League:
     scoring_settings: ScoringSettings = field(default_factory=ScoringSettings)
     playoff_settings: PlayoffSettings = field(default_factory=PlayoffSettings)
     schedule: Schedule = field(default_factory=Schedule)
+    h2h_records: List[H2HRecord] = field(default_factory=list)
+    accolades: List[Accolade] = field(default_factory=list)
