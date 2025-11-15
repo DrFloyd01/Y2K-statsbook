@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Josh Allen",
+    "score_difference": 24.5
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Malik Nabers",
+    "score_difference": 34.8
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Puka Nacua",
+    "score_difference": 37.2
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "DeVonta Smith",
+    "score_difference": 41.9
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Alvin Kamara",
+    "score_difference": 31.1
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Breece Hall",
+    "score_difference": 44.4
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "T.J. Hockenson",
+    "score_difference": 50.0
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Jerry Jeudy",
+    "score_difference": 50.0
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Matt Gay",
+    "score_difference": 50.0
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Los Angeles",
+    "score_difference": 50.0
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Christian Kirk",
+    "score_difference": 50.0
+  },
+  {
+    "week": 5,
+    "losing_team": "Dylan",
+    "winning_team": "Dustin",
+    "losing_margin": 5.0,
+    "bench_player": "D'OH Player",
+    "starter_player": "Brandon Aiyuk",
+    "score_difference": 50.0
+  }
+]
