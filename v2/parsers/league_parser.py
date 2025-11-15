@@ -17,6 +17,9 @@ def parse_league_data(cache_dir: Path, year: int, league: League):
     with open(cache_dir / f"rosters_{year}_w1.json", "r") as f:
         rosters_data = json.load(f)
 
+    with open(cache_dir / f"player_scores_{year}_w1.json", "r") as f:
+        player_scores_data = json.load(f)
+
     # Extract league-level data
     league_data = settings_data["league"]
     league.league_id = league_data["league_id"]
@@ -34,11 +37,15 @@ def parse_league_data(cache_dir: Path, year: int, league: League):
             if "players" in roster_json:
                 for player_json in roster_json["players"]:
                     player_info = player_json["player"]
+                    player_id_str = str(player_info["player_id"])
+                    actual_score = player_scores_data.get(player_id_str, {}).get("score", 0.0)
                     player = Player(
                         player_id=player_info["player_id"],
                         name=player_info["name"]["full"],
                         position=player_info["primary_position"],
-                        nfl_team=player_info["editorial_team_abbr"]
+                        nfl_team=player_info["editorial_team_abbr"],
+                        starting_status=(player_info["selected_position"]["position"] != "BN"),
+                        actual_score=actual_score
                     )
                     team_roster.append(player)
 

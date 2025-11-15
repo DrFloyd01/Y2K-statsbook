@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.append(".")
+sys.path.append("v2")
 from v2.parsers.league_parser import parse_league_data
 from v2.models.league import League, Team, Player
 
@@ -17,7 +18,8 @@ class TestLeagueParser(unittest.TestCase):
         year = 2025
         week = 1
 
-        league = parse_league_data(cache_dir, year, week)
+        from v2.parsers.main_parser import load_league_from_cache
+        league = load_league_from_cache(cache_dir, year)
 
         self.assertIsInstance(league, League)
         self.assertEqual(league.league_id, "97974")
