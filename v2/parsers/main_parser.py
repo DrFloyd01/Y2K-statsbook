@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Dict
 
 from v2.models.league import League, Team, Matchup, PlayoffSettings
-from v2.parsers.league_parser import parse_league_data
+from v2.parsers.league_parser import parse_league_data, parse_weekly_rosters
 from v2.parsers.scoreboard_parser import parse_scoreboard_data
 
 def load_league_from_cache(cache_dir: Path, year: int) -> League:
@@ -40,7 +40,10 @@ def load_league_from_cache(cache_dir: Path, year: int) -> League:
 
         # Parse the league data and populate the League object
         if not league.teams:
-            parse_league_data(cache_dir, year, week, league)
+            parse_league_data(cache_dir, year, league)
+
+        # Now, parse the weekly roster data
+        parse_weekly_rosters(league, cache_dir, year, week)
 
         # Create a team_id -> Team object map for quick lookups
         team_map: Dict[int, Team] = {team.team_id: team for team in league.teams}

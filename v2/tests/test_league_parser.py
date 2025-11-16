@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.append(".")
 sys.path.append("v2")
-from v2.parsers.league_parser import parse_league_data
+from v2.parsers.league_parser import parse_league_data, parse_weekly_rosters
 from v2.models.league import League, Team, Player
 
 class TestLeagueParser(unittest.TestCase):
@@ -39,6 +39,25 @@ class TestLeagueParser(unittest.TestCase):
         self.assertEqual(player.name, "Josh Allen")
         self.assertEqual(player.position, "QB")
         self.assertEqual(player.nfl_team, "Buf")
+
+    def test_parse_weekly_rosters(self):
+        """
+        Tests that the weekly roster parser correctly updates the league object.
+        """
+        cache_dir = Path("v2/api_cache")
+        year = 2025
+        week = 2
+
+        from v2.parsers.main_parser import load_league_from_cache
+        league = load_league_from_cache(cache_dir, year)
+        parse_weekly_rosters(league, cache_dir, year, week)
+
+        # check that dylan's roster is correct for week 2
+        dylan = league.get_team_by_id(1)
+        self.assertEqual(dylan.roster[0].name, "Josh Allen")
+        self.assertEqual(dylan.roster[0].actual_score, 12.32)
+        self.assertEqual(dylan.roster[0].starting_status, True)
+
 
 if __name__ == '__main__':
     unittest.main()
