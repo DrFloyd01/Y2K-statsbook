@@ -5,7 +5,7 @@ from pathlib import Path
 import copy
 
 sys.path.append(".")
-from v2.accolades import calculate_doh_accolades, calculate_alt_universe_accolades
+from v2.accolades import calculate_doh_accolades, calculate_alt_universe_accolades, aggregate_doh_by_week
 from v2.models.league import League, Team, Player, Matchup, Schedule
 
 class TestAccolades(unittest.TestCase):
@@ -85,6 +85,24 @@ class TestAccolades(unittest.TestCase):
         self.assertEqual(len(manager2_accolades), 2)
         self.assertEqual(manager2_accolades[0]["accolade"], "alt_universe_win")
         self.assertEqual(manager2_accolades[1]["accolade"], "alt_universe_win")
+
+    def test_aggregate_doh_by_week(self):
+        """Test that D'OH accolades are correctly aggregated by week."""
+        doh_accolades = [
+            {"week": 1, "losing_team": "Team A"},
+            {"week": 1, "losing_team": "Team B"},
+            {"week": 2, "losing_team": "Team C"},
+        ]
+
+        weekly_summary = aggregate_doh_by_week(doh_accolades)
+
+        self.assertEqual(len(weekly_summary), 2)
+        self.assertEqual(weekly_summary[0]["week"], 1)
+        self.assertEqual(weekly_summary[0]["count"], 2)
+        self.assertEqual(weekly_summary[0]["teams"], ["Team A", "Team B"])
+        self.assertEqual(weekly_summary[1]["week"], 2)
+        self.assertEqual(weekly_summary[1]["count"], 1)
+        self.assertEqual(weekly_summary[1]["teams"], ["Team C"])
 
 if __name__ == '__main__':
     unittest.main()
