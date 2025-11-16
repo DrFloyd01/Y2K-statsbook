@@ -18,7 +18,7 @@ def _parse_roster_data(rosters_data: dict, team_id: int) -> list[Player]:
                     name=player_info["name"]["full"],
                     position=player_info["primary_position"],
                     nfl_team=player_info["editorial_team_abbr"],
-                    starting_status=(player_info["selected_position"]["position"] != "BN"),
+                    starting_status=(player_info["selected_position"]["position"] not in ("BN", "IR")),
                     actual_score=float(player_json["player"]["player_points"]["total"])
                 )
                 team_roster.append(player)

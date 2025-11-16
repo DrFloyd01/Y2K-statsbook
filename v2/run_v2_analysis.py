@@ -33,8 +33,8 @@ def main():
     # 2. Calculate leaderboards, H2H records, and accolades
     print("Calculating leaderboards and accolades...")
     from v2.accolades import calculate_doh_accolades
-    doh_accolades = calculate_doh_accolades(league)
-    leaderboard_data = calculate_leaderboards(league, doh_accolades)
+    [doh_accolades, doh_weeks] = calculate_doh_accolades(league)
+    leaderboard_data = calculate_leaderboards(league, doh_accolades, doh_weeks)
 
     # 3. Display the results
     print("Displaying results...\n")

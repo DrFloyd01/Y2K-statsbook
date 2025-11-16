@@ -20,7 +20,13 @@ def _is_valid_substitution(bench_player: Player, starter: Player) -> bool:
     if bench_player.position == "DEF" and starter.position == "DEF":
         return True
     # WR/RB/TE for WR/RB/TE or FLEX (W/R/T)
-    if bench_player.position in valid_flex_positions and (starter.position in valid_flex_positions or starter.position == "W/R/T"):
+    if bench_player.position in valid_flex_positions and starter.position == "W/R/T":
+        return True
+    if bench_player.position == "WR" and starter.position == "WR":
+        return True
+    if bench_player.position == "RB" and starter.position == "RB":
+        return True
+    if bench_player.position == "TE" and starter.position == "TE":
         return True
     return False
 
@@ -77,7 +83,15 @@ def calculate_doh_accolades(league: League):
     # Sort accolades by week, then by losing team, then by point swing descending
     doh_accolades.sort(key=lambda x: (x["week"], x["losing_team"], -x["point_swing"]))
 
-    return doh_accolades
+    # Sort doh leaderboard by # of doh weeks (then by total occurrences)
+    doh_weeks = []
+    for doh in doh_accolades:
+        week = doh["week"]
+        manager = doh["losing_team"]
+        if not any(dw for dw in doh_weeks if dw["manager"] == manager and dw["week"] == week):
+            doh_weeks.append({"manager": manager, "week": week})
+
+    return [doh_accolades, doh_weeks]
 
 
 def calculate_alt_universe_accolades(league: League):
