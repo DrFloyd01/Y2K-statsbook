@@ -12,7 +12,6 @@
     "game_code": "nfl",
     "iris_group_chat_id": null,
     "is_cash_league": 0,
-    "is_highscore": false,
     "is_plus_league": 0,
     "is_pro_league": 0,
     "league_id": "97974",
@@ -20,13 +19,11 @@
     "league_type": "private",
     "league_update_timestamp": 1763107469,
     "logo_url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/59589323742_224e33.jpg",
-    "matchup_week": 11,
     "name": "Y2K CPU Machinations",
     "num_teams": 10,
     "password": null,
     "renew": "449_548113",
     "renewed": null,
-    "roster_type": "week",
     "scoring_type": "head",
     "season": 2025,
     "settings": {
@@ -37,7 +34,6 @@
       "draft_type": "live",
       "has_multiweek_championship": 0,
       "has_playoff_consolation_games": true,
-      "invite_permission": "commissioner",
       "is_auction_draft": 0,
       "league_premium_features": null,
       "max_teams": 12,
@@ -1152,7 +1148,7 @@
     "url": "https://football.fantasysports.yahoo.com/f1/97974",
     "weekly_deadline": null
   },
-  "time": "29.837846755981ms",
+  "time": "39.382934570312ms",
   "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
   "refresh_rate": 60
 }

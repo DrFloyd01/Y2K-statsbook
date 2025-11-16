@@ -1,6 +1,6 @@
 {
   "xml:lang": "en-US",
-  "yahoo:uri": "/fantasy/v2/league/461.l.97974/scoreboard;week=1",
+  "yahoo:uri": "/fantasy/v2/league/461.l.97974/scoreboard;week=10",
   "league": {
     "allow_add_to_dl_extra_pos": 1,
     "current_week": 11,
@@ -35,19 +35,19 @@
             "matchup_grades": [
               {
                 "matchup_grade": {
-                  "grade": "A",
+                  "grade": "D+",
                   "team_key": "461.l.97974.t.1"
                 }
               },
               {
                 "matchup_grade": {
-                  "grade": "D-",
+                  "grade": "B+",
                   "team_key": "461.l.97974.t.8"
                 }
               }
             ],
             "matchup_recap_title": "Win or lose, game day just got saucier with Jimmy John's.",
-            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=1&mid1=1&mid2=8",
+            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=10&mid1=1&mid2=8",
             "status": "postevent",
             "teams": [
               {
@@ -87,17 +87,17 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 150.1,
-                    "week": 1
+                    "total": 130.6,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 145.02,
-                    "week": 1
+                    "total": 144.06,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/1",
                   "waiver_priority": 10,
-                  "win_probability": 1.0
+                  "win_probability": 0.0
                 }
               },
               {
@@ -134,24 +134,24 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 103.26,
-                    "week": 1
+                    "total": 140.72,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 147.34,
-                    "week": 1
+                    "total": 137.18,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/8",
                   "waiver_priority": 9,
-                  "win_probability": 0.0
+                  "win_probability": 1.0
                 }
               }
             ],
-            "week": 1,
-            "week_end": "2025-09-08",
-            "week_start": "2025-09-04",
-            "winner_team_key": "461.l.97974.t.1"
+            "week": 10,
+            "week_end": "2025-11-10",
+            "week_start": "2025-11-04",
+            "winner_team_key": "461.l.97974.t.8"
           }
         },
         {
@@ -163,19 +163,19 @@
             "matchup_grades": [
               {
                 "matchup_grade": {
-                  "grade": "A+",
+                  "grade": "D-",
                   "team_key": "461.l.97974.t.2"
                 }
               },
               {
                 "matchup_grade": {
-                  "grade": "D-",
+                  "grade": "A+",
                   "team_key": "461.l.97974.t.9"
                 }
               }
             ],
             "matchup_recap_title": "Win or lose, game day just got saucier with Jimmy John's.",
-            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=1&mid1=2&mid2=9",
+            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=10&mid1=2&mid2=9",
             "status": "postevent",
             "teams": [
               {
@@ -212,17 +212,17 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 166.14,
-                    "week": 1
+                    "total": 119.5,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 133.1,
-                    "week": 1
+                    "total": 145.51,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/2",
                   "waiver_priority": 6,
-                  "win_probability": 1.0
+                  "win_probability": 0.0
                 }
               },
               {
@@ -259,24 +259,24 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 113.85,
-                    "week": 1
+                    "total": 186.88,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 140.71,
-                    "week": 1
+                    "total": 132.23,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/9",
                   "waiver_priority": 3,
-                  "win_probability": 0.0
+                  "win_probability": 1.0
                 }
               }
             ],
-            "week": 1,
-            "week_end": "2025-09-08",
-            "week_start": "2025-09-04",
-            "winner_team_key": "461.l.97974.t.2"
+            "week": 10,
+            "week_end": "2025-11-10",
+            "week_start": "2025-11-04",
+            "winner_team_key": "461.l.97974.t.9"
           }
         },
         {
@@ -288,19 +288,19 @@
             "matchup_grades": [
               {
                 "matchup_grade": {
-                  "grade": "D+",
+                  "grade": "A+",
                   "team_key": "461.l.97974.t.3"
                 }
               },
               {
                 "matchup_grade": {
-                  "grade": "B-",
+                  "grade": "D-",
                   "team_key": "461.l.97974.t.10"
                 }
               }
             ],
             "matchup_recap_title": "Win or lose, game day just got saucier with Jimmy John's.",
-            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=1&mid1=3&mid2=10",
+            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=10&mid1=3&mid2=10",
             "status": "postevent",
             "teams": [
               {
@@ -337,17 +337,17 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 118.58,
-                    "week": 1
+                    "total": 198.24,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 135.08,
-                    "week": 1
+                    "total": 145.33,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/3",
                   "waiver_priority": 8,
-                  "win_probability": 0.0
+                  "win_probability": 1.0
                 }
               },
               {
@@ -384,24 +384,24 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 120.6,
-                    "week": 1
+                    "total": 124.92,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 143.35,
-                    "week": 1
+                    "total": 129.11,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/10",
                   "waiver_priority": 7,
-                  "win_probability": 1.0
+                  "win_probability": 0.0
                 }
               }
             ],
-            "week": 1,
-            "week_end": "2025-09-08",
-            "week_start": "2025-09-04",
-            "winner_team_key": "461.l.97974.t.10"
+            "week": 10,
+            "week_end": "2025-11-10",
+            "week_start": "2025-11-04",
+            "winner_team_key": "461.l.97974.t.3"
           }
         },
         {
@@ -413,19 +413,19 @@
             "matchup_grades": [
               {
                 "matchup_grade": {
-                  "grade": "A+",
+                  "grade": "B-",
                   "team_key": "461.l.97974.t.4"
                 }
               },
               {
                 "matchup_grade": {
-                  "grade": "D",
+                  "grade": "C-",
                   "team_key": "461.l.97974.t.6"
                 }
               }
             ],
             "matchup_recap_title": "Win or lose, game day just got saucier with Jimmy John's.",
-            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=1&mid1=4&mid2=6",
+            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=10&mid1=4&mid2=6",
             "status": "postevent",
             "teams": [
               {
@@ -462,13 +462,13 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 182.67,
-                    "week": 1
+                    "total": 138.0,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 138.84,
-                    "week": 1
+                    "total": 153.02,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/4",
                   "waiver_priority": 5,
@@ -509,13 +509,13 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 129.32,
-                    "week": 1
+                    "total": 135.53,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 148.62,
-                    "week": 1
+                    "total": 138.87,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/6",
                   "waiver_priority": 1,
@@ -523,9 +523,9 @@
                 }
               }
             ],
-            "week": 1,
-            "week_end": "2025-09-08",
-            "week_start": "2025-09-04",
+            "week": 10,
+            "week_end": "2025-11-10",
+            "week_start": "2025-11-04",
             "winner_team_key": "461.l.97974.t.4"
           }
         },
@@ -538,19 +538,19 @@
             "matchup_grades": [
               {
                 "matchup_grade": {
-                  "grade": "B+",
+                  "grade": "D+",
                   "team_key": "461.l.97974.t.5"
                 }
               },
               {
                 "matchup_grade": {
-                  "grade": "D",
+                  "grade": "B",
                   "team_key": "461.l.97974.t.7"
                 }
               }
             ],
             "matchup_recap_title": "Win or lose, game day just got saucier with Jimmy John's.",
-            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=1&mid1=5&mid2=7",
+            "matchup_recap_url": "https://football.fantasysports.yahoo.com/f1/97974/recap?week=10&mid1=5&mid2=7",
             "status": "postevent",
             "teams": [
               {
@@ -587,17 +587,17 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 135.06,
-                    "week": 1
+                    "total": 119.77,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 145.47,
-                    "week": 1
+                    "total": 130.98,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/5",
                   "waiver_priority": 2,
-                  "win_probability": 1.0
+                  "win_probability": 0.0
                 }
               },
               {
@@ -634,28 +634,28 @@
                   },
                   "team_points": {
                     "coverage_type": "week",
-                    "total": 115.38,
-                    "week": 1
+                    "total": 133.54,
+                    "week": 10
                   },
                   "team_projected_points": {
                     "coverage_type": "week",
-                    "total": 146.78,
-                    "week": 1
+                    "total": 145.32,
+                    "week": 10
                   },
                   "url": "https://football.fantasysports.yahoo.com/f1/97974/7",
                   "waiver_priority": 4,
-                  "win_probability": 0.0
+                  "win_probability": 1.0
                 }
               }
             ],
-            "week": 1,
-            "week_end": "2025-09-08",
-            "week_start": "2025-09-04",
-            "winner_team_key": "461.l.97974.t.5"
+            "week": 10,
+            "week_end": "2025-11-10",
+            "week_start": "2025-11-04",
+            "winner_team_key": "461.l.97974.t.7"
           }
         }
       ],
-      "week": 1
+      "week": 10
     },
     "scoring_type": "head",
     "season": 2025,
@@ -665,7 +665,7 @@
     "url": "https://football.fantasysports.yahoo.com/f1/97974",
     "weekly_deadline": null
   },
-  "time": "113.84201049805ms",
+  "time": "164.45994377136ms",
   "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
   "refresh_rate": 60
 }

@@ -4,6 +4,7 @@ import logging
 import os
 from pathlib import Path
 from yfpy.query import YahooFantasySportsQuery
+from dotenv import load_dotenv
 
 # --- Setup ---
 logging.basicConfig(level=logging.INFO, format='%(message)s')
@@ -12,6 +13,9 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 CACHE_DIR = Path("v2/api_cache")
 CACHE_DIR.mkdir(exist_ok=True)
 TARGET_SEASON = "2025"
+
+# Load environment variables from a local .env file (if present)
+load_dotenv()
 
 def main():
     """
