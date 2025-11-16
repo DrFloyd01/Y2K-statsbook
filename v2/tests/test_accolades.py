@@ -58,7 +58,7 @@ class TestAccolades(unittest.TestCase):
 
     def test_calculate_doh_accolades(self):
         """Test that the 'D'OH' accolade is correctly identified."""
-        doh_accolades = calculate_doh_accolades(self.league)
+        doh_accolades, doh_weeks = calculate_doh_accolades(self.league)
         self.assertEqual(len(doh_accolades), 1)
 
         doh = doh_accolades[0]
@@ -69,6 +69,10 @@ class TestAccolades(unittest.TestCase):
         self.assertEqual(doh["bench_player"], "QB Bench")
         self.assertEqual(doh["starting_player"], "QB Starter")
         self.assertEqual(doh["point_swing"], 20.0)
+
+        self.assertEqual(len(doh_weeks), 1)
+        self.assertEqual(doh_weeks[0]["manager"], "Manager 1")
+        self.assertEqual(doh_weeks[0]["week"], 1)
 
     def test_calculate_alt_universe_accolades(self):
         """Test that the 'Alternative Universe' accolade is correctly calculated."""
@@ -85,6 +89,42 @@ class TestAccolades(unittest.TestCase):
         self.assertEqual(len(manager2_accolades), 2)
         self.assertEqual(manager2_accolades[0]["accolade"], "alt_universe_win")
         self.assertEqual(manager2_accolades[1]["accolade"], "alt_universe_win")
+
+    def test_calculate_doh_accolades_flex_position(self):
+        """Test D'OH accolade with a valid flex position substitution."""
+        # Overwrite the league schedule with a new matchup
+        team1 = copy.deepcopy(self.team1)
+        team2 = copy.deepcopy(self.team2)
+        team1.roster = [
+            Player(player_id=1, name="Flex Starter", position="W/R/T", nfl_team="A", starting_status=True, actual_score=10.0),
+            Player(player_id=2, name="Bench WR", position="WR", nfl_team="A", starting_status=False, actual_score=30.0),
+        ]
+        team2.roster = [
+            Player(player_id=3, name="Opponent QB", position="QB", nfl_team="B", starting_status=True, actual_score=25.0),
+        ]
+        matchup = Matchup(
+            week=1,
+            team1=team1,
+            team2=team2,
+            team1_score=10.0,
+            team2_score=25.0,
+        )
+        self.league.schedule = Schedule(regular_season={1: [matchup]})
+
+        doh_accolades, doh_weeks = calculate_doh_accolades(self.league)
+        self.assertEqual(len(doh_accolades), 1)
+
+        doh = doh_accolades[0]
+        self.assertEqual(doh["week"], 1)
+        self.assertEqual(doh["losing_team"], "Manager 1")
+        self.assertEqual(doh["bench_player"], "Bench WR")
+        self.assertEqual(doh["starting_player"], "Flex Starter")
+        self.assertEqual(doh["point_swing"], 20.0)
+
+        self.assertEqual(len(doh_weeks), 1)
+        self.assertEqual(doh_weeks[0]["manager"], "Manager 1")
+        self.assertEqual(doh_weeks[0]["week"], 1)
+
 
 if __name__ == '__main__':
     unittest.main()
