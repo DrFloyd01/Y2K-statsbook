@@ -6,7 +6,7 @@ from v2.models.league import League, Matchup
 from v2.parsers.h2h_parser import parse_h2h_data
 from v2.parsers.accolade_parser import parse_accolades
 
-def calculate_leaderboards(league: League) -> Dict:
+def calculate_leaderboards(league: League, doh_accolades) -> Dict:
     """
     Calculates the standard leaderboards, H2H records, and accolades.
     """
@@ -54,14 +54,36 @@ def calculate_leaderboards(league: League) -> Dict:
         if total_games > 0:
             stats["win_percentage"] = stats["wins"] / total_games
 
+    # --- Alt Universe Accolades ---
+    from v2.accolades import calculate_alt_universe_accolades
+    alt_universe_accolades = calculate_alt_universe_accolades(league)
+    for team in league.teams:
+        leaderboard[team.team_id]["alt_universe_wins"] = 0
+        leaderboard[team.team_id]["alt_universe_losses"] = 0
+
+    for accolade in alt_universe_accolades:
+        for team in league.teams:
+            if team.manager_name == accolade["manager"]:
+                if accolade["accolade"] == "alt_universe_win":
+                    leaderboard[team.team_id]["alt_universe_wins"] += 1
+                else:
+                    leaderboard[team.team_id]["alt_universe_losses"] += 1
+
+
     # --- H2H Records ---
     h2h_records = parse_h2h_data(league)
 
+
     # --- Accolades ---
     accolades = parse_accolades(league)
+
+    # --- D'OH Accolades ---
+    # Sort accolades by the potential point swing for display
+    sorted_doh_accolades = sorted(doh_accolades, key=lambda item: item["point_swing"], reverse=True)
 
     return {
         "leaderboard": dict(leaderboard),
         "h2h_records": h2h_records,
         "accolades": accolades,
+        "doh_accolades": sorted_doh_accolades,
     }

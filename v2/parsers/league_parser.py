@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from v2.models.league import League, Team, Player
 
-def parse_league_data(cache_dir: Path, year: int, league: League):
+def parse_league_data(cache_dir: Path, year: int, week: int, league: League):
     """
     Parses the raw JSON data from the cache and populates a League object.
     """
@@ -14,7 +14,7 @@ def parse_league_data(cache_dir: Path, year: int, league: League):
     with open(cache_dir / f"teams_{year}.json", "r") as f:
         teams_data = json.load(f)
 
-    with open(cache_dir / f"rosters_{year}_w1.json", "r") as f:
+    with open(cache_dir / f"rosters_{year}_w{week}.json", "r") as f:
         rosters_data = json.load(f)
 
     # Extract league-level data
@@ -38,7 +38,9 @@ def parse_league_data(cache_dir: Path, year: int, league: League):
                         player_id=player_info["player_id"],
                         name=player_info["name"]["full"],
                         position=player_info["primary_position"],
-                        nfl_team=player_info["editorial_team_abbr"]
+                        nfl_team=player_info["editorial_team_abbr"],
+                        starting_status=(player_info["selected_position"]["position"] != "BN"),
+                        actual_score=float(player_json["player"]["player_points"]["total"])
                     )
                     team_roster.append(player)
 

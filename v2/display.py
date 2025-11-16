@@ -68,6 +68,38 @@ def display_total_accolades(accolades: List[Accolade], num_seasons: int):
         print(row)
     print("\n")
 
+def display_doh_leaderboards(doh_accolades: List[Dict]):
+    """Formats and prints the 'D'OH' leaderboards."""
+    print("--- D'OH! Scenarios ---")
+    if not doh_accolades:
+        print("No D'OH! scenarios found.")
+        return
+
+    # --- D'OH! Counts ---
+    print("\n--- D'OH! Counts ---")
+    doh_counts = {}
+    for accolade in doh_accolades:
+        manager = accolade["losing_team"]
+        doh_counts[manager] = doh_counts.get(manager, 0) + 1
+
+    sorted_counts = sorted(doh_counts.items(), key=lambda item: item[1], reverse=True)
+    for manager, count in sorted_counts:
+        print(f"{manager}: {count}")
+
+    # --- Top 20 D'OH! Scenarios by Point Swing ---
+    print("\n--- Top 20 D'OH! Scenarios by Point Swing ---")
+    for i, accolade in enumerate(doh_accolades[:20]):
+        print(f"  {i+1}. Week {accolade['week']}: {accolade['losing_team']} "
+              f"lost to {accolade['winning_team']} "
+              f"({accolade['losing_score']:.2f} - {accolade['winning_score']:.2f})")
+        print(f"      - Margin: {accolade['margin']:.2f}")
+        print(f"      - Bench Player: {accolade['bench_player']} ({accolade['bench_player_score']:.2f})")
+        print(f"      - Starter: {accolade['starting_player']} ({accolade['starting_player_score']:.2f})")
+        print(f"      - Point Swing: {accolade['point_swing']:.2f}")
+        print(f"      - New Score: {accolade['new_score']:.2f}")
+    print("\n")
+
+
 def display_leaderboard(leaderboard_data: Dict):
     """
     Displays the full suite of league statistics.
@@ -77,3 +109,4 @@ def display_leaderboard(leaderboard_data: Dict):
     # Note: We are hardcoding num_seasons to 1 for now, as we only have 2025 data.
     # This will be updated once historical data is pulled.
     display_total_accolades(leaderboard_data["accolades"], num_seasons=1)
+    display_doh_leaderboards(leaderboard_data["doh_accolades"])

@@ -24,27 +24,27 @@ def load_league_from_cache(cache_dir: Path, year: int) -> League:
     # 1. Create a new League object
     league = League(league_id="", season=year, name="", teams=[])
 
-    # 2. Parse the league data and populate the League object
-    parse_league_data(cache_dir, year, league)
-
-    # 3. Manually parse playoff settings and current week
+    # 2. Manually parse playoff settings and current week
     with open(cache_dir / f"settings_{year}.json", "r") as f:
         settings_data = json.load(f)
     playoff_start_week = settings_data["league"]["settings"]["playoff_start_week"]
     current_week = settings_data["league"]["current_week"]
     league.playoff_settings = PlayoffSettings(start_week=int(playoff_start_week))
 
-    # 4. Create a team_id -> Team object map for quick lookups
-    team_map: Dict[int, Team] = {team.team_id: team for team in league.teams}
-
-    # 5. Iterate through all possible weeks up to the current week
+    # 3. Iterate through all possible weeks up to the current week
     for week in range(1, current_week):
+        # Parse the league data and populate the League object
+        parse_league_data(cache_dir, year, week, league)
+
+        # Create a team_id -> Team object map for quick lookups
+        team_map: Dict[int, Team] = {team.team_id: team for team in league.teams}
+
         scoreboard_file = cache_dir / f"scoreboard_{year}_w{week}.json"
 
         if not scoreboard_file.exists():
             continue # Skip weeks with no cached data
 
-        # Parse the raw scoreboard data for the week
+        # Parse the scoreboard data for the week
         matchup_dicts = parse_scoreboard_data(cache_dir, year, week)
 
         matchups_for_week = []

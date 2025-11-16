@@ -1,12 +1,11 @@
 
 import json
 import logging
+import os
 from pathlib import Path
-from dotenv import load_dotenv
 from yfpy.query import YahooFantasySportsQuery
 
 # --- Setup ---
-load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # --- Directory Setup ---
@@ -23,15 +22,28 @@ def main():
     with open("leagues.json", "r") as f:
         config = json.load(f)[TARGET_SEASON]
 
+    # --- Programmatic Authentication ---
+    access_token_json = {
+        "access_token": os.environ.get("YAHOO_ACCESS_TOKEN"),
+        "consumer_key": os.environ.get("YAHOO_CONSUMER_KEY"),
+        "consumer_secret": os.environ.get("YAHOO_CONSUMER_SECRET"),
+        "guid": os.environ.get("YAHOO_GUID"),
+        "refresh_token": os.environ.get("YAHOO_REFRESH_TOKEN"),
+        "token_time": float(os.environ.get("YAHOO_TOKEN_TIME", 0)),
+        "token_type": "bearer"
+    }
+
     query = YahooFantasySportsQuery(
         league_id=config["league_id"],
         game_code="nfl",
-        game_id=config["game_id"]
+        game_id=config["game_id"],
+        yahoo_access_token_json=access_token_json
     )
     json_query = YahooFantasySportsQuery(
         league_id=config["league_id"],
         game_code="nfl",
         game_id=config["game_id"],
+        yahoo_access_token_json=access_token_json,
         all_output_as_json_str=True
     )
 
@@ -78,23 +90,24 @@ def main():
             # If we don't find matchups, we can assume we've reached the end of the completed weeks.
             break
 
-    # 4. Fetch Rosters (only needed for one week to populate the team models)
-    logging.info(f"--- Fetching final roster data ---")
-    all_rosters = {}
+    # 4. Fetch Rosters for each week
+    logging.info(f"--- Fetching weekly roster data ---")
     teams_str = json_query.query(f"https://fantasysports.yahooapis.com/fantasy/v2/league/{league_key}/teams", [])
     teams_data = json.loads(teams_str)
     if teams_data:
-        for team_data in teams_data["league"]["teams"]:
-            team = team_data['team']
-            team_key = team["team_key"]
-            team_id = team["team_id"]
-            logging.info(f"  - Fetching roster for team {team_id}...")
-            roster_str = json_query.query(f"https://fantasysports.yahooapis.com/fantasy/v2/team/{team_key}/roster;week=1", [])
-            all_rosters[team_id] = json.loads(roster_str)
-    rosters_file = CACHE_DIR / f"rosters_{TARGET_SEASON}_w1.json"
-    with open(rosters_file, "w") as f:
-        json.dump(all_rosters, f, indent=2)
-    logging.info(f"✅ Saved all team rosters to {rosters_file}")
+        for week in range(1, 11):
+            all_rosters = {}
+            for team_data in teams_data["league"]["teams"]:
+                team = team_data['team']
+                team_key = team["team_key"]
+                team_id = team["team_id"]
+                logging.info(f"  - Fetching roster for team {team_id} for week {week}...")
+                roster_str = json_query.query(f"https://fantasysports.yahooapis.com/fantasy/v2/team/{team_key}/roster;week={week}/players/stats", [])
+                all_rosters[team_id] = json.loads(roster_str)
+            rosters_file = CACHE_DIR / f"rosters_{TARGET_SEASON}_w{week}.json"
+            with open(rosters_file, "w") as f:
+                json.dump(all_rosters, f, indent=2)
+            logging.info(f"✅ Saved all team rosters for week {week} to {rosters_file}")
 
     logging.info("\n--- API Data Fetch Complete ---")
 

@@ -11,6 +11,8 @@ class Player:
     name: str
     position: str
     nfl_team: str
+    starting_status: bool  # True if in starting lineup, False if on bench
+    actual_score: float
 
 @dataclass
 class Team:

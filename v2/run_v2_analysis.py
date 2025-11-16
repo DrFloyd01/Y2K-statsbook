@@ -31,11 +31,19 @@ def main():
 
     # 2. Calculate leaderboards, H2H records, and accolades
     print("Calculating leaderboards and accolades...")
-    leaderboard_data = calculate_leaderboards(league)
+    from v2.accolades import calculate_doh_accolades
+    doh_accolades = calculate_doh_accolades(league)
+    leaderboard_data = calculate_leaderboards(league, doh_accolades)
 
     # 3. Display the results
     print("Displaying results...\n")
     display_leaderboard(leaderboard_data)
+
+    # 4. Save D'OH log to JSON file
+    import json
+    with open("doh_log.json", "w") as f:
+        json.dump(doh_accolades, f, indent=2)
+    print("D'OH log saved to doh_log.json")
 
     print("--- v2 League Analysis Complete ---")
 
