@@ -6,7 +6,7 @@ from v2.models.league import League, Matchup
 from v2.parsers.h2h_parser import parse_h2h_data
 from v2.parsers.accolade_parser import parse_accolades
 
-def calculate_leaderboards(league: League) -> Dict:
+def calculate_leaderboards(league: League, doh_accolades) -> Dict:
     """
     Calculates the standard leaderboards, H2H records, and accolades.
     """
@@ -54,14 +54,45 @@ def calculate_leaderboards(league: League) -> Dict:
         if total_games > 0:
             stats["win_percentage"] = stats["wins"] / total_games
 
+    # --- Alt Universe Accolades ---
+    from v2.accolades import calculate_alt_universe_accolades
+    alt_universe_accolades = calculate_alt_universe_accolades(league)
+    for team in league.teams:
+        leaderboard[team.team_id]["alt_universe_wins"] = 0
+        leaderboard[team.team_id]["alt_universe_losses"] = 0
+
+    for accolade in alt_universe_accolades:
+        for team in league.teams:
+            if team.manager_name == accolade["manager"]:
+                if accolade["accolade"] == "alt_universe_win":
+                    leaderboard[team.team_id]["alt_universe_wins"] += 1
+                else:
+                    leaderboard[team.team_id]["alt_universe_losses"] += 1
+
+
     # --- H2H Records ---
     h2h_records = parse_h2h_data(league)
 
+
     # --- Accolades ---
     accolades = parse_accolades(league)
+
+    # --- D'OH Accolades ---
+    doh_counts = defaultdict(int)
+    doh_point_diff = []
+    for doh in doh_accolades:
+        doh_counts[doh["losing_team"]] += 1
+        doh_point_diff.append((doh["losing_team"], doh["score_difference"]))
+
+    # Sort the 'D'OH' leaderboards
+    sorted_doh_counts = sorted(doh_counts.items(), key=lambda item: item[1], reverse=True)
+    sorted_doh_point_diff = sorted(doh_point_diff, key=lambda item: item[1], reverse=True)
+
 
     return {
         "leaderboard": dict(leaderboard),
         "h2h_records": h2h_records,
         "accolades": accolades,
+        "doh_counts": sorted_doh_counts,
+        "doh_point_difference": sorted_doh_point_diff,
     }

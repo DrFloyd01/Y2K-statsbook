@@ -68,6 +68,19 @@ def display_total_accolades(accolades: List[Accolade], num_seasons: int):
         print(row)
     print("\n")
 
+def display_doh_leaderboards(doh_counts, doh_point_difference):
+    """Formats and prints the 'D'OH' leaderboards."""
+    print("--- D'OH Accolade Leaderboards ---")
+    print("\n--- D'OH Counts ---")
+    for manager, count in doh_counts:
+        print(f"{manager}: {count}")
+
+    print("\n--- D'OH Point Difference ---")
+    for manager, diff in doh_point_difference:
+        print(f"{manager}: {diff:.2f}")
+    print("\n")
+
+
 def display_leaderboard(leaderboard_data: Dict):
     """
     Displays the full suite of league statistics.
@@ -77,3 +90,4 @@ def display_leaderboard(leaderboard_data: Dict):
     # Note: We are hardcoding num_seasons to 1 for now, as we only have 2025 data.
     # This will be updated once historical data is pulled.
     display_total_accolades(leaderboard_data["accolades"], num_seasons=1)
+    display_doh_leaderboards(leaderboard_data["doh_counts"], leaderboard_data["doh_point_difference"])
