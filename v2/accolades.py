@@ -61,18 +61,21 @@ def calculate_doh_accolades(league: League):
                         if score_difference > losing_margin:
                             doh_accolades.append({
                                 "week": week,
-                            "losing_team": losing_team.manager_name,
-                            "winning_team": winning_team.manager_name,
-                            "losing_score": losing_score,
-                            "winning_score": winning_score,
-                            "margin": losing_margin,
-                            "bench_player": bench_player.name,
-                            "bench_player_score": bench_player.actual_score,
-                            "starting_player": starter.name,
-                            "starting_player_score": starter.actual_score,
-                            "point_swing": score_difference,
-                            "new_score": losing_score + score_difference
-                        })
+                                "losing_team": losing_team.manager_name,
+                                "winning_team": winning_team.manager_name,
+                                "losing_score": losing_score,
+                                "winning_score": winning_score,
+                                "margin": losing_margin,
+                                "bench_player": bench_player.name,
+                                "bench_player_score": bench_player.actual_score,
+                                "starting_player": starter.name,
+                                "starting_player_score": starter.actual_score,
+                                "point_swing": score_difference,
+                                "new_score": losing_score + score_difference
+                            })
+
+    # Sort accolades by week, then by losing team, then by point swing descending
+    doh_accolades.sort(key=lambda x: (x["week"], x["losing_team"], -x["point_swing"]))
 
     return doh_accolades
 
