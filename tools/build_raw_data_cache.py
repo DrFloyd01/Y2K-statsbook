@@ -59,6 +59,40 @@ def update_raw_data_cache(season, week):
     
     logging.info(f"✅ Successfully updated {raw_cache_file.name} with Week {week} data.")
 
+
+def cache_specific_week(season, week):
+    """
+    Fetches and caches the raw data for a single, specific week.
+    """
+    logging.info(f"--- Fetching raw data for {season}, Week {week} ---")
+    
+    with open("leagues.json", "r") as f:
+        config = json.load(f)[str(season)]
+
+    query = YahooFantasySportsQuery(
+        league_id=config["league_id"], game_code="nfl", game_id=config["game_id"],
+        yahoo_consumer_key=YAHOO_CONSUMER_KEY, yahoo_consumer_secret=YAHOO_CONSUMER_SECRET,
+        env_file_location=Path("."), save_token_data_to_env_file=True
+    )
+
+    settings = query.get_league_settings()
+    playoff_start_week = int(settings.playoff_start_week)
+
+    if week >= playoff_start_week:
+        scoreboard = query.get_league_scoreboard_by_week(week)
+        matchups = scoreboard.matchups
+    else:
+        matchups = query.get_league_matchups_by_week(week)
+
+    if matchups and matchups[0].status == "postevent":
+        weekly_cache_file = CACHE_DIR / f"week_{week}_matchups.pkl"
+        with open(weekly_cache_file, "wb") as f:
+            pickle.dump(matchups, f)
+        logging.info(f"✅ Successfully cached Week {week} data to {weekly_cache_file.name}")
+    else:
+        logging.info(f"Skipping Week {week} (not yet played or no data).")
+
+
 def cache_all_raw_data():
     """
     Connects to the API one last time to fetch all raw matchup data
