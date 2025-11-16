@@ -1,6 +1,7 @@
 """
 This module contains the logic for calculating league accolades.
 """
+from collections import defaultdict
 from v2.models.league import League, Matchup, Player
 
 
@@ -78,6 +79,22 @@ def calculate_doh_accolades(league: League):
     doh_accolades.sort(key=lambda x: (x["week"], x["losing_team"], -x["point_swing"]))
 
     return doh_accolades
+
+
+def aggregate_doh_by_week(doh_accolades):
+    """
+    Aggregates D'OH accolades by week to count the number of D'OHs per week.
+    """
+    weekly_doh = defaultdict(lambda: {"count": 0, "teams": []})
+    for doh in doh_accolades:
+        week = doh["week"]
+        weekly_doh[week]["count"] += 1
+        weekly_doh[week]["teams"].append(doh["losing_team"])
+
+    # Convert back to a list of dicts, sorted by week
+    sorted_weekly_doh = [{"week": w, "count": d["count"], "teams": d["teams"]} for w, d in sorted(weekly_doh.items())]
+
+    return sorted_weekly_doh
 
 
 def calculate_alt_universe_accolades(league: League):

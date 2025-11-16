@@ -5,7 +5,7 @@ from pathlib import Path
 import copy
 
 sys.path.append(".")
-from v2.accolades import calculate_doh_accolades, calculate_alt_universe_accolades
+from v2.accolades import calculate_doh_accolades, calculate_alt_universe_accolades, aggregate_doh_by_week
 from v2.models.league import League, Team, Player, Matchup, Schedule
 
 class TestAccolades(unittest.TestCase):
@@ -85,6 +85,54 @@ class TestAccolades(unittest.TestCase):
         self.assertEqual(len(manager2_accolades), 2)
         self.assertEqual(manager2_accolades[0]["accolade"], "alt_universe_win")
         self.assertEqual(manager2_accolades[1]["accolade"], "alt_universe_win")
+
+    def test_doh_with_flex_substitution(self):
+        """Test D'OH with a valid FLEX substitution (WR for W/R/T)."""
+        team1 = Team(team_id=3, manager_name="Flex Manager", roster=[
+            Player(player_id=4, name="Flex Starter", position="W/R/T", nfl_team="C", starting_status=True, actual_score=5.0),
+            Player(player_id=5, name="WR Bench", position="WR", nfl_team="C", starting_status=False, actual_score=25.0),
+        ])
+        team2 = Team(team_id=4, manager_name="Opponent", roster=[
+            Player(player_id=6, name="Opponent Player", position="QB", nfl_team="D", starting_status=True, actual_score=20.0),
+        ])
+        matchup = Matchup(
+            week=3,
+            team1=team1,
+            team2=team2,
+            team1_score=5.0,
+            team2_score=20.0,
+        )
+        self.league.schedule.regular_season[3] = [matchup]
+
+        doh_accolades = calculate_doh_accolades(self.league)
+
+        # Filter for week 3 DOH
+        week3_doh = [doh for doh in doh_accolades if doh['week'] == 3]
+
+        self.assertEqual(len(week3_doh), 1)
+        doh = week3_doh[0]
+        self.assertEqual(doh["losing_team"], "Flex Manager")
+        self.assertEqual(doh["bench_player"], "WR Bench")
+        self.assertEqual(doh["starting_player"], "Flex Starter")
+        self.assertEqual(doh["point_swing"], 20.0)
+
+    def test_aggregate_doh_by_week(self):
+        """Test that D'OH accolades are correctly aggregated by week."""
+        doh_accolades = [
+            {"week": 1, "losing_team": "Team A"},
+            {"week": 1, "losing_team": "Team B"},
+            {"week": 2, "losing_team": "Team C"},
+        ]
+
+        weekly_summary = aggregate_doh_by_week(doh_accolades)
+
+        self.assertEqual(len(weekly_summary), 2)
+        self.assertEqual(weekly_summary[0]["week"], 1)
+        self.assertEqual(weekly_summary[0]["count"], 2)
+        self.assertEqual(weekly_summary[0]["teams"], ["Team A", "Team B"])
+        self.assertEqual(weekly_summary[1]["week"], 2)
+        self.assertEqual(weekly_summary[1]["count"], 1)
+        self.assertEqual(weekly_summary[1]["teams"], ["Team C"])
 
 if __name__ == '__main__':
     unittest.main()

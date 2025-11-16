@@ -7,7 +7,7 @@ from v2.models.league import League, Matchup
 from v2.parsers.h2h_parser import parse_h2h_data
 from v2.parsers.accolade_parser import parse_accolades
 
-def calculate_leaderboards(league: League, doh_accolades) -> Dict:
+def calculate_leaderboards(league: League, doh_accolades, weekly_doh_summary=None) -> Dict:
     """
     Calculates the standard leaderboards, H2H records, and accolades.
     """
@@ -82,9 +82,14 @@ def calculate_leaderboards(league: League, doh_accolades) -> Dict:
     # Sort accolades by the potential point swing for display
     sorted_doh_accolades = sorted(doh_accolades, key=lambda item: item["point_swing"], reverse=True)
 
-    return {
+    output = {
         "leaderboard": dict(leaderboard),
         "h2h_records": [asdict(record) for record in h2h_records],
         "accolades": [asdict(accolade) for accolade in accolades],
         "doh_accolades": sorted_doh_accolades,
     }
+
+    if weekly_doh_summary:
+        output["weekly_doh_summary"] = weekly_doh_summary
+
+    return output
