@@ -102,3 +102,12 @@ class League:
     schedule: Schedule = field(default_factory=Schedule)
     h2h_records: List[H2HRecord] = field(default_factory=list)
     accolades: List[Accolade] = field(default_factory=list)
+
+    def get_team_by_id(self, team_id: int) -> Team | None:
+        """
+        Returns a team from the league by its ID.
+        """
+        for team in self.teams:
+            if team.team_id == team_id:
+                return team
+        return None
