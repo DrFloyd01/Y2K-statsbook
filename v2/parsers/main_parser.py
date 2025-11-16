@@ -33,6 +33,11 @@ def load_league_from_cache(cache_dir: Path, year: int) -> League:
 
     # 3. Iterate through all possible weeks up to the current week
     for week in range(1, current_week):
+        # Skip weeks with no cached roster data
+        roster_file = cache_dir / f"rosters_{year}_w{week}.json"
+        if not roster_file.exists():
+            continue
+
         # Parse the league data and populate the League object
         parse_league_data(cache_dir, year, week, league)
 
