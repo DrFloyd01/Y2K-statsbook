@@ -8,6 +8,7 @@ sys.path.append(".")
 from v2.parsers.main_parser import load_league_from_cache
 from v2.leaderboard import calculate_leaderboards
 from v2.display import display_leaderboard
+from v2.json_saver import save_analysis_to_json
 
 # --- Constants ---
 CACHE_DIR = Path("v2/api_cache")
@@ -39,11 +40,9 @@ def main():
     print("Displaying results...\n")
     display_leaderboard(leaderboard_data)
 
-    # 4. Save D'OH log to JSON file
-    import json
-    with open("doh_log.json", "w") as f:
-        json.dump(doh_accolades, f, indent=2)
-    print("D'OH log saved to doh_log.json")
+    # 4. Save analysis to JSON file
+    save_analysis_to_json(leaderboard_data, "analysis_output.json")
+    print("Analysis saved to analysis_output.json")
 
     print("--- v2 League Analysis Complete ---")
 

@@ -39,7 +39,8 @@ def load_league_from_cache(cache_dir: Path, year: int) -> League:
             continue
 
         # Parse the league data and populate the League object
-        parse_league_data(cache_dir, year, week, league)
+        if not league.teams:
+            parse_league_data(cache_dir, year, week, league)
 
         # Create a team_id -> Team object map for quick lookups
         team_map: Dict[int, Team] = {team.team_id: team for team in league.teams}

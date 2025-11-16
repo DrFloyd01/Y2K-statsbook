@@ -3,6 +3,7 @@ Unit tests for the new v2 features (H2H, accolades, display).
 """
 import unittest
 import sys
+from dataclasses import asdict
 sys.path.append(".")
 
 from v2.models.league import League, Team, Matchup, H2HRecord, Accolade
@@ -77,9 +78,9 @@ class TestNewFeatures(unittest.TestCase):
             h2h_records = parse_h2h_data(self.league)
             accolades = parse_accolades(self.league)
 
-            display_h2h_records(h2h_records)
-            display_top_5_accolades(accolades)
-            display_total_accolades(accolades, num_seasons=1)
+            display_h2h_records([asdict(record) for record in h2h_records])
+            display_top_5_accolades([asdict(accolade) for accolade in accolades])
+            display_total_accolades([asdict(accolade) for accolade in accolades], num_seasons=1)
         except Exception as e:
             self.fail(f"Display functions raised an exception: {e}")
 
