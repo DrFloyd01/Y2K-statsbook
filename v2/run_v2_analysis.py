@@ -9,6 +9,7 @@ from v2.parsers.main_parser import load_league_from_cache
 from v2.leaderboard import calculate_leaderboards
 from v2.display import display_leaderboard
 from v2.json_saver import save_analysis_to_json
+from v2.accolades import calculate_doh_accolades, aggregate_doh_by_week
 
 # --- Constants ---
 CACHE_DIR = Path("v2/api_cache")
@@ -32,9 +33,10 @@ def main():
 
     # 2. Calculate leaderboards, H2H records, and accolades
     print("Calculating leaderboards and accolades...")
-    from v2.accolades import calculate_doh_accolades
     doh_accolades = calculate_doh_accolades(league)
-    leaderboard_data = calculate_leaderboards(league, doh_accolades)
+    weekly_doh_summary = aggregate_doh_by_week(doh_accolades)
+
+    leaderboard_data = calculate_leaderboards(league, doh_accolades, weekly_doh_summary)
 
     # 3. Display the results
     print("Displaying results...\n")
