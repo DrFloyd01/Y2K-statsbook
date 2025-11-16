@@ -1,6 +1,7 @@
 """
 Integrates multiple parsing functions to build a complete League object from cached data.
 """
+import copy
 import json
 from pathlib import Path
 from typing import Dict
@@ -45,8 +46,9 @@ def load_league_from_cache(cache_dir: Path, year: int) -> League:
         # Now, parse the weekly roster data
         parse_weekly_rosters(league, cache_dir, year, week)
 
-        # Create a team_id -> Team object map for quick lookups
-        team_map: Dict[int, Team] = {team.team_id: team for team in league.teams}
+        # Create a deep copy of the team map to ensure roster data is not shared
+        team_map: Dict[int, Team] = {team.team_id: copy.deepcopy(team) for team in league.teams}
+
 
         scoreboard_file = cache_dir / f"scoreboard_{year}_w{week}.json"
 
