@@ -15,7 +15,7 @@ class TestAccolades(unittest.TestCase):
         # Team 1 (Loser)
         team1_roster = [
             Player(player_id=1, name="Starter 1", position="QB", nfl_team="A", starting_status=True, actual_score=10.0),
-            Player(player_id=2, name="Bench Player 1", position="RB", nfl_team="A", starting_status=False, actual_score=30.0),
+            Player(player_id=2, name="Bench Player 1", position="QB", nfl_team="A", starting_status=False, actual_score=30.0),
         ]
         self.team1 = Team(team_id=1, manager_name="Manager 1", roster=team1_roster)
 

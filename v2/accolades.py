@@ -1,7 +1,29 @@
 """
 This module contains the logic for calculating league accolades.
 """
-from v2.models.league import League, Matchup
+from v2.models.league import League, Matchup, Player
+
+
+def _is_valid_substitution(bench_player: Player, starter: Player) -> bool:
+    """
+    Checks if a bench player can be substituted for a starter based on position.
+    """
+    valid_flex_positions = {"WR", "RB", "TE"}
+
+    # QB for QB
+    if bench_player.position == "QB" and starter.position == "QB":
+        return True
+    # K for K
+    if bench_player.position == "K" and starter.position == "K":
+        return True
+    # DEF for DEF
+    if bench_player.position == "DEF" and starter.position == "DEF":
+        return True
+    # WR/RB/TE for WR/RB/TE or FLEX (W/R/T)
+    if bench_player.position in valid_flex_positions and (starter.position in valid_flex_positions or starter.position == "W/R/T"):
+        return True
+    return False
+
 
 def calculate_doh_accolades(league: League):
     """
@@ -34,10 +56,11 @@ def calculate_doh_accolades(league: League):
             # Check for 'D'OH' scenarios
             for bench_player in bench_players:
                 for starter in starters:
-                    score_difference = bench_player.actual_score - starter.actual_score
-                    if score_difference > losing_margin:
-                        doh_accolades.append({
-                            "week": week,
+                    if _is_valid_substitution(bench_player, starter):
+                        score_difference = bench_player.actual_score - starter.actual_score
+                        if score_difference > losing_margin:
+                            doh_accolades.append({
+                                "week": week,
                             "losing_team": losing_team.manager_name,
                             "winning_team": winning_team.manager_name,
                             "losing_score": losing_score,
