@@ -16,3 +16,4 @@ cache/
 data/
 site/
 !site/index.html
+analysis_output.json

@@ -1,6 +1,7 @@
 
 from typing import Dict
 from collections import defaultdict
+from dataclasses import asdict
 
 from v2.models.league import League, Matchup
 from v2.parsers.h2h_parser import parse_h2h_data
@@ -83,7 +84,7 @@ def calculate_leaderboards(league: League, doh_accolades) -> Dict:
 
     return {
         "leaderboard": dict(leaderboard),
-        "h2h_records": h2h_records,
-        "accolades": accolades,
+        "h2h_records": [asdict(record) for record in h2h_records],
+        "accolades": [asdict(accolade) for accolade in accolades],
         "doh_accolades": sorted_doh_accolades,
     }
