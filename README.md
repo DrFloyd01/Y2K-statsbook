@@ -187,3 +187,11 @@ graph TD
 The next major feature on the roadmap is to implement one of the most coveted fantasy accolades: the **"D'OH!" Award**.
 
 This will involve fetching player-level data for each team to calculate the "optimal" lineup for the week. We will then identify managers who lost but would have won if they had set their lineup optimally, immortalizing their poor coaching decisions in the weekly report.
+
+## Disclaimer
+
+This project is intended for educational purposes only and is not affiliated with Yahoo Fantasy Sports.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your changes.

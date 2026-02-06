@@ -5,6 +5,17 @@ import itertools
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 def calculate_h2h_for_pair(name1, name2, all_matchups):
+    """
+    Calculates the head-to-head record for a pair of managers.
+
+    Args:
+        name1 (str): The name of the first manager.
+        name2 (str): The name of the second manager.
+        all_matchups (list): A list of all matchups.
+
+    Returns:
+        dict: A dictionary containing the head-to-head record.
+    """
     relevant_games = [
         g for g in all_matchups 
         if {g['team1_manager_name'], g['team2_manager_name']} == {name1, name2}
